@@ -1035,7 +1035,9 @@
 						"reloadButton": "Yeniden Yükle"
 					},
 					"assignedToMe": "Bana atananlar",
-					"newConversations": "{count} yeni sohbet"
+					"newConversations": "{count} yeni sohbet",
+					"assigneeFilter": "Atanan",
+					"selectAssignee": "Atanan seç"
 				},
 				"itemOptions": {
 					"deleteAlert": {
@@ -1361,7 +1363,10 @@
 					"unknownAction": "Bilinmeyen Adım"
 				},
 				"advancedNodeActions": {
-					"searchPlaceholder": "Adım Ara..."
+					"searchPlaceholder": "Adım Ara...",
+					"fieldSelector": {
+						"label": "Alan seç"
+					}
 				}
 			},
 			"node": {
@@ -1478,7 +1483,9 @@
 						},
 						"moreItems": "daha fazla",
 						"addQuickReplies": "Hızlı Yanıtlar Ekle",
-						"testMessageSuccess": "Mesaj testi başarıyla gönderildi!"
+						"testMessageSuccess": "Mesaj testi başarıyla gönderildi!",
+						"changeContentType": "İçerik türünü değiştir",
+						"removeContent": "Kaldır"
 					},
 					"removeTag": {
 						"removeTagsFromContact": "Bu etiketleri, varsa, kişiden kaldır."
@@ -1616,7 +1623,8 @@
 							"messageFieldPath": "Veri Yolu (Field Path)",
 							"messageFieldHint": "Yanıt içeriğini bulmak için JSON yolu",
 							"fallbackMessage": "Fallback Mesajı",
-							"fallbackPlaceholder": "Üzgünüz, dinamik içeriği yükleyemedik."
+							"fallbackPlaceholder": "Üzgünüz, dinamik içeriği yükleyemedik.",
+							"fallbackHint": "Yanıttan mesaj çıkarılamadığında kişiye gösterilir."
 						},
 						"requestTest": {
 							"testing": "Test Ediliyor...",
@@ -1632,7 +1640,10 @@
 							"field": "alan",
 							"fields": "alanlar",
 							"rawTextBody": "Ham metin gövdesi",
-							"title": "İsteği Test Et"
+							"title": "İsteği Test Et",
+							"formData": "Form verisi",
+							"jsonBody": "JSON gövde",
+							"noBody": "Gövde yok"
 						}
 					},
 					"sendMessagePartials": {
@@ -2504,6 +2515,288 @@
 				"percentageDiscountText": "%{value}",
 				"amountDiscountText": "{value}"
 			}
+		},
+		"pricing": {
+			"paymentSuccessful": {
+				"title": "Ödeme Başarılı!",
+				"description": "Aboneliğiniz başarıyla aktif edildi.",
+				"getStartedButton": "Hemen Başla",
+				"viewAccountsButton": "Tüm Hesaplarımı Görüntüle"
+			},
+			"packages": {
+				"title": "Bir Ayda Kaç Kişiye Ulaşıyorsunuz?",
+				"hideTiers": "Planları Gizle",
+				"viewAllTiers": "Tüm Planları Göster"
+			},
+			"contactCalculator": {
+				"prefix": "En Fazla",
+				"suffix": " "
+			},
+			"planOption": {
+				"lessThan": " ",
+				"contacts": "Kişiden Az"
+			},
+			"enterprisePlan": {
+				"hero": {
+					"title": "Standart planları {scaling}? {fits} bir plan birlikte kuralım.",
+					"scaling": "aştınız mı",
+					"fits": "Size özel"
+				},
+				"priceValue": "Özel",
+				"priceSuffix": "hacminize göre şekillenir",
+				"priceNote": "Net aylık fatura. Büyürken sürpriz aşım ücretleri yok.",
+				"primaryCta": "Biizmle Görüşün",
+				"secondaryCta": "hello{'@'}simpliers.com'a yazın",
+				"trust": "Yüksek hacimli Instagram hesaplarını yöneten ajansların ve markaların güveniyle.",
+				"features": {
+					"contacts": {
+						"title": "{count}+ Aktif Kişi için boyutlandırıldı",
+						"description": "Kapasiteniz, gerçekten etkileşim kurduğunuz kitleye göre planlanır."
+					}
+				},
+				"perks": {
+					"dedicated": {
+						"title": "Özel başarı yöneticisi",
+						"description": "Hesabınızı, ekibinizi ve hedeflerinizi tanıyan gerçek bir partner."
+					},
+					"integrations": {
+						"title": "Özel entegrasyonlar",
+						"description": "Ekibinizin kullandığı araçlarla Simpliers'ı sorunsuz birleştirelim."
+					},
+					"sla": {
+						"title": "Güvenlik ve SLA",
+						"description": "Plan yapabileceğiniz, hizmet seviyesi anlaşmasıyla güvenceye alınmış istikrar."
+					}
+				}
+			},
+			"freePlan": {
+				"title": "Ücretsiz Sürüm",
+				"hero": {
+					"title": "{free} Başla, {faster} Büyü",
+					"free": "Ücretsiz",
+					"faster": "Hızlı"
+				},
+				"features": {
+					"contacts": {
+						"title": "Aylık {limit} Kişiye Kadar",
+						"description": "Yorumlar ve DM aracılığıyla {periodName} {activePeople} etkileşim kurmanız için kullanılabilir.",
+						"activePeople": "{limit} aktif kişiye kadar",
+						"monthlyName": "aylık"
+					},
+					"essential": {
+						"title": "Temel Özellikler",
+						"description": "Keşfetmek ve Başlamak için ideal; Simpliers ile güvenli adımlarla ilerleyin."
+					},
+					"noCreditCard": {
+						"title": "Kredi Kartı Gerekmez",
+						"description": "İlk Flow'unuzu kolayca yayınlayın"
+					},
+					"unlock": {
+						"title": "İstediğinizde Yükseltin",
+						"description": "Hazır olduğunuzda planınızı yükselterek tüm özellikleri kullanabilirsiniz."
+					}
+				},
+				"unlockButton": "Tüm Özellikleri Kullan",
+				"startButton": "Ücretsiz Başla"
+			},
+			"overagePricingTable": {
+				"chooseTitle": "Kitlenize en uygun planı seçelim",
+				"overageTitle": "Her planın size sunduğu",
+				"capReassurance": "Aşım sınırı sayesinde faturanız kontrolden çıkmaz; bir üst sınır belirleyerek en fazla kaç kişiyle etkileşime geçeceğinizi ayarlayabilirsiniz. Sınıra ulaşıldığında otomasyonlarınız bir sonraki döneme kadar duraklar; kontrol her zaman sizin elinizde olur.",
+				"notAvailable": "Dahil değil",
+				"perContact": "artan kişi başına",
+				"unlimited": "Sınırsız",
+				"contacts": "{contactsCount} kişi",
+				"footerNote": "Aktif Kişi, ay içinde size kaç kez yazarsa yazsın bir kez sayılır. Dönem bitmeden planınızı yükseltirseniz o aya ait aşım ücretleri iptal edilir. {link}",
+				"footerNoteLink": "Detaylar için tıklayın",
+				"ctas": {
+					"getStarted": "Hemen başlayın"
+				},
+				"rows": {
+					"messages": {
+						"period": "Aylık DM",
+						"label": "Kitlenize istediğiniz kadar DM gönderin, otomatikleştirin."
+					},
+					"comments": {
+						"period": "Aylık yorum",
+						"label": "Gönderilerinizdeki tüm yorumlara aylık limit olmadan yanıt verin."
+					},
+					"automations": {
+						"period": "Aylık otomasyon",
+						"label": "Dilediğiniz kadar otomasyon kurun, bir sınır yok."
+					},
+					"teammates": {
+						"period": "Takım üyeleri",
+						"label": "Tüm ekibinizi flow'larda ve gelen kutusunda iş birliği yapmak için davet edin."
+					},
+					"monthly": {
+						"period": "Aylık plan",
+						"label": "Plan limitinizi aştığınızda her ek kişi için geçerli tarife."
+					},
+					"annual": {
+						"period": "Yıllık plan",
+						"label": "Limitinizi aştığınızda da her ek kişi için aynı tarife."
+					}
+				}
+			},
+			"activeContactsInfoModal": {
+				"title": "Aktif Kişi nedir?",
+				"highlight": "Aktif Kişi",
+				"intro": "Faturalandırma {highlight} üzerinden ilerler: ay içinde DM, yorum ya da otomasyon yoluyla sizinle etkileşime geçen kişiler.",
+				"countedOnce": "Aynı kişi ay içinde kaç kez yazışırsa yazışsın, kaç yorum bırakırsa bıraksın, her zaman tek bir Aktif Kişi olarak sayılır.",
+				"overageTitle": "Limiti aştınız mı? Akış kesilmez.",
+				"overageDescription": "Otomasyonlarınız kesintisiz çalışmaya devam eder. Her ek Aktif Kişi için o aya ait faturanıza küçük bir aşım ücreti eklenir, beklenmedik duraklamalar olmaz.",
+				"overageBilling": "Aktif Kişi hakkınız hem aylık hem yıllık planlarda her ay başında sıfırlanır. Aşım ücretleri her zaman aylık olarak faturalandırılır.",
+				"overageCapTitle": "Aşım sınırı her zaman sizin kontrolünüzde.",
+				"overageCapDescription": "Her plan için varsayılan bir aşım sınırı tanımlıdır; istediğiniz zaman değiştirebilirsiniz.",
+				"overageCapDescriptionSecondary": "Sınıra ulaşıldığında otomasyonlarınız bir sonraki döneme kadar duraklar; faturanız asla kontrolden çıkmaz.",
+				"overageUpgrade": "Ay bitmeden aboneliğinizi bir üst plana yükseltirseniz, o döneme ait aşım ücretlerinden muaf olursunuz."
+			},
+			"testimonials": {
+				"confidenceText": "{profiles} ve diğerleri hesaplarını büyütürken Simpliers'a güvendiler."
+			},
+			"featureRenderer": {
+				"learnMore": "Daha Fazla",
+				"contactLimit": {
+					"title": "Aylık {limit} Kişiye Kadar",
+					"description": "Yorumlar veya DM aracılığıyla {periodName} {activePeople} etkileşim kurmanız için kullanılabilir.",
+					"activePeople": "{limit} aktif kişiye kadar",
+					"monthlyName": "aylık",
+					"yearlyName": "her ay"
+				},
+				"features": {
+					"unlimitedGiveaways": {
+						"title": "Sınırsız Çekilişler Yapın",
+						"description": "Hesabınızla {limit} Yoruma kadar sınırsız çekiliş yapın. {link}"
+					},
+					"accessAllFeatures": {
+						"title": "Tüm Özelliklere Erişin"
+					},
+					"neverMissMessage": {
+						"title": "Hiçbir Mesajı Gözden Kaçırmayın",
+						"description": "Tüm hesaplarınızdaki DM'leri ortak gelen kutusunda yönetin. Hiçbir şey gözünüzden kaçmasın."
+					},
+					"breakLanguageBarriers": {
+						"title": "Dil Engellerini Zahmetsizce Aşın",
+						"description": "Gelen ve giden mesajları anında çevirerek her yerden herkesle konuşun. Sekme değiştirmeye veya başka araca gerek kalmadan."
+					},
+					"turnCommentsToConversations": {
+						"title": "Yorumları Satışa Dönüştürün",
+						"description": "Tüm gönderilerdeki yorumları bir arada görün ve kolayca yanıtlayın. Etkileşimi, başladığı yerde güçlendirin."
+					},
+					"moderateSmarter": {
+						"title": "Daha Çok Değil, Daha Akıllı Çalışın",
+						"description": "Yapay zeka her yorumun duygu ve niyetini analiz etsin. Toksik olanları otomatik gizleyin, soruları işaretleyin veya teşekkür ederek yanıtlayın."
+					},
+					"automateLikePro": {
+						"title": "Profesyonelce Otomatikleştirin",
+						"description": "Karmaşık kurguları kolayca oluşturun. Kişiselleştirilmiş yanıtları, API işlemlerini veya veri güncellemelerini otomatize edin."
+					},
+					"startFastWithQuickFlows": {
+						"title": "Hazır Flow'larla Hızlı Başlayın",
+						"description": "Başarısı kanıtlanmış hazır otomasyonları kullanın. Çekilişler, bahsetmeler veya DM'ler için kullanıma hazır şablonlarla hemen başlayın."
+					},
+					"instantlyKnowWhatMatters": {
+						"title": "Önemli Olan Her Şeyden Haberdar Olun",
+						"description": "Toksik bir yorum geldiğinde veya bir işlem aksadığında anında bildirim alın. Daha hızlı tepki verin ve itibarınızı gerçek zamanlı koruyun."
+					},
+					"knowWhatWorks": {
+						"title": "Nelerin İşe Yaradığını Görün",
+						"description": "Etkileşiminiz, büyümeniz ve Flow performansınız hakkında akıllı içgörüler edinin."
+					},
+					"engageAuthentically": {
+						"title": "Büyürken Samimiyetten Ödün Vermeyin",
+						"description": "Otomasyon kullanırken bile marka sesinizi koruyun; her yanıtı ve DM'i kişiselleştirerek samimi kalın."
+					},
+					"collaborateSeamlessly": {
+						"title": "Ekibinizle Sorunsuz İş Dağılımı Yapın",
+						"description": "Tüm ekibinizi tek bir çalışma alanında toplayın. Konuşmaları atayın, yanıtları izleyin ve herkesin senkronize kalmasını sağlayın."
+					},
+					"contactLimit": {
+						"title": "Kişi Limiti",
+						"description": "Yorumlar veya DM'ler aracılığıyla etkileşime geçilebilecek kişi sayısı."
+					},
+					"cancelAnytime": {
+						"title": "İstediğiniz Zaman İptal Edin",
+						"description": "Aboneliğinizi dilediğiniz an iptal edebilirsiniz."
+					}
+				}
+			},
+			"plans": {
+				"seeAllPlans": "Tüm Planları Gör"
+			},
+			"stackedPlan": {
+				"monthly": "Aylık",
+				"yearly": "Yıllık",
+				"save": "{percent} Daha Uygun",
+				"monthlyPlan": "Aylık Plan",
+				"yearlyPlan": "Yıllık Plan",
+				"saveShort": "{percent} Uygun",
+				"percentage": "%{number}"
+			},
+			"planElement": {
+				"perMonth": "/ay",
+				"billedMonthly": "Aylık Ücretlendirilir",
+				"billedYearly": "{price} olarak yıllık ücretlendirilir",
+				"startButton": "Hemen Başlayın"
+			}
+		},
+		"landing": {
+			"components": {
+				"approvedByMeta": "{meta} tarafından onaylandı"
+			}
+		},
+		"support": {
+			"threadMessages": {
+				"loading": "Mesajlar Yükleniyor...",
+				"retryButton": "Yeniden Dene",
+				"emptyState": {
+					"title": "Hiç mesaj yok",
+					"subtitle": "Konuşmayı Başlatın"
+				},
+				"inputPlaceholder": "Mesajınızı yazın...",
+				"sendButton": "Gönder"
+			},
+			"threadPreview": {
+				"unknownUser": "Bilinmeyen Kullanıcı",
+				"noMessage": "Mesaj Yok",
+				"openChatButton": "Konuşmayı Aç"
+			},
+			"threadList": {
+				"header": {
+					"title": "Destek Almaktan Çekinmeyin",
+					"subtitle": "Size nasıl yardımcı olabiliriz?"
+				},
+				"newMessageButton": "Bize mesaj gönderin",
+				"replyTime": "Genellikle 1 saatten kısa sürede yanıt veririz.",
+				"errorState": {
+					"retryButton": "Yeniden Dene"
+				},
+				"previousConversations": "Önceki Konuşmalar",
+				"emptyState": {
+					"title": "Hiç konuşma yok",
+					"subtitle": "İlk konuşmanızı buradan başlatabilirsiniz"
+				},
+				"aiPrompt": "Instagram Direkt Mesajlarımı otomatikleştirmek ve akıllı konuşma akışlarıyla etkileşimimi artırmak istiyorum. Simpliers Chat bu süreçte bana ne gibi avantajlar sağlayabilir? Ayrıca Simpliers Chat'in web sitesindeki öne çıkanları özetle: {chatUrl}",
+				"chatPath": "/tr"
+			},
+			"aiAssistantLinks": {
+				"chatgpt": "ChatGPT'ye bizi sor",
+				"google": "Google'a bizi sor",
+				"claude": "Claude'a bizi sor",
+				"grok": "Grok'a bizi sor",
+				"perplexity": "Perplexity'e bizi sor"
+			},
+			"supportLauncher": {
+				"navigation": {
+					"newConversation": "Yeni Konuşma",
+					"threadDetails": "Konuşma"
+				},
+				"messageReplied": {
+					"text": "Mesajınız yanıtlandı!",
+					"action": "Yanıtı görmek için tıklayın"
+				}
+			}
 		}
 	},
 	"pages": {
@@ -2652,6 +2945,81 @@
 					}
 				}
 			}
+		},
+		"main": {
+			"termsOfPayment": {
+				"text": "{simpliers} hizmetlerine abone olarak, aşağıdaki şartlar ve koşulları kabul ettiğinizi onaylarsınız.",
+				"subscriptionPricesLinkText": "Fiyatlar",
+				"accountSubscriptionLinkText": "Hesabım > Abonelik",
+				"content1": {
+					"title": "Genel Hükümler",
+					"texts": [
+						"Bu abonelik şartları, https://simpliers.com web sitesi altında herhangi bir sayfa veya mobil uygulama aracılığıyla yenileme abonelik yöntemini seçen kullanıcılar ile PE PORTAKAL ENERJİ BİLİŞİM LİMİTED ŞİRKETİ arasında geçerlidir (bundan sonra 'Simpliers' olarak anılacaktır).",
+						"Simpliers, bu sözleşmenin hükümlerini tek taraflı olarak istediği zaman değiştirme hakkını saklı tutar. Bu değişiklikler, web sitesinde yayınlandığı anda yürürlüğe girecektir."
+					]
+				},
+				"content2": {
+					"title": "Abonelik ve Hizmet Ücretleri",
+					"texts": [
+						"Abonelik kapsamındaki dijital hizmetler ve tekliflerin ücretleri subscriptionPricesUrl sayfasında listelenmiştir. Simpliers, abonelik ücretleri ve hizmetlerinde önceden bildirimde bulunmaksızın değişiklik yapma hakkını saklı tutar.",
+						"Kullanıcı abonelik ücretlerindeki değişiklikleri kabul etmezse, aboneliğini iptal etme hakkına sahiptir. Aksi takdirde, aboneliğe devam ederek kullanıcı değişiklikleri kabul etmiş sayılır."
+					]
+				},
+				"content3": {
+					"title": "Ödeme Şartları ve Yöntemleri",
+					"texts": [
+						"Abonelik ücreti, kayıtlı ödeme yöntemi aracılığıyla tahsil edilir. Ödeme yöntemleri, banka kartı, kredi kartı veya uygulama içi satın alımları içerebilir. Kullanıcılar, abonelikleri uygulama mağazası aracılığıyla seçebilir veya hesaplarında kayıtlı kredi kartından otomatik olarak tahsil edilmesini sağlayabilir. Ödeme yapılmadığı veya seçilen ödeme yöntemi geçerli olmadığı takdirde, Simpliers hizmetlere erişimi askıya alma hakkını saklı tutar. Ödeme yöntemi bilgilerini güncel tutmak kullanıcıların sorumluluğundadır."
+					]
+				},
+				"content4": {
+					"title": "Hizmet Teslimatı ve Kullanımı",
+					"texts": [
+						"Kullanıcı tarafından satın alınan hizmet elektronik olarak teslim edilir. Hizmet, ödeme başarıyla tamamlandığı anda kullanıcıya abonelik süresi boyunca sunulacaktır. Kullanıcı, hizmeti geçerli yasalar ve düzenlemelere uygun olarak kullanmayı kabul eder. Kullanıcı, hizmetin herhangi bir yasadışı kullanımından sorumludur.",
+						"Kullanıcı, Türk Fikir ve Sanat Eserleri Kanunu No. 5846'ya uygun olarak lisanslanmış Simpliers hizmetlerini ticari amaçlarla pazarlamamayı veya üçüncü şahıslara devretmemeyi kabul, beyan ve taahhüt eder ve bu sözleşmede açıkça belirtilmeyen hiçbir hakkın kullanıcıya verilmediğini kabul eder."
+					]
+				},
+				"content45": {
+					"title": "İptal ve İade Politikası",
+					"texts": [
+						"Satın alınan hizmetler, Avrupa Birliği'nin Dijital İçerik Yönergesi (2019/770) ve Amerika Birleşik Devletleri Federal Ticaret Komisyonu düzenlemeleri de dahil olmak üzere, geçerli uluslararası tüketici koruma yasaları kapsamında dijital içerik olarak kabul edilmektedir. Hizmet teslimatına başlandıktan sonra, cayma hakkı kapsamında geri ödemeye uygun değildir.",
+						"Hatalı veya eksik hizmet teslimatı durumunda, kullanıcı çözüm talep etmek için hizmet sağlayıcısıyla iletişime geçebilir.",
+						"Kullanıcı hizmetten memnuniyetsizlik bildirirse ve kullanımını sonlandırmaya karar verirse, geri ödeme talepleri Memnuniyet Politikamız çerçevesinde değerlendirilecektir."
+					]
+				},
+				"content5": {
+					"title": "Abonelik Yenileme ve İptal",
+					"texts": [
+						"Abonelikler, kullanıcı tarafından iptal edilmediği sürece her dönem (Aylık, Üç Aylık veya Yıllık) sonunda otomatik olarak yenilenir ve hizmet bir sonraki dönemin sonuna kadar uzatılır. Yenileme ücreti kayıtlı ödeme yöntemine yansıtılır. Kullanıcı aboneliği iptal etmek isterse, iptal işlemi accountSubscriptionUrl sayfası üzerinden gerçekleştirilebilir. İptal, mevcut abonelik döneminin sonunda geçerli olacaktır.",
+						"Mesafeli Satış Yönetmeliği'nin 15. maddesine göre, kullanıcı cayma hakkını kullanamaz. Bu yönetmeliğe göre, daha önce tanımlanmış abonelik hizmet dönemleri için geri ödeme yapılmayacaktır. Kullanıcı, aboneliğin yenilenmesini istemiyorsa, yenileme tarihinden önce aboneliği iptal etmelidir."
+					]
+				},
+				"content6": {
+					"title": "Hizmet Askıya Alma",
+					"texts": [
+						"Simpliers, ödemelerin yapılmaması, geç ödemeler veya sözleşmenin diğer ihlalleri durumunda hizmeti önceden bildirimde bulunmaksızın askıya alma veya sonlandırma hakkını saklı tutar. Kullanıcı yükümlülüklerini yerine getirmediği takdirde, Simpliers yasal ve idari yollara başvurma hakkını saklı tutar."
+					]
+				},
+				"content7": {
+					"title": "Ödeme Yöntemleri",
+					"texts": [
+						"Kullanıcıların abonelik ücreti ödemeleri için bir veya daha fazla ödeme yöntemi tanımlamaları gerekmektedir. Kayıtlı ödeme yöntemi geçersiz hale gelirse, Simpliers, diğer kayıtlı ödeme yöntemlerinden ücret alma hakkını saklı tutar. Ödeme yöntemi değişiklikleri, Hesabım > Ödemeler bölümünde güncellenebilir."
+					]
+				},
+				"content8": {
+					"title": "Uyuşmazlıklar",
+					"texts": [
+						"Kullanıcı, bu sözleşmeden kaynaklanan uyuşmazlıklar durumunda Simpliers'ın ticari kayıtlarının, veritabanında tutulan elektronik bilgilerin ve bilgisayar kayıtlarının bağlayıcı, kesin ve münhasır delil teşkil edeceğini kabul eder, beyan eder ve taahhüt eder ve bu maddenin Türk Medeni Usul Hukuku'nun 193. maddesi anlamında bir delil sözleşmesi niteliğinde olduğunu kabul eder."
+					]
+				},
+				"content9": {
+					"title": "Çeşitli Hükümler",
+					"texts": [
+						"Bu sözleşmedeki herhangi bir hükmün veya ifadenin geçersizliği, yasadışılığı veya uygulanamazlığı, kalan hükümlerinin geçerliliğini veya uygulanabilirliğini etkilemeyecektir.",
+						"Kullanıcının, Simpliers web sitesini güncellemeler ve bilgiler için düzenli olarak kontrol etmesi sorumluluğundadır.",
+						"Bu anlaşma, kullanıcı tarafından satın alındığında kabul edilmiş sayılacaktır."
+					]
+				}
+			}
 		}
 	},
 	"plugins": {
@@ -2788,6 +3156,19 @@
 				"else": "Değilse",
 				"consent": "Onay"
 			}
+		}
+	},
+	"headers": {
+		"index": {
+			"title": "Instagram Hesapları için Kolay Otomasyonlar",
+			"description": "Instagram DM ve yorumlarınızı tek bir yerden yönetin. Hızlı büyümek isteyen markalar, influencerlar ve ajanslar için daha düzenli, daha hızlı, daha kontrollü.",
+			"sitename": "Simpliers Chat"
+		}
+	},
+	"fields": {
+		"tag": {
+			"name": "Ad",
+			"description": "Açıklama"
 		}
 	}
 }

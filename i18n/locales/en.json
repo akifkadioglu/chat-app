@@ -1265,7 +1265,9 @@
 						"reloadButton": "Reload"
 					},
 					"assignedToMe": "Assigned to me",
-					"newConversations": "{count} new conversations"
+					"newConversations": "{count} new conversations",
+					"assigneeFilter": "Assignee",
+					"selectAssignee": "Select assignee"
 				},
 				"itemOptions": {
 					"deleteAlert": {
@@ -1591,7 +1593,10 @@
 					"unknownAction": "Unknown Step"
 				},
 				"advancedNodeActions": {
-					"searchPlaceholder": "Search Step..."
+					"searchPlaceholder": "Search Step...",
+					"fieldSelector": {
+						"label": "Select field"
+					}
 				}
 			},
 			"node": {
@@ -1848,7 +1853,8 @@
 							"messageFieldPath": "Message Field Path",
 							"messageFieldHint": "JSON path to extract message content from response",
 							"fallbackMessage": "Fallback Message",
-							"fallbackPlaceholder": "Sorry, we couldn't load the dynamic content."
+							"fallbackPlaceholder": "Sorry, we couldn't load the dynamic content.",
+							"fallbackHint": "Shown to the contact when no message could be extracted from the response."
 						},
 						"requestTest": {
 							"testing": "Testing...",
@@ -1864,7 +1870,10 @@
 							"field": "field",
 							"fields": "fields",
 							"rawTextBody": "Raw text body",
-							"title": "Test Request"
+							"title": "Test Request",
+							"formData": "Form data",
+							"jsonBody": "JSON body",
+							"noBody": "No body"
 						}
 					},
 					"sendMessagePartials": {
@@ -2198,7 +2207,19 @@
 						"title": "Story Reply",
 						"description": "When your story is replied to",
 						"autoLikeTitle": "Auto Like Reply",
-						"autoLikeDescription": "Automatically likes the reply"
+						"autoLikeDescription": "Automatically likes the reply",
+						"filterRules": {
+							"addRule": "Add More Filter",
+							"removeRule": "Remove Rule",
+							"contains": "Contains",
+							"doesNotContain": "Doesn't Contain",
+							"beginsWith": "Begins With",
+							"containsWholeWord": "Contains Whole Word",
+							"containsDescription": "Matches if the message contains at least one of these keywords.",
+							"doesNotContainDescription": "Matches if the message does NOT contain any of these keywords.",
+							"beginsWithDescription": "Matches if the message starts with any of these keywords.",
+							"containsWholeWordDescription": "Matches if the message contains any of these keywords as complete words (not as part of another word)."
+						}
 					},
 					"receivedDM": {
 						"title": "DM Reply",
@@ -3142,6 +3163,12 @@
 				"else": "Else",
 				"consent": "Consent"
 			}
+		}
+	},
+	"fields": {
+		"tag": {
+			"name": "Name",
+			"description": "Description"
 		}
 	}
 }
