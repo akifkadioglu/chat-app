@@ -46,7 +46,6 @@
 			<AuthorizationSocketListener />
 			<AddAccountModal v-if="auth.loggedIn" />
 			<RefreshPermissionModal />
-			<!--			<AuthModalStore />-->
 			<CreateFlowModal />
 			<SupportLauncher inApp />
 			<UpgradeModal />
@@ -87,7 +86,6 @@ export default {
 		SimpliersLogo,
 		AddAccountModal,
 		MainHeader: defineAsyncComponent(() => import('~/components/BaseComponents/Header/MainHeader.vue')),
-		// AuthModalStore: defineAsyncComponent(() => import('~/components/GlobalComponents/Auth/AuthModalStore.vue')),
 		SupportLauncher: defineAsyncComponent(() => import('~/components/Support/SupportLauncher.vue')),
 	},
 	computed: {
