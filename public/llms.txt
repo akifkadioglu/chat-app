@@ -1,0 +1,266 @@
+# Simpliers CHAT
+
+> Simpliers CHAT is an Instagram automation platform that helps influencers, brands, and agencies manage DMs, comments, and engagement from one unified workspace. Approved by Meta as Tech Provider, it uses official Meta APIs to keep accounts secure.
+
+## Services
+> Simpliers CHAT provides smart Instagram automation tools including unified inbox for DMs, AI-powered comment moderation, auto-reply systems, visual flow builder for automations, auto-translate for messages, and multi-account management.
+
+## Features
+> Meta-approved Tech Provider
+> Unified DM inbox across multiple accounts
+> AI-powered comment sentiment and intent analysis
+> Visual automation flow builder
+> Auto-translate for incoming and outgoing messages
+> Toxic comment auto-hide
+> Auto-reply to positive comments
+> Keyword-triggered DM sending
+> Ready-to-use automation templates
+> Multi-account and team collaboration
+> Adjustable overage limits
+> Real-time notifications and alerts
+> White-label message option
+> External API requests within flows
+> Conditional logic and delay controls
+> Data collection within automation flows
+
+## Products
+
+- [Simpliers CHAT](https://simpliers.chat/en): Instagram automation platform for managing DMs, comments, and engagement with smart automations.
+
+- [Simpliers Giveaway](https://simpliers.com/en/giveaway/instagram): Fair and transparent Instagram giveaway and contest tool.
+
+- [Simpliers Forms](https://forms.simpliers.com/en): Customizable forms for collecting giveaway participants and leads.
+
+---
+
+## Solutions
+
+- [For Influencers](https://simpliers.chat/en/influencer): Automate DMs and comments so you can focus on creating content. Turn engagement into followers and grow your account on autopilot.
+
+- [For Brands](https://simpliers.chat/en/brand): Turn customer DMs and comments into sales with 24/7 smart automation. Answer product questions instantly and convert shoppers faster.
+
+- [For Agencies](https://simpliers.chat/en/agency): Manage multiple client Instagram accounts from one dashboard with team controls, unified inbox, and detailed reporting.
+
+---
+
+## Use Cases
+
+- [DM from Comments](https://simpliers.chat/en/case/comment-dm): Auto-reply to comments and send personalized DMs to boost engagement. Followers comment a keyword and instantly receive a DM with a link, offer, or content.
+
+- [Hide Toxic Comments](https://simpliers.chat/en/case/hide-comments): AI-powered sentiment analysis detects and auto-hides negative or toxic comments before your audience sees them. Protect your brand reputation 24/7.
+
+- [Reply Positive Comments](https://simpliers.chat/en/case/reply-comments): Automatically respond to positive comments with authentic replies that keep the conversation going and boost engagement.
+
+- [Reply Giveaway Entries](https://simpliers.chat/en/case/giveaway-reply): Reply to every giveaway comment instantly, send rules by DM, and verify follows automatically. Giveaways run smoothly from start to finish.
+
+---
+
+## Automation Templates
+
+- [Explore Templates](https://simpliers.chat/en/templates): Ready-to-use automation templates to get started in minutes. Built for creators, brands, and agencies.
+
+### Comment Automations
+- [Send DM from Comments](https://simpliers.chat/en/app/flow/send-dm/new): Automatically send a DM to anyone who comments on your post.
+- [Grow Followers From Comments](https://simpliers.chat/en/app/flow/grow/new): Encourage people who comment to follow your account instantly.
+- [Turn Reels into Sales](https://simpliers.chat/en/app/flow/sales/new): Engage commenters automatically and turn conversations into sales.
+- [Auto-Hide Negative Comments](https://simpliers.chat/en/app/flow/hide-comment/new): Automatically hide negative comments to keep your community positive.
+- [Auto-Reply to Positive Comments](https://simpliers.chat/en/app/flow/positive-comment/new): Reply to positive comments with reactions to boost engagement.
+- [Auto-Reply to Question Comments](https://simpliers.chat/en/app/flow/question-comment/new): Detect questions in comments, reply with answers, and follow up via DM.
+
+### DMs & Stories
+- [Auto-Reply to Story Mentions](https://simpliers.chat/en/app/flow/mention/new): Automatically respond and like when someone mentions you in their story.
+
+---
+
+## Key Stats
+
+> **10x** average engagement boost for Simpliers CHAT users
+> **8%** average monthly organic follower growth
+> **2s** average automation response time (vs ~120s manual)
+> **25%** increase in repeat comment rate from replied-to followers
+> **0 hours** weekly manual moderation with comment automation enabled
+> **40%** more engagement after enabling comment moderation
+> **95%** toxic comments caught by AI moderation
+
+---
+
+## Pricing
+
+- [Pricing Page](https://simpliers.chat/en/pricing): Scalable pricing based on Active Contacts per month.
+
+> **Free Plan**: Up to 200 monthly active contacts with essential features. No credit card required.
+> **Pro Plans**: Tiered pricing based on monthly active contact volume. Includes all features.
+> **Active Contacts**: Billing is based on unique people who engage through DMs, comments, or automations during the month. Same person counts once regardless of interaction frequency.
+> **Overage Control**: Adjustable overage limit per plan. Automations pause when limit is reached. Upgrade before month-end to waive overage charges.
+> **Annual and Monthly billing available**. Overage charges are always billed monthly.
+
+---
+
+## Partner Program
+
+- [Partner Program](https://simpliers.chat/en/partner): Earn up to 30% recurring commission for every referral. Apply in minutes, get your personal link, and grow your monthly income.
+
+---
+
+## Comparison
+
+- [Simpliers CHAT vs ManyChat](https://simpliers.chat/en/alternatives/manychat): Simpliers CHAT offers 200 free contacts (vs ManyChat's 25), AI-powered comment moderation, and automatic DM translation. Designed specifically for Instagram.
+
+---
+
+## Languages
+
+- Supported languages include: English, Türkçe.
+
+---
+
+## Core Links
+
+### English (en):
+- [Home](https://simpliers.chat/en)
+- [For Influencers](https://simpliers.chat/en/influencer)
+- [For Brands](https://simpliers.chat/en/brand)
+- [For Agencies](https://simpliers.chat/en/agency)
+- [Templates](https://simpliers.chat/en/templates)
+- [Pricing](https://simpliers.chat/en/pricing)
+- [Support](https://simpliers.chat/en/support)
+- [Partner Program](https://simpliers.chat/en/partner)
+- [About Us](https://simpliers.chat/en/about-us)
+- [Contact Us](https://simpliers.chat/en/contact)
+- [Privacy Policy](https://simpliers.chat/en/privacy-policy)
+- [Legal Information](https://simpliers.chat/en/legal-information)
+- [Payment Terms](https://simpliers.chat/en/subscription-agreement)
+
+### Turkish (tr):
+- [Ana Sayfa](https://simpliers.chat/tr)
+- [Influencer'lar İçin](https://simpliers.chat/tr/influencer)
+- [Markalar İçin](https://simpliers.chat/tr/marka)
+- [Ajanslar İçin](https://simpliers.chat/tr/ajans)
+- [Şablonlar](https://simpliers.chat/tr/sablonlar)
+- [Fiyatlar](https://simpliers.chat/tr/fiyatlar)
+- [Destek](https://simpliers.chat/tr/destek)
+- [İşbirliği Programı](https://simpliers.chat/tr/isbirligi)
+- [Hakkımızda](https://simpliers.chat/tr/hakkimizda)
+- [Bize Ulaşın](https://simpliers.chat/tr/iletisim)
+- [Gizlilik Politikası](https://simpliers.chat/tr/gizlilik-politikasi)
+- [Yasal Bilgiler](https://simpliers.chat/tr/yasal-bilgiler)
+- [Ödeme Koşulları](https://simpliers.chat/tr/abonelik-sozlesmesi)
+
+### Turkish Use Cases (tr):
+- [Yorumdan DM](https://simpliers.chat/tr/kullanim/yorum-dm)
+- [Toksik Yorumları Gizle](https://simpliers.chat/tr/kullanim/yorum-gizle)
+- [Pozitif Yorumlara Yanıt](https://simpliers.chat/tr/kullanim/yorum-yanitla)
+- [Çekiliş Katılımlarını Yanıtla](https://simpliers.chat/tr/kullanim/cekilis-yanitla)
+
+---
+
+## Social Media
+
+- [@simpliers](https://www.instagram.com/simpliers/): Simpliers English Instagram account
+- [@simpliersturkiye](https://www.instagram.com/simpliersturkiye/): Simpliers Turkish Instagram account
+- [@simpliersbrasil](https://www.instagram.com/simpliersbrasil/): Simpliers Portuguese Instagram account
+- [@simplierses](https://www.instagram.com/simplierses/): Simpliers Spanish Instagram account
+- [Twitter (X)](https://x.com/simpliershello): Simpliers Twitter (X) account
+- [TikTok](https://www.tiktok.com/@simpliersturkiye): Simpliers TikTok account
+- [YouTube](https://www.youtube.com/@simpliers): Simpliers YouTube channel
+
+---
+
+## AI Assistants
+
+> You can ask about Simpliers CHAT on these platforms:
+
+- [Ask on ChatGPT](https://chatgpt.com/?prompt=I%20want%20to%20automate%20my%20Instagram%20direct%20messages%20and%20grow%20my%20engagement%20with%20smart%20conversation%20flows.%20What%20benefits%20can%20Simpliers%20Chat%20provide%20me%20in%20this%20process%3F%20Also%2C%20summarize%20the%20highlights%20from%20Simpliers%20Chat's%20website%3A%20https%3A%2F%2Fsimpliers.chat%2Fen)
+- [Ask on Google Gemini](https://www.google.com/search?udm=50&q=I%20want%20to%20automate%20my%20Instagram%20direct%20messages%20and%20grow%20my%20engagement%20with%20smart%20conversation%20flows.%20What%20benefits%20can%20Simpliers%20Chat%20provide%20me%20in%20this%20process%3F%20Also%2C%20summarize%20the%20highlights%20from%20Simpliers%20Chat's%20website%3A%20https%3A%2F%2Fsimpliers.chat%2Fen)
+- [Ask on Claude](https://claude.ai/new?q=I%20want%20to%20automate%20my%20Instagram%20direct%20messages%20and%20grow%20my%20engagement%20with%20smart%20conversation%20flows.%20What%20benefits%20can%20Simpliers%20Chat%20provide%20me%20in%20this%20process%3F%20Also%2C%20summarize%20the%20highlights%20from%20Simpliers%20Chat's%20website%3A%20https%3A%2F%2Fsimpliers.chat%2Fen)
+- [Ask on Grok](https://grok.com/?q=I%20want%20to%20automate%20my%20Instagram%20direct%20messages%20and%20grow%20my%20engagement%20with%20smart%20conversation%20flows.%20What%20benefits%20can%20Simpliers%20Chat%20provide%20me%20in%20this%20process%3F%20Also%2C%20summarize%20the%20highlights%20from%20Simpliers%20Chat's%20website%3A%20https%3A%2F%2Fsimpliers.chat%2Fen)
+- [Ask on Perplexity](https://www.perplexity.ai/search?q=I%20want%20to%20automate%20my%20Instagram%20direct%20messages%20and%20grow%20my%20engagement%20with%20smart%20conversation%20flows.%20What%20benefits%20can%20Simpliers%20Chat%20provide%20me%20in%20this%20process%3F%20Also%2C%20summarize%20the%20highlights%20from%20Simpliers%20Chat's%20website%3A%20https%3A%2F%2Fsimpliers.chat%2Fen)
+
+---
+
+## Security & Trust
+
+> **Meta-Approved**: Simpliers is an official Meta-approved Tech Provider.
+> **Encrypted Data**: Private data such as messages is stored encrypted and is never shared with third parties.
+> **Official APIs Only**: Simpliers only uses official Meta APIs. Accounts stay secure at all times.
+
+---
+
+## Common Questions
+
+- How do I set up my first automation?
+- Can I manage multiple Instagram accounts from one workspace?
+- What is an Active Contact and how is billing calculated?
+- How does the AI comment moderation work?
+- Can I auto-send links when someone comments a keyword?
+- Does it work with Reels and Story replies?
+- Is there a free plan?
+- How is Simpliers CHAT different from ManyChat?
+- Can I customize the tone and wording of automated replies?
+- Will my followers know replies are automated?
+
+---
+
+## About
+
+> Simpliers has been active since 2019, originally providing Instagram giveaway infrastructure. Simpliers CHAT extends the ecosystem with smart Instagram automation tools for DMs, comments, and engagement.
+
+---
+
+## Contact
+
+- Email: hello@simpliers.com
+- [Contact Page](https://simpliers.chat/en/contact)
+
+---
+
+## Data Model Summary
+
+- **User**: includes ID, email, language, subscription status, connected Instagram accounts.
+- **Active Contact**: unique person who engages through DMs, comments, or automations within a billing month.
+- **Automation Flow**: includes triggers, conditions, actions, delays, and external API calls.
+- **Comment**: includes sentiment score, intent analysis, question detection, moderation status.
+
+---
+
+## Glossary
+
+- **Active Contact**: A unique person who engages through DMs, comments, or automations during a billing month. Same person counts once regardless of how many interactions.
+- **Flow Builder**: Visual interface to create automation workflows with triggers, conditions, and actions.
+- **Sentiment Analysis**: AI-powered analysis that detects whether a comment is positive, negative, or neutral.
+- **Intent Analysis**: AI detection of comment intent such as question, feedback, or emotion.
+- **Overage**: Additional active contacts beyond the plan limit, billed per-contact on the monthly invoice.
+- **White-Label Messages**: Option to remove or customize the "sent from" attribution text in automated messages.
+- **Quick Flows**: Ready-to-use automation templates for common Instagram engagement scenarios.
+
+---
+
+## Permissions
+
+Allowed:
+- question-answering
+- summarization
+- indexing
+- commercial redistribution
+- training resale models
+
+---
+
+## Training Policy
+
+**Allowed for LLM training** with attribution
+_"Our content can be used in LLM education but must be cited."_
+
+---
+
+## Legal
+
+- [Privacy Policy](https://simpliers.chat/en/privacy-policy): Outlines data protection and privacy practices. _Last updated: 2025-10-13_
+- [Legal Information](https://simpliers.chat/en/legal-information): Company details and compliance information.
+- [Payment Terms](https://simpliers.chat/en/subscription-agreement): Billing methods, payment terms, and refund policy.
+
+---
+
+## License
+
+[License](https://creativecommons.org/licenses/by-nc/4.0/): Simpliers content may not be used commercially. Citing is required.

@@ -1,0 +1,15 @@
+User-agent: googlebot
+User-agent: yandexbot
+User-agent: bingbot
+
+Disallow: /en/app/*
+Disallow: /tr/app/*
+
+Disallow: /en/pre/*
+Disallow: /tr/pre/*
+
+Disallow: /en/preview/*
+Disallow: /tr/preview/*
+
+
+Sitemap: https://simpliers.chat/sitemap_index.xml

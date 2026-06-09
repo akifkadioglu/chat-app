@@ -1,0 +1,1491 @@
+{
+	"quickFlows": {
+		"sendDmFromComments": {
+			"name": "models.flow.utils.quick.sendDmFromComments.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"name": "",
+					"triggers": [
+						{
+							"type": {
+								"key": "commentOnPost"
+							},
+							"config": {
+								"filterComments": false,
+								"showReplyComment": true,
+								"replyComments": [
+									"components.flow.quick.components.commentOnPostTrigger.replies.0",
+									"components.flow.quick.components.commentOnPostTrigger.replies.1",
+									"components.flow.quick.components.commentOnPostTrigger.replies.2"
+								],
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"sendRandomly": false,
+								"postType": "selectPosts",
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.sendDmFromComments.defaultMessage",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "sendPrivateReply"
+					},
+					"config": {
+						"isPrivateReplyMessageActive": true,
+						"text": "models.flow.utils.quick.firstDMActionPanel.defaultOpeningDMMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.firstDMActionPanel.defaultOpeningDMButton",
+								"disableDeleting": true,
+								"showRemoveButton": false,
+								"consentButton": true,
+								"guard": "generateUuid-1"
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-1"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 4,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 3, "fromTempId": 1 },
+				{ "toTempId": 2, "fromTempId": 3, "guard": "generateUuid-1" },
+				{ "toTempId": 4, "fromTempId": 2 }
+			]
+		},
+		"replyGiveawayEntries": {
+			"name": "models.flow.utils.quick.replyGiveawayEntries.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"name": "",
+					"triggers": [
+						{
+							"type": {
+								"key": "commentOnPost"
+							},
+							"config": {
+								"filterComments": false,
+								"showReplyComment": true,
+								"replyComments": [
+									"models.flow.utils.quick.replyGiveawayEntries.defaultCommentReply1",
+									"models.flow.utils.quick.replyGiveawayEntries.defaultCommentReply2",
+									"models.flow.utils.quick.replyGiveawayEntries.defaultCommentReply3"
+								],
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"sendRandomly": false,
+								"postType": "selectPosts",
+								"perContactOnce": true,
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.replyGiveawayEntries.defaultMessage",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "sendPrivateReply"
+					},
+					"config": {
+						"isPrivateReplyMessageActive": true,
+						"text": "models.flow.utils.quick.replyGiveawayEntries.defaultOpeningDMMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.replyGiveawayEntries.defaultOpeningDMButton",
+								"disableDeleting": true,
+								"showRemoveButton": false,
+								"consentButton": true,
+								"guard": "generateUuid-1"
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-1"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 4,
+					"type": {
+						"label": "Comparison",
+						"key": "comparison"
+					},
+					"config": {
+						"field": {
+							"key": "ig.follows_account",
+							"icon": "fa fa-user-plus",
+							"name": "models.flow.utils.quick.replyGiveawayEntries.comparisonNode.name",
+							"type": "bool",
+							"categories": ["instagram"],
+							"description": "models.flow.utils.quick.replyGiveawayEntries.comparisonNode.description",
+							"comparisonType": "bool"
+						},
+						"value": null,
+						"operator": "is_true"
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 5,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.replyGiveawayEntries.followMessage",
+								"buttons": [
+									{
+										"text": "models.flow.utils.quick.replyGiveawayEntries.followButton",
+										"action": {},
+										"disableDeleting": true,
+										"guard": "generateUuid-2",
+										"showRemoveButton": false,
+										"consentButton": true
+									}
+								]
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-2"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 6,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 3, "fromTempId": 1 },
+				{ "toTempId": 4, "fromTempId": 3, "guard": "generateUuid-1" },
+				{ "toTempId": 2, "fromTempId": 4 },
+				{ "toTempId": 5, "fromTempId": 4, "guard": "else" },
+				{ "toTempId": 4, "fromTempId": 5, "guard": "generateUuid-2" },
+				{ "toTempId": 6, "fromTempId": 2 }
+			]
+		},
+		"replyToStory": {
+			"name": "models.flow.utils.quick.replyToStory.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "replyToStory"
+							},
+							"config": {
+								"likeReply": false,
+								"filterByWords": false,
+								"wordFilters": [{ "type": "contains", "keywords": [] }],
+								"filterByIntent": false,
+								"intentFilter": { "intention": null }
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.replyToStory.sendMessageText",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2 }
+			]
+		},
+		"replyToDm": {
+			"name": "models.flow.utils.quick.replyToDm.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "receivedDM"
+							},
+							"config": {
+								"likeReply": false,
+								"filterByWords": true,
+								"wordFilters": [{ "type": "contains", "keywords": [] }],
+								"filterByIntent": false,
+								"intentFilter": { "intention": null }
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.replyToDm.sendMessageText",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2 }
+			]
+		},
+		"storyMentionReply": {
+			"name": "models.flow.utils.quick.storyMentionReply.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "storyMention"
+							},
+							"config": {
+								"autoLike": false,
+								"perContactADay": false
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.storyMentionReply.defaultMessage",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2 }
+			]
+		},
+		"growFollowersFromComments": {
+			"name": "models.flow.utils.quick.growFollowersFromComments.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"config": {},
+					"triggers": [
+						{
+							"type": {
+								"key": "commentOnPost"
+							},
+							"config": {
+								"filterComments": false,
+								"showReplyComment": true,
+								"replyComments": [
+									"components.flow.quick.components.commentOnPostTrigger.replies.0",
+									"components.flow.quick.components.commentOnPostTrigger.replies.1",
+									"components.flow.quick.components.commentOnPostTrigger.replies.2"
+								],
+								"sendRandomly": false,
+								"postType": "selectPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendPrivateReply"
+					},
+					"config": {
+						"isPrivateReplyMessageActive": true,
+						"text": "models.flow.utils.quick.growFollowersFromComments.openingMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.growFollowersFromComments.openingButton",
+								"disableDeleting": true,
+								"showRemoveButton": false,
+								"consentButton": true,
+								"guard": "generateUuid-1"
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-1"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"label": "Comparison",
+						"key": "comparison"
+					},
+					"config": {
+						"field": {
+							"key": "ig.follows_account",
+							"icon": "fa fa-user-plus",
+							"name": "models.flow.utils.quick.growFollowersFromComments.comparisonNode.name",
+							"type": "bool",
+							"categories": ["instagram"],
+							"description": "models.flow.utils.quick.growFollowersFromComments.comparisonNode.description",
+							"comparisonType": "bool"
+						},
+						"value": null,
+						"operator": "is_true"
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 4,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.growFollowersFromComments.finalMessage",
+								"buttons": []
+							}
+						]
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 5,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.growFollowersFromComments.followMessage",
+								"buttons": [
+									{
+										"text": "models.flow.utils.quick.growFollowersFromComments.goToProfileButton",
+										"websiteLink": true,
+										"url": "https://www.instagram.com/_u/",
+										"disableDeleting": true,
+										"showRemoveButton": false,
+										"consentButton": false
+									},
+									{
+										"text": "models.flow.utils.quick.growFollowersFromComments.followButton",
+										"action": {},
+										"disableDeleting": true,
+										"guard": "generateUuid-2",
+										"showRemoveButton": false,
+										"consentButton": true
+									}
+								]
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-2"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 6,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2, "guard": "generateUuid-1" },
+				{ "toTempId": 4, "fromTempId": 3 },
+				{ "toTempId": 5, "fromTempId": 3, "guard": "else" },
+				{ "toTempId": 3, "fromTempId": 5, "guard": "generateUuid-2" },
+				{ "toTempId": 6, "fromTempId": 4 }
+			]
+		},
+		"turnCommentsIntoSales": {
+			"name": "models.flow.utils.quick.turnCommentsIntoSales.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"config": {},
+					"triggers": [
+						{
+							"type": {
+								"key": "commentOnPost"
+							},
+							"config": {
+								"filterComments": false,
+								"showReplyComment": true,
+								"replyComments": [
+									"components.flow.quick.components.commentOnPostTrigger.replies.0",
+									"components.flow.quick.components.commentOnPostTrigger.replies.1",
+									"components.flow.quick.components.commentOnPostTrigger.replies.2"
+								],
+								"sendRandomly": false,
+								"postType": "selectPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "sendPrivateReply"
+					},
+					"config": {
+						"isPrivateReplyMessageActive": true,
+						"text": "models.flow.utils.quick.turnCommentsIntoSales.openingMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.turnCommentsIntoSales.openingButton",
+								"disableDeleting": true,
+								"showRemoveButton": false,
+								"consentButton": true,
+								"guard": "generateUuid-1"
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-1"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 3,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.turnCommentsIntoSales.sendMessage",
+								"buttons": [
+									{
+										"text": "models.flow.utils.quick.turnCommentsIntoSales.shopNowButton",
+										"url": "",
+										"disableDeleting": true,
+										"showRemoveButton": false,
+										"websiteLink": true
+									}
+								]
+							}
+						]
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 4,
+					"type": {
+						"key": "delay"
+					},
+					"config": {
+						"isDelayActive": false,
+						"delayType": "duration",
+						"delayTime": 5,
+						"delayUnit": "hours"
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 5,
+					"type": {
+						"key": "sendMessage"
+					},
+					"config": {
+						"isFollowUp": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.turnCommentsIntoSales.followUpMessage",
+								"buttons": []
+							}
+						]
+					},
+					"triggers": []
+				},
+				{
+					"tempId": 6,
+					"type": {
+						"key": "signature"
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2, "guard": "generateUuid-1" },
+				{ "toTempId": 4, "fromTempId": 3 },
+				{ "toTempId": 5, "fromTempId": 4 },
+				{ "toTempId": 6, "fromTempId": 5 }
+			]
+		},
+		"runGiveaway": {
+			"name": "models.flow.utils.quick.runGiveaway.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": { "key": "trigger" },
+					"triggers": [
+						{
+							"type": { "key": "commentOnPost" },
+							"config": {
+								"filterComments": true,
+								"filters": {
+									"filterByWords": true,
+									"wordFilters": [{ "type": "contains", "keywords": ["giveaway"] }]
+								},
+								"showReplyComment": true,
+								"replyComments": ["😊", "❤️", "👍"],
+								"sendRandomly": false,
+								"postType": "allPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": { "key": "comparison" },
+					"config": {
+						"field": {
+							"key": "tag",
+							"name": "models.flow.utils.quick.runGiveaway.comparisonField.name",
+							"description": "models.flow.utils.quick.runGiveaway.comparisonField.description",
+							"icon": "fa fa-tag",
+							"type": "tag",
+							"comparisonType": "tag",
+							"categories": ["recommended"]
+						},
+						"operator": "not_has"
+					}
+				},
+				{
+					"tempId": 3,
+					"type": { "key": "sendPrivateReply" },
+					"config": {
+						"alreadyEntered": true,
+						"type": "text",
+						"text": "models.flow.utils.quick.runGiveaway.alreadyEnteredMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.runGiveaway.visitButton",
+								"action": {},
+								"url": "simpliers.com",
+								"websiteLink": true,
+								"guard": "generateUuid-3"
+							}
+						],
+						"triggers": [
+							{
+								"type": {
+									"key": "postback"
+								},
+								"config": {
+									"postback": "generateUuid-3"
+								}
+							}
+						]
+					}
+				},
+				{
+					"tempId": 4,
+					"type": { "key": "addTag" },
+					"config": {}
+				},
+				{
+					"tempId": 5,
+					"type": { "key": "sendPrivateReply" },
+					"config": {
+						"text": "models.flow.utils.quick.runGiveaway.privateReplyMessage",
+						"buttons": [
+							{
+								"text": "models.flow.utils.quick.runGiveaway.privateReplyButton",
+								"consentButton": true,
+								"disableDeleting": true,
+								"guard": "generateUuid-4"
+							}
+						]
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "postback"
+							},
+							"config": {
+								"postback": "generateUuid-4"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 6,
+					"type": { "key": "randomizer" },
+					"config": {
+						"variations": [
+							{ "uuid": "generateUuid-1", "percentage": 50 },
+							{ "uuid": "generateUuid-2", "percentage": 50 }
+						],
+						"randomPathEveryTime": true
+					},
+					"triggers": [
+						{
+							"type": { "key": "postback" },
+							"config": { "postback": "generateUuid-1" }
+						},
+						{
+							"type": { "key": "postback" },
+							"config": { "postback": "generateUuid-2" }
+						}
+					]
+				},
+				{
+					"tempId": 7,
+					"type": { "key": "sendMessage" },
+					"config": {
+						"isWinnerResponse": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.runGiveaway.winnerMessage",
+								"buttons": [
+									{
+										"text": "models.flow.utils.quick.runGiveaway.claimButton",
+										"action": {},
+										"url": "simpliers.com",
+										"websiteLink": true
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"tempId": 8,
+					"type": { "key": "sendMessage" },
+					"config": {
+						"isWinnerResponse": false,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.runGiveaway.loserMessage",
+								"buttons": [
+									{
+										"text": "models.flow.utils.quick.runGiveaway.visitButton",
+										"action": {},
+										"url": "simpliers.com",
+										"websiteLink": true
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"tempId": 9,
+					"type": { "key": "signature" }
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2, "guard": "else" },
+				{ "toTempId": 4, "fromTempId": 2 },
+				{ "toTempId": 5, "fromTempId": 4 },
+				{ "toTempId": 6, "fromTempId": 5, "guard": "generateUuid-4" },
+				{ "toTempId": 7, "fromTempId": 6, "guard": "generateUuid-1" },
+				{ "toTempId": 8, "fromTempId": 6, "guard": "generateUuid-2" },
+				{ "toTempId": 9, "fromTempId": 7 },
+				{ "toTempId": 9, "fromTempId": 8 }
+			]
+		},
+		"positiveCommentReply": {
+			"name": "models.flow.utils.quick.positiveCommentReply.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": {
+						"key": "trigger"
+					},
+					"triggers": [
+						{
+							"type": {
+								"key": "commentOnPost"
+							},
+							"config": {
+								"postType": "allPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"replyComments": ["😊", "❤️", "👍"],
+								"sendRandomly": false,
+								"filterComments": true,
+								"showReplyComment": true,
+								"filters": {
+									"filterBySentiment": true,
+									"sentimentFilter": {
+										"filterByAnalysis": false,
+										"filterByScore": true,
+										"analysisFilter": {
+											"label": "positive"
+										},
+										"scoreFilter": {
+											"operator": "greater_than_or_equal",
+											"value": 50
+										}
+									}
+								},
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": {
+						"key": "replyComment"
+					},
+					"config": {
+						"replies": [{ "text": "😊" }, { "text": "❤️" }, { "text": "👍" }],
+						"sendRandomly": true,
+						"showReplyComment": true
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 }
+			]
+		},
+		"questionCommentReply": {
+			"name": "models.flow.utils.quick.questionCommentReply.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": { "key": "trigger" },
+					"triggers": [
+						{
+							"type": { "key": "commentOnPost" },
+							"config": {
+								"postType": "allPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"replyComments": ["😊", "❤️", "👍"],
+								"sendRandomly": false,
+								"filterComments": false,
+								"showReplyComment": true,
+								"showSignature": true,
+								"signatureText": "",
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": { "key": "comparison" },
+					"config": {
+						"field": {
+							"key": "comment.intent",
+							"icon": "fa fa-lightbulb",
+							"name": "models.flow.utils.quick.questionCommentReply.intentField.name",
+							"type": "intent",
+							"categories": ["comment"],
+							"description": "models.flow.utils.quick.questionCommentReply.intentField.description",
+							"comparisonType": "intent"
+						},
+						"value": "question",
+						"operator": "has"
+					}
+				},
+				{
+					"tempId": 3,
+					"type": { "key": "sendPrivateReply" },
+					"config": {
+						"text": "models.flow.utils.quick.questionCommentReply.privateReplyText",
+						"buttons": []
+					}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 },
+				{ "toTempId": 3, "fromTempId": 2 }
+			]
+		},
+		"hideCommentNegative": {
+			"name": "models.flow.utils.quick.hideCommentNegative.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": { "key": "trigger" },
+					"triggers": [
+						{
+							"type": { "key": "commentOnPost" },
+							"config": {
+								"postType": "allPosts",
+								"selectedPostIds": [],
+								"selectedPostImgs": [],
+								"replyComments": [],
+								"sendRandomly": false,
+								"filterComments": true,
+								"showReplyComment": true,
+								"filters": {
+									"filterBySentiment": true,
+									"sentimentFilter": {
+										"filterByAnalysis": false,
+										"filterByScore": true,
+										"analysisFilter": {
+											"label": "negative"
+										},
+										"scoreFilter": {
+											"operator": "less_than_or_equal",
+											"value": -50
+										}
+									}
+								},
+								"signatureText": "",
+								"showSignature": true,
+								"signatureLocale": "models.flow.utils.defaultNodeConfigs.signature.locale"
+							}
+						}
+					]
+				},
+				{
+					"tempId": 2,
+					"type": { "key": "hideComment" },
+					"config": {}
+				}
+			],
+			"edges": [
+				{ "toTempId": 1, "fromTempId": null },
+				{ "toTempId": 2, "fromTempId": 1 }
+			]
+		},
+		"quiz": {
+			"name": "models.flow.utils.quick.quiz.flowName",
+			"nodes": [
+				{
+					"tempId": 1,
+					"type": { "key": "trigger" },
+					"config": {},
+					"triggers": [
+						{
+							"type": { "key": "receivedDM" },
+							"config": {
+								"wordFilters": [{ "type": "containsWholeWord", "keywords": ["quiz"] }],
+								"filterByWords": true,
+								"filterByIntent": false
+							}
+						}
+					]
+				},
+
+				{
+					"tempId": 2,
+					"type": { "key": "comparison" },
+					"config": {
+						"field": {
+							"key": "tag",
+							"icon": "fa fa-tag",
+							"type": "tag",
+							"comparisonType": "tag",
+							"name": "Tag"
+						},
+						"operator": "not_has"
+					}
+				},
+
+				{
+					"tempId": 3,
+					"type": { "key": "sendMessage" },
+					"config": {
+						"repeatedQuizMessage": true,
+						"contents": [{ "type": "text", "text": "models.flow.utils.quick.quiz.repeatMessage", "buttons": [] }]
+					}
+				},
+
+				{
+					"tempId": 4,
+					"type": { "key": "addTag" },
+					"config": {}
+				},
+
+				{
+					"tempId": 5,
+					"type": { "key": "setContactField" },
+					"name": "Reset Score",
+					"config": {
+						"field": {
+							"name": "point",
+							"description": "Custom Field",
+							"icon": "fa fa-hashtag",
+							"type": "integer",
+							"comparisonType": "integer"
+						},
+						"operation": "set",
+						"value": 0
+					}
+				},
+
+				{
+					"tempId": 6,
+					"type": { "key": "sendMessage" },
+					"name": "Question 1",
+					"config": {
+						"isQuestion": true,
+						"questionNumber": 1,
+						"contents": [
+							{ "type": "text", "text": "models.flow.utils.quick.quiz.questions.question1.text", "buttons": [] }
+						],
+						"quickReplies": [
+							{
+								"uuid": "generateUuid-1",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question1.options.heart",
+								"payload": "generateUuid-1"
+							},
+							{
+								"uuid": "generateUuid-2",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question1.options.star",
+								"payload": "generateUuid-2"
+							},
+							{
+								"uuid": "generateUuid-7",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question1.options.fire",
+								"payload": "generateUuid-2"
+							}
+						]
+					},
+					"triggers": [
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-1" } },
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-2" } }
+					]
+				},
+
+				{
+					"tempId": 7,
+					"type": { "key": "sendMessage" },
+					"name": "Q1 Wrong",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": false,
+						"questionNumber": 1,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.quiz.questions.question1.wrongAnswer",
+								"buttons": []
+							}
+						]
+					}
+				},
+
+				{
+					"tempId": 8,
+					"type": { "key": "setContactField" },
+					"name": "Q1 Score Add",
+					"config": {
+						"increment": true,
+						"operation": "increment",
+						"value": 1,
+						"questionNumber": 1,
+						"field": {
+							"name": "point",
+							"type": "integer",
+							"icon": "fa fa-hashtag",
+							"comparisonType": "integer"
+						}
+					}
+				},
+
+				{
+					"tempId": 9,
+					"type": { "key": "sendMessage" },
+					"name": "Q1 Correct",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": true,
+						"questionNumber": 1,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.quiz.questions.question1.correctAnswer",
+								"buttons": []
+							}
+						]
+					}
+				},
+
+				{
+					"tempId": 10,
+					"type": { "key": "sendMessage" },
+					"name": "Follow-up 1",
+					"config": {
+						"isQuestionFollowUp": true,
+						"questionNumber": 1,
+						"contents": [{ "type": "text", "text": "models.flow.utils.quick.quiz.followUps.question1", "buttons": [] }]
+					}
+				},
+
+				{
+					"tempId": 11,
+					"type": { "key": "sendMessage" },
+					"name": "Question 2",
+					"config": {
+						"isQuestion": true,
+						"questionNumber": 2,
+						"contents": [
+							{ "type": "text", "text": "models.flow.utils.quick.quiz.questions.question2.text", "buttons": [] }
+						],
+						"quickReplies": [
+							{
+								"uuid": "generateUuid-3",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question2.options.threeSeconds",
+								"payload": "generateUuid-4"
+							},
+							{
+								"uuid": "generateUuid-4",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question2.options.fifteenSeconds",
+								"payload": "generateUuid-3"
+							},
+							{
+								"uuid": "generateUuid-8",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question2.options.thirtySeconds",
+								"payload": "generateUuid-4"
+							}
+						]
+					},
+					"triggers": [
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-3" } },
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-4" } }
+					]
+				},
+
+				{
+					"tempId": 12,
+					"type": { "key": "sendMessage" },
+					"name": "Q2 Wrong",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": false,
+						"questionNumber": 2,
+						"contents": [
+							{ "type": "text", "text": "models.flow.utils.quick.quiz.questions.question2.wrongAnswer", "buttons": [] }
+						]
+					}
+				},
+
+				{
+					"tempId": 13,
+					"type": { "key": "setContactField" },
+					"name": "Q2 Score Add",
+					"config": {
+						"questionNumber": 2,
+						"increment": true,
+						"operation": "increment",
+						"value": 1,
+						"field": {
+							"name": "point",
+							"type": "integer",
+							"icon": "fa fa-hashtag",
+							"comparisonType": "integer"
+						}
+					}
+				},
+
+				{
+					"tempId": 14,
+					"type": { "key": "sendMessage" },
+					"name": "Q2 Correct",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": true,
+						"questionNumber": 2,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.quiz.questions.question2.correctAnswer",
+								"buttons": []
+							}
+						]
+					}
+				},
+				{
+					"tempId": 15,
+					"type": { "key": "sendMessage" },
+					"name": "Follow-up 2",
+					"config": {
+						"isQuestionFollowUp": true,
+						"questionNumber": 2,
+						"contents": [{ "type": "text", "text": "models.flow.utils.quick.quiz.followUps.question2", "buttons": [] }]
+					}
+				},
+
+				{
+					"tempId": 16,
+					"type": { "key": "sendMessage" },
+					"name": "Question 3",
+					"config": {
+						"isQuestion": true,
+						"questionNumber": 3,
+						"contents": [
+							{ "type": "text", "text": "models.flow.utils.quick.quiz.questions.question3.text", "buttons": [] }
+						],
+						"quickReplies": [
+							{
+								"uuid": "generateUuid-5",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question3.options.addStory",
+								"payload": "generateUuid-6"
+							},
+							{
+								"uuid": "generateUuid-6",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question3.options.writeComment",
+								"payload": "generateUuid-6"
+							},
+							{
+								"uuid": "generateUuid-9",
+								"content_type": "text",
+								"title": "models.flow.utils.quick.quiz.questions.question3.options.save",
+								"payload": "generateUuid-5"
+							}
+						]
+					},
+					"triggers": [
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-5" } },
+						{ "type": { "key": "quickReply" }, "config": { "postback": "generateUuid-6" } }
+					]
+				},
+
+				{
+					"tempId": 17,
+					"type": { "key": "sendMessage" },
+					"name": "Q3 Wrong",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": false,
+						"questionNumber": 3,
+						"contents": [
+							{ "type": "text", "text": "models.flow.utils.quick.quiz.questions.question3.wrongAnswer", "buttons": [] }
+						]
+					}
+				},
+
+				{
+					"tempId": 18,
+					"type": { "key": "setContactField" },
+					"name": "Q3 Score Add",
+					"config": {
+						"questionNumber": 3,
+						"increment": true,
+						"operation": "increment",
+						"value": 1,
+						"field": {
+							"name": "point",
+							"type": "integer",
+							"icon": "fa fa-hashtag",
+							"comparisonType": "integer"
+						}
+					}
+				},
+
+				{
+					"tempId": 19,
+					"type": { "key": "sendMessage" },
+					"name": "Q3 Correct",
+					"config": {
+						"isAnswer": true,
+						"isCorrect": true,
+						"questionNumber": 3,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.quiz.questions.question3.correctAnswer",
+								"buttons": []
+							}
+						]
+					}
+				},
+
+				{
+					"tempId": 20,
+					"type": { "key": "sendMessage" },
+					"name": "Follow-up 3",
+					"config": {
+						"isQuestionFollowUp": true,
+						"questionNumber": 3,
+						"contents": [{ "type": "text", "text": "models.flow.utils.quick.quiz.followUps.question3", "buttons": [] }]
+					}
+				},
+
+				{
+					"tempId": 21,
+					"type": { "key": "comparison" },
+					"name": "Score Check",
+					"config": {
+						"isScoreCheck": true,
+						"field": {
+							"name": "point",
+							"type": "integer",
+							"icon": "fa fa-hashtag",
+							"comparisonType": "integer"
+						},
+						"value": 3,
+						"operator": "greater_than_or_equal"
+					}
+				},
+
+				{
+					"tempId": 22,
+					"type": { "key": "sendMessage" },
+					"name": "High Score",
+					"config": {
+						"isSuccess": true,
+						"contents": [{ "type": "text", "text": "models.flow.utils.quick.quiz.results.highScore", "buttons": [] }]
+					}
+				},
+
+				{
+					"tempId": 23,
+					"type": { "key": "sendMessage" },
+					"name": "Low Score",
+					"config": {
+						"isFailed": true,
+						"contents": [
+							{
+								"type": "text",
+								"text": "models.flow.utils.quick.quiz.results.lowScore",
+								"buttons": []
+							}
+						]
+					}
+				},
+
+				{
+					"tempId": 24,
+					"type": { "key": "signature" }
+				}
+			],
+
+			"edges": [
+				{ "fromTempId": null, "toTempId": 1 },
+
+				{ "fromTempId": 1, "toTempId": 2 },
+
+				{ "fromTempId": 2, "toTempId": 3, "guard": "else" },
+				{ "fromTempId": 2, "toTempId": 4 },
+
+				{ "fromTempId": 4, "toTempId": 5 },
+				{ "fromTempId": 5, "toTempId": 6 },
+
+				{ "fromTempId": 6, "toTempId": 7, "guard": "generateUuid-2" },
+				{ "fromTempId": 6, "toTempId": 8, "guard": "generateUuid-1" },
+				{ "fromTempId": 8, "toTempId": 9 },
+				{ "fromTempId": 9, "toTempId": 10 },
+				{ "fromTempId": 7, "toTempId": 10 },
+
+				{ "fromTempId": 10, "toTempId": 11 },
+
+				{ "fromTempId": 11, "toTempId": 12, "guard": "generateUuid-4" },
+				{ "fromTempId": 11, "toTempId": 13, "guard": "generateUuid-3" },
+				{ "fromTempId": 13, "toTempId": 14 },
+				{ "fromTempId": 14, "toTempId": 15 },
+				{ "fromTempId": 12, "toTempId": 15 },
+
+				{ "fromTempId": 15, "toTempId": 16 },
+
+				{ "fromTempId": 16, "toTempId": 17, "guard": "generateUuid-6" },
+				{ "fromTempId": 16, "toTempId": 18, "guard": "generateUuid-5" },
+				{ "fromTempId": 18, "toTempId": 19 },
+				{ "fromTempId": 19, "toTempId": 20 },
+				{ "fromTempId": 17, "toTempId": 20 },
+
+				{ "fromTempId": 20, "toTempId": 21 },
+
+				{ "fromTempId": 21, "toTempId": 22 },
+				{ "fromTempId": 21, "toTempId": 23, "guard": "else" },
+
+				{ "fromTempId": 22, "toTempId": 24 },
+				{ "fromTempId": 23, "toTempId": 24 }
+			]
+		}
+	}
+}

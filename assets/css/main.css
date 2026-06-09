@@ -1,0 +1,256 @@
+@import "tailwindcss";
+
+/*@plugin "@tailwindcss/forms";*/
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+    exclude: rootscrollgutter;
+}
+
+/* Poppins Font Import */
+@import "./fonts.css";
+@import 'vue-virtual-scroller/dist/vue-virtual-scroller.css';
+
+@theme{
+    --color-simpliers: #e0003b;
+    --color-forms: #02483c;
+    --color-hub: #004391;
+    --color-simpliers-content: white;
+    --radius-selector: 1rem;
+
+    --color-instagram: #C13584;
+    --color-twitter: #000000; /*#1d9bf0*/
+    --color-tiktok: #69C9D0;
+    --color-youtube: #FF0000;
+    --color-facebook: #0866FF;
+
+    --color-red: #ff0000;
+    --color-shadow: oklch(20% 0.05 250);
+
+    --shadow-xs: 0 2px 14px -2px oklch(from var(--color-shadow) l c h / 0.10), 0 4px 8px -2px oklch(from var(--color-shadow) l c h / 0.06);
+    --shadow-sm: 0 8px 32px -4px oklch(from var(--color-shadow) l c h / 0.12), 0 6px 14px -4px oklch(from var(--color-shadow) l c h / 0.08);
+    --shadow: 0 14px 48px -6px oklch(from var(--color-shadow) l c h / 0.14), 0 10px 28px -6px oklch(from var(--color-shadow) l c h / 0.10);
+    --shadow-lg: 0 22px 72px -8px oklch(from var(--color-shadow) l c h / 0.16), 0 14px 40px -8px oklch(from var(--color-shadow) l c h / 0.12);
+    --shadow-xl: 0 32px 110px -10px oklch(from var(--color-shadow) l c h / 0.24), 0 20px 60px -10px oklch(from var(--color-shadow) l c h / 0.16);
+}
+
+
+@plugin "daisyui/theme" {
+    name: light;
+    /*default: false;*/
+    /*prefersdark: false;*/
+    color-scheme: light;
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(96% 0.001 286.375);
+    --color-base-300: oklch(92% 0.004 286.32);
+    --color-base-content: oklch(28% 0.091 267.935);
+    --color-primary: #4230cd;
+    --color-primary-content: oklch(98% 0.003 247.858);
+    --color-secondary: oklch(55% 0.046 257.417);
+    --color-secondary-content: oklch(98% 0.003 247.858);
+    --color-accent: oklch(75.98% 0.204 56.72);
+    --color-accent-content: oklch(98% 0.003 247.858);
+    --color-neutral: oklch(27.807% 0.029 256.847);
+    --color-neutral-content: oklch(85.561% 0.005 256.847);
+    --color-info: oklch(62% 0.214 259.815);
+    --color-info-content: oklch(97% 0.014 254.604);
+    --color-success: oklch(53% 0.157 131.589);
+    --color-success-content: oklch(96% 0.067 122.328);
+    --color-warning: oklch(82% 0.189 84.429);
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: oklch(50% 0.213 27.518);
+    --color-error-content: oklch(93% 0.032 17.717);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 0.5px;
+    --depth: 0;
+    --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+    name: dark;
+    /*default: false;*/
+    /*prefersdark: false;*/
+    color-scheme: dark;
+    --color-base-100: oklch(25.33% 0.016 252.42);
+    --color-base-200: oklch(20% 0.015 239.5);
+    --color-base-300: oklch(15% 0.042 265.8);
+    --color-base-content: oklch(97.807% 0.029 256.847);
+    --color-primary: #6366f1;
+    --color-primary-content: oklch(96% 0.018 272.314);
+    --color-secondary: oklch(55% 0.046 257.417);
+    --color-secondary-content: oklch(92% 0.013 255.508);
+    --color-accent: oklch(75.98% 0.204 56.72);
+    --color-accent-content: oklch(98% 0.003 247.858);
+    --color-neutral: oklch(27.807% 0.029 256.847);
+    --color-neutral-content: oklch(85.561% 0.005 256.847);
+    --color-info: oklch(62% 0.214 259.815);
+    --color-info-content: oklch(97% 0.014 254.604);
+    --color-success: oklch(53% 0.157 131.589);
+    --color-success-content: oklch(96% 0.067 122.328);
+    --color-warning: oklch(82% 0.189 84.429);
+    --color-warning-content: oklch(98% 0.022 95.277);
+    --color-error: oklch(50% 0.213 27.518);
+    --color-error-content: oklch(93% 0.032 17.717);
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 0.5px;
+    --depth: 0;
+    --noise: 0;
+
+    --color-shadow: oklch(15% 0.042 265.8);
+}
+
+
+@layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+
+    label {
+        cursor: pointer;
+    }
+}
+
+.sm\:container,
+.md\:container,
+.lg\:container,
+.xl\:container,
+.container {
+    @apply sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 2xl:max-w-285 mx-auto px-3;
+}
+
+@custom-variant hover (&:hover);
+
+body {
+    min-height: 100%;
+    background-color: oklch(57.37% 0.2303 19.77);
+}
+
+.simpliers-frame {
+    @apply px-1 pb-1 sm:px-[0.4rem] sm:pb-[0.4rem] md:px-[0.8rem] md:pb-[0.8rem] lg:px-4 lg:pb-4;
+}
+
+@layer utilities {
+    /* Grid Pattern Utilities with SVG */
+    .grid-pattern-sm {
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-sm' width='40' height='40' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='rgba(255,255,255,0.3)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-sm)'/%3E%3C/svg%3E");
+    }
+    
+    .grid-pattern-lg {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid-lg' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grid-lg)'/%3E%3C/svg%3E");
+    }
+
+    /* AI Gradient Text */
+    .text-ai {
+        background: linear-gradient(90deg, #edaa3c, #fe406f, #49bcf8, #e68de7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-shine 3s ease-in infinite;
+    }
+
+    /* AI Gradient Button */
+    .ai-button {
+        position: relative;
+        border-radius: 7px;
+        padding: 2px;
+        background: linear-gradient(45deg, #edaa3c, #fe406f, #49bcf8, #e68de7);
+        background-size: 200% 200%;
+        animation: gradient-shine 3s ease-in infinite;
+    }
+
+    .ai-button button .ai-text {
+        background: linear-gradient(90deg, #edaa3c, #fe406f, #49bcf8, #e68de7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-shine 3s linear infinite;
+    }
+}
+
+@keyframes gradient-shine {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-display: swap;
+}
+
+.modal {
+    overflow-y: auto !important;
+}
+
+.modal-box {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-height: none !important;
+    overflow-y: visible !important;
+}
+
+.modal-backdrop {
+    @apply backdrop-blur-xs;
+
+    button {
+        cursor: default !important;
+    }
+}
+
+.skeleton {
+    @apply animate-pulse rounded-sm my-px;
+}
+
+
+.glow-shine-infinite {
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-shine-infinite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shine-infinite 4s ease-in-out infinite;
+}
+
+@keyframes shine-infinite {
+    0%,
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        left: 100%;
+        opacity: 1;
+    }
+    31%,
+    100% {
+        opacity: 0;
+    }
+}

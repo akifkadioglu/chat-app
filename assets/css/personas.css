@@ -1,0 +1,231 @@
+/* Personas: renkler ve yardımcı sınıflar (tek yerden yönetim) */
+:root {
+    /* Kart köşe yuvarlama varsayılanı */
+    --persona-radius: 1.5rem;
+
+    /* Baz renkler - sadece burayı değiştirerek tüm persona kartlarının tonu güncellenir */
+    --persona-influencer: #EC4899; /* pink-500 */
+    --persona-brand: #1d64ff; /* blue-400 - tatlı mavi */
+    --persona-agency: #F59E0B; /* amber-500 - turuncu */
+    --persona-educator: #6366F1; /* indigo-500 */
+    --persona-real-estator: var(--color-warning);
+    --persona-dietitian: #84cc16; /* lime-500 */
+    --persona-beauty: #f43f5e; /* rose-500 */
+    --persona-travel: #0ea5e9; /* sky-500 */
+    --persona-life-coach: #8b5cf6; /* violet-500 */
+    --persona-shoe-bag: #ea580c; /* orange-600 */
+    --persona-trainer: #3b82f6; /* blue-500 */
+}
+
+/* Tailwind v4 token'ları: bu tanımlar ile text-influencer, bg-brand, border-agency vb. sınıflar
+   otomatik üretilir. İsimleri değiştirmek istersen sadece bu token'ları güncelle. */
+@theme {
+    --color-influencer: var(--persona-influencer);
+    --color-influencer-content: color-mix(in srgb, var(--persona-influencer) 90%, var(--color-base-content));
+    --color-brand: var(--persona-brand);
+    --color-brand-content: color-mix(in srgb, var(--persona-brand) 90%, var(--color-base-content));
+    --color-agency: var(--persona-agency);
+    --color-agency-content: color-mix(in srgb, var(--persona-agency) 90%, var(--color-base-content));
+    --color-educator: var(--persona-educator);
+    --color-educator-content: color-mix(in srgb, var(--persona-educator) 90%, var(--color-base-content));
+    --color-real-estator: var(--persona-real-estator);
+    --color-real-estator-content: color-mix(in srgb, var(--persona-real-estator) 90%, var(--color-base-content));
+    --color-dietitian: var(--persona-dietitian);
+    --color-dietitian-content: color-mix(in srgb, var(--persona-dietitian) 90%, var(--color-base-content));
+    --color-beauty: var(--persona-beauty);
+    --color-beauty-content: color-mix(in srgb, var(--persona-beauty) 90%, var(--color-base-content));
+    --color-travel: var(--persona-travel);
+    --color-travel-content: color-mix(in srgb, var(--persona-travel) 90%, var(--color-base-content));
+    --color-life-coach: var(--persona-life-coach);
+    --color-life-coach-content: color-mix(in srgb, var(--persona-life-coach) 90%, var(--color-base-content));
+    --color-shoe-bag: var(--persona-shoe-bag);
+    --color-shoe-bag-content: color-mix(in srgb, var(--persona-shoe-bag) 90%, var(--color-base-content));
+    --color-trainer: var(--persona-trainer);
+    --color-trainer-content: color-mix(in srgb, var(--persona-trainer) 90%, var(--color-base-content));
+}
+
+@layer components {
+    /* Kart iskeleti */
+    .persona-card {
+        @apply p-6 md:p-8 hover:shadow-sm transition-all duration-300 overflow-visible hover:scale-[1.02];
+        border-radius: var(--persona-radius);
+        background-color: transparent; /* arka planı persona bg sınıfları verecek */
+    }
+
+    /* Hafif degrade arkaplanlar - ana rengin beyazla karışımı */
+    .bg-persona-influencer {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-influencer) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-influencer) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-brand {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-brand) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-brand) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-agency {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-agency) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-agency) 10%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-educator {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-educator) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-educator) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-real-estator {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-real-estator) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-real-estator) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-dietitian {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-dietitian) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-dietitian) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-travel {
+        background-image: linear-gradient(
+                135deg,
+                color-mix(in srgb, var(--persona-travel) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-travel) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-beauty {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-beauty) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-beauty) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-life-coach {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-life-coach) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-life-coach) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-shoe-bag {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-shoe-bag) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-shoe-bag) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-persona-trainer {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--persona-trainer) 20%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--persona-trainer) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    /*.btn-influencer {*/
+    /*    background-color: var(--persona-influencer);*/
+    /*    color: white;*/
+    /*}*/
+    /*.btn-influencer:hover:not(:disabled) {*/
+    /*    background-color: color-mix(in srgb, var(--persona-influencer) 92%, white);*/
+    /*}*/
+    /*.btn-brand {*/
+    /*    background-color: var(--persona-brand);*/
+    /*    color: white;*/
+    /*}*/
+    /*.btn-brand:hover:not(:disabled) {*/
+    /*    background-color: color-mix(in srgb, var(--persona-brand) 92%, white);*/
+    /*}*/
+    /*.btn-agency {*/
+    /*    background-color: var(--persona-agency);*/
+    /*    color: black; !* amber üstünde daha iyi kontrast *!*/
+    /*}*/
+    /*.btn-agency:hover:not(:disabled) {*/
+    /*    background-color: color-mix(in srgb, var(--persona-agency) 92%, white);*/
+    /*}*/
+    /* Link renk yardımcıları: link-{color} */
+    .link-influencer {
+        color: var(--color-influencer-content);
+    }
+
+    .link-brand {
+        color: var(--color-brand-content);
+    }
+
+    .link-agency {
+        color: var(--color-agency-content);
+    }
+
+    .link-educator {
+        color: var(--color-educator-content);
+    }
+
+    .link-real-estator {
+        color: var(--color-real-estator-content);
+    }
+
+    /* Hover durumunda global .link:hover kuralını geçmek için daha yüksek özgüllük */
+    .link:hover .link-influencer {
+        color: color-mix(in srgb, var(--color-influencer-content) 75%, black) !important;
+    }
+
+    .link:hover .link-brand {
+        color: color-mix(in srgb, var(--color-brand-content) 75%, black) !important;
+    }
+
+    .link:hover .link-agency {
+        color: color-mix(in srgb, var(--color-agency-content) 75%, black) !important;
+    }
+
+    .link:hover .link-educator {
+        color: color-mix(in srgb, var(--color-educator-content) 75%, black) !important;
+    }
+
+    .link:hover .link-real-estator {
+        color: color-mix(in srgb, var(--color-real-estator-content) 75%, black) !important;
+    }
+
+    /* Liquid glass CTA */
+    .cta-liquid {
+        /* layout */
+        @apply inline-flex items-center gap-2 rounded-2xl px-5 py-2.5 text-lg text-white whitespace-nowrap cursor-pointer hover:brightness-90 active:scale-95;
+        /* glass */
+        @apply relative overflow-hidden backdrop-blur-xl backdrop-saturate-150 transition-all duration-300;
+        background: linear-gradient(135deg, rgba(0,0,0,0.35), rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.3));
+        box-shadow:
+            0 8px 32px rgba(0,0,0,0.12),
+            0 2px 8px rgba(0,0,0,0.08),
+            inset 0 1px 0 rgba(255,255,255,0.3),
+            inset 0 -1px 0 rgba(255,255,255,0.1);
+    }
+
+    /*.link:hover .cta-liquid {*/
+    /*    background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.45));*/
+    /*    backdrop-filter: blur(24px) saturate(1.8) brightness(1.15);*/
+    /*    box-shadow:*/
+    /*        0 8px 32px rgba(0,0,0,0.2),*/
+    /*        0 2px 8px rgba(0,0,0,0.12),*/
+    /*        inset 0 1px 0 rgba(255,255,255,0.4),*/
+    /*        inset 0 -1px 0 rgba(255,255,255,0.15);*/
+    /*}*/
+
+}

@@ -1,0 +1,3540 @@
+{
+	"components": {
+		"moderate": {
+			"commentFilterDropdown": {
+				"all": "Tümü",
+				"unconfirmed": "Okunmayanlar",
+				"confirmed": "Okunanlar",
+				"hidden": "Gizlenenler",
+				"has_reply": "Yanıtlananlar"
+			},
+			"replyComment": {
+				"header": "{username} kullanıcısına yanıt ver",
+				"placeholder": "Yanıtınızı yazın...",
+				"info": "Bu yanıt Instagram'da yorum olarak gönderilecek"
+			},
+			"postList": {
+				"noPosts": "Gönderi bulunmuyor",
+				"allPosts": {
+					"title": "Tüm Gönderiler",
+					"description": "Tüm Gönderileri Gör"
+				}
+			},
+			"postHeader": {
+				"allComments": "Tüm Yorumlar",
+				"comments": "Yorumlar"
+			}
+		},
+		"app": {
+			"accountConnectedView": {
+				"success": {
+					"title": "{username} Bağlandı",
+					"description": "Şimdi Flow oluşturabilir ve diğer özellikleri kullanmaya başlayabilirsiniz."
+				},
+				"getStartedButton": "Hemen Başla",
+				"follow": {
+					"title": "Yenilikler için Instagram'da {username}'ı takip edin",
+					"description": "Yeni özellikleri, ürün güncellemelerini ve hesabınızı büyütecek pratik ipuçlarını öğrenmek için hesabımızı takip edin.",
+					"button": "Takip Et"
+				}
+			},
+			"questionElement": {
+				"continueButton": "Devam Et"
+			},
+			"emptyCase": {
+				"title": "Harika, bir adım daha kaldı...",
+				"connectTitle": "Instagram Hesabınızı Bağlayın",
+				"connectDescription": "Hesabınızı bağlamak için {bold} hesabınız olmalıdır.",
+				"connectDescriptionBold": "İşletme veya İçerik Üretici",
+				"usernameLabel": "Instagram kullanıcı adınızı girin",
+				"loginInstruction": "Instagram hesabınıza giriş yapın ve {brand} için gerekli izinleri verin",
+				"description": "Bu sayede Instagram üzerinden Otomasyonlar kurabilir ve hesabınızı güvenle büyütebilirsiniz.",
+				"connectWithMetaButton": "Meta Business Suite ile Bağlan",
+				"connectWithInstagram": "Instagram ile Bağlan",
+				"usernamePlaceholder": "Kullanıcı adı",
+				"facebookPageRequired": "Instagram hesabınız bir Facebook sayfasına bağlı olmalıdır.",
+				"switchToFacebook": "Facebook üzerinden giriş yapmak istiyorum",
+				"switchToInstagram": "Instagram üzerinden giriş yapmak istiyorum",
+				"metaProviderNotice": "{brand}, doğrulanmış bir {metaTechProvider}. Verilerinizi ve gizliliğinizi korumaya kararlıyız ve {metaDevTerms} uyuyoruz.",
+				"metaTechProvider": "Meta Teknoloji Sağlayıcısıdır",
+				"metaDevTerms": "Meta Geliştirici Platformu Koşullarına",
+				"questions": {
+					"describeProfileType": {
+						"question": "Kendinizi ne olarak tanımlıyorsunuz?",
+						"description": "Size en uygun seçeneği belirleyin",
+						"options": {
+							"influencer": "İçerik Üreticisi",
+							"brand": "Marka",
+							"agency": "Sosyal Medya Ajansı",
+							"other": "Diğer"
+						}
+					},
+					"primaryInstagramGoal": {
+						"question": "Instagram'ı hangi amaçla kullanıyorsunuz?",
+						"description": "Birincil hedefinizi seçin",
+						"options": {
+							"followers": "Takipçi sayımı artırmak",
+							"sales": "Satış yapmak",
+							"engagement": "Etkileşimi artırmak",
+							"brand_awareness": "Marka bilinirliği"
+						}
+					}
+				},
+				"backButton": "Geri",
+				"instagramConnectGuide": "Instagram ile bağlama rehberi",
+				"instagramConnectGuideLink": "https://simpliers.com/tr/blog/simpliers-chate-instagram-hesabi-nasil-baglanir",
+				"description2": "Verilerinizin kontrolü her zaman sizde.\n{brand}, izniniz olmayan hiçbir işlemi gerçekleştiremez."
+			},
+			"content": {
+				"teamSettingsTab": {
+					"title": "Ekip Ayarları",
+					"weightedAssignment": {
+						"member": "Üye",
+						"frequency": "Sıklığı",
+						"ratio": "Oranı"
+					}
+				},
+				"accountsTab": {
+					"title": "Bağlı Hesaplar"
+				}
+			}
+		},
+		"baseComponents": {
+			"addAccountModal": {
+				"title": "Instagram'ı Bağla",
+				"description": "Instagram hesabınızı {brand} ile bağlayın.",
+				"subtitle": "Sadece birkaç adım kaldı...",
+				"instructions": "Instagram ile giriş yapın ve izinlerinizi ayarlayın. Bu işlem tamamlandığında, Simpliers Chat'e bağlanmaya hazır olacaksınız!",
+				"connectWithInstagram": "Instagram ile Bağlan",
+				"connectWithMetaButton": "Meta Business Suite ile Bağlan"
+			},
+			"refreshPermissionModal": {
+				"title": "İzinleri Yenile",
+				"description": "Instagram hesabınızın izinlerinin süresi dolmuş görünüyor.",
+				"instructions": "Instagram'a giriş yapın ve izinlerinizi yenileyin. Bu işlem tamamlandığında Simpliers CHAT'i kullanmaya hazır olacaksınız!",
+				"button": "Instagram'a Git"
+			},
+			"appHeader": {
+				"navigation": {
+					"accounts": "Hesap",
+					"comments": "Yorumlar",
+					"contacts": "Kişiler",
+					"chat": "Sohbet",
+					"flows": "Flow'lar",
+					"giveaway": "/tr/cekilis/instagram",
+					"posts": "Gönderiler"
+				}
+			},
+			"autoSaveStatus": {
+				"allChangesSaved": "Kaydedildi",
+				"lastSavedAt": "Son kaydedilme zamanı {time}",
+				"flowChanged": "Flow değişti",
+				"saveFailed": "Kaydedilemedi"
+			},
+			"mainFooter": {
+				"lifeCoachesAstrologers": "Yaşam Koçları & Astrologlar",
+				"corporate": "Kurumsal",
+				"aboutUs": "Hakkımızda",
+				"contactUs": "Bize Ulaşın",
+				"resources": "Kaynaklar",
+				"useCases": "Kullanım Alanları",
+				"dmFromComments": "Yorumları DM ile Yanıtla",
+				"hideToxicComments": "Toksik Yorumları Gizle",
+				"replyPositiveComments": "Pozitif Yorumları Yanıtla",
+				"replyGiveawayEntries": "Çekiliş Katılımlarını Yanıtla",
+				"leadCollection": "Lead Toplama",
+				"signUp": "Kaydolun",
+				"privacyPolicy": "Gizlilik Koşulları",
+				"legalInformation": "Yasal Bilgiler",
+				"paymentTerms": "Ödeme Şartları",
+				"copyright": "© {simpliers}. {year} Tüm hakları saklıdır.",
+				"cookieNotice": "Web sitemizi, hizmetlerimizi veya araçlarımızı ziyaret ettiğinizde ve etkileşimde bulunduğunuzda, biz veya hizmet sağlayıcılarımız, size daha iyi, daha hızlı ve daha güvenli bir deneyim sunmak ve pazarlama amaçları için bilgi depolamak amacıyla çerezler kullanabiliriz.",
+				"personas": "Sayfalar",
+				"influencers": "İçerik Üreticileri",
+				"brands": "Markalar",
+				"agencies": "Ajanslar",
+				"educators": "Eğitimciler",
+				"realEstateAgents": "Emlak Danışmanları",
+				"beautySalons": "Kuaför & Güzellik Salonları",
+				"travelAgencies": "Tur Şirketleri & Seyahat Acenteleri",
+				"shoeBagBoutiques": "Ayakkabı & Çanta Butikleri",
+				"dietitians": "Diyetisyenler",
+				"personalTrainers": "Antrenörler",
+				"templates": "Şablonlar",
+				"prices": "Fiyatlandırma",
+				"services": "Servisler",
+				"support": "Destek",
+				"anonymStoryViewer": "Instagram Hikaye İzleme",
+				"links": {
+					"giveaway": "tr/cekilis/instagram",
+					"forms": "tr",
+					"blog": "tr/blog",
+					"chat": "tr",
+					"storyViewer": "tr/araclar/story"
+				},
+				"giveaway": "Ücretsiz Çekiliş Aracı",
+				"aiPrompt": "Instagram direkt mesajlarımı otomatikleştirmek ve akıllı konuşma akışlarıyla etkileşimimi artırmak istiyorum. Simpliers Chat bu süreçte bana ne gibi avantajlar sağlayabilir? Ayrıca Simpliers Chat'in web sitesindeki öne çıkanları özetle: {chatUrl}",
+				"alternatives": "Alternatifler",
+				"tools": "Araçlar",
+				"manychatAlternative": "ManyChat",
+				"creatorflowAlternative": "CreatorFlow",
+				"linkdmAlternative": "LinkDM",
+				"allUseCases": "Tüm Kullanım Alanları",
+				"utmLinkGenerator": "UTM Link Oluşturucu",
+				"dmRoiCalculator": "DM ROI Hesaplayıcı",
+				"imageSplitter": "Instagram Görsel Bölücü",
+				"guides": "Rehberler",
+				"allGuides": "Rehberler"
+			},
+			"mainHeader": {
+				"giveawayPath": "tr/cekilis",
+				"blogPath": "tr/blog",
+				"loginButton": "Giriş Yap",
+				"myAccount": "Hesabım",
+				"dropdown": {
+					"accounts": "Bağlı Hesaplar",
+					"posts": "Gönderiler",
+					"comments": "Yorumlar",
+					"contacts": "Kişiler",
+					"chat": "Sohbet",
+					"flows": "Flow'lar",
+					"logout": "Çıkış Yap",
+					"teamManagementPath": "tr/hesabim/ekip",
+					"giveawayPath": "tr/hesabim/sosyal-medya",
+					"formsPath": "tr/hesabim/forms",
+					"chatPath": "tr/app/account",
+					"teamManagement": "Ekip Yönetimi"
+				}
+			},
+			"themeToggler": {
+				"ariaLabel": "Tema Değiştirici"
+			},
+			"accountStatusBanner": {
+				"reachedContactLimit": {
+					"title": "Planınızın Kişi Sınırına Ulaştınız",
+					"description": "Sınırı aşan her kişi için {extraPrice} yansıtılır. Dilediğinizde planınızı yükselterek ek ücretten kurtulabilirsiniz.",
+					"adjustButton": "Sınırı Yönet",
+					"upgradeButton": "Planı Yükselt"
+				},
+				"needsUpgrade": {
+					"title": "Planınızın Sınırına Ulaştınız",
+					"description": "Planınızın sınırına ulaştınız. Devam etmek için planınızı yükseltmelisiniz.",
+					"upgradeButton": "Planı Yükselt"
+				},
+				"overageLimitFilled": {
+					"title": "Otomasyonlar Duraklatıldı",
+					"description": "Belirlediğiniz sınıra ulaştınız. Otomasyonların tekrar çalışması için sınırı yükseltebilir ya da bir sonraki dönemi bekleyebilirsiniz.",
+					"adjustButton": "Sınırı Yükselt"
+				},
+				"permissionsExpired": {
+					"title": "İzinlerinizin Süresi Doldu",
+					"description": "Devam etmek için izinlerinizi yenilemelisiniz."
+				},
+				"dmAccessDisabled": {
+					"title": "DM Erişimi Kapalı",
+					"description": "Instagram hesabınızda DM erişimi kapalı görünüyor. Otomasyonlarınızda ya da Sohbet sayfasından DM gönderebilmek için DM erişimini açmanız gerekiyor.",
+					"button": "Nasıl Açılır?"
+				}
+			},
+			"defaultLayoutHeader": {
+				"navigation": {
+					"influencer": "Influencer",
+					"brand": "Marka",
+					"agency": "Ajans",
+					"pricing": "Fiyatlar",
+					"templates": "Şablonlar",
+					"support": "Destek",
+					"solutions": "Çözümler",
+					"useCases": "Kullanım Alanları",
+					"partners": "İşbirliği",
+					"blog": "Blog",
+					"giveaway": "Çekiliş"
+				},
+				"megaMenu": {
+					"dmFromComments": {
+						"description": "Yorumlara otomatik yanıt ver ve kişiselleştirilmiş DM'ler gönder",
+						"title": "Yorumdan DM"
+					},
+					"heroDescription": "Her etkileşimi bir dönüşüm fırsatına çevir",
+					"heroTitle": "Instagram'da Büyü",
+					"hideToxicComments": {
+						"title": "Toksik Yorumları Gizle",
+						"description": "Negatif yorumları otomatik gizleyerek markanı ve huzurunu koru"
+					},
+					"solutions": {
+						"lifeCoachesAstrologers": {
+							"description": "Ücretsiz yorum, ritüel rehberi ve çalışma kağıtlarını DM'den otomatik gönderin. 'Yoruma yaz' ile büyüyün, fiyat ve randevu sorularını yanıtlayın.",
+							"title": "Yaşam Koçları & Astrologlar İçin"
+						},
+						"agency": {
+							"description": "Birden fazla müşteri hesabını ekip kontrolleri ve tek gelen kutusuyla yönet",
+							"title": "Ajanslar İçin"
+						},
+						"brand": {
+							"description": "Müşteri DM'lerini ve yorumlarını 7/24 akıllı otomasyonla satışa dönüştür",
+							"title": "Markalar İçin"
+						},
+						"educators": {
+							"description": "PDF, slayt ve kurs linklerinizi DM'lerden otomatik gönderin. Kurs satın, öğrenci e-postalarını toplayın.",
+							"title": "Eğitimciler İçin"
+						},
+						"realEstateAgents": {
+							"description": "İlan sorularına saniyeler içinde yanıt verin. Fiyat paylaşın, telefon toplayın ve ilan linklerini DM'den otomatik gönderin.",
+							"title": "Emlak Danışmanları İçin"
+						},
+						"beautySalons": {
+							"description": "Öncesi/sonrası gönderilerini keşfete taşıyın, fiyat ve randevu sorularını yanıtlayın, randevuları DM'den toplayın.",
+							"title": "Kuaför & Güzellik Salonları İçin"
+						},
+						"travelAgencies": {
+							"description": "Destinasyon paylaşımlarını keşfete taşıyın, fiyat ve müsaitlik sorularını yanıtlayın, rezervasyonları DM'den toplayın.",
+							"title": "Tur Şirketleri & Seyahat Acenteleri İçin"
+						},
+						"shoeBagBoutiques": {
+							"title": "Ayakkabı & Çanta Butikleri İçin",
+							"description": "Fiyat, numara ve stok sorularını yanıtlayın, ürün linkini gönderin, siparişleri DM'den toplayın."
+						},
+						"dietitians": {
+							"description": "Örnek menü, tarif ve rehberleri DM'den otomatik gönderin. 'Yoruma yaz' ile büyüyün, fiyat ve randevu sorularını yanıtlayın.",
+							"title": "Diyetisyenler İçin"
+						},
+						"personalTrainers": {
+							"title": "Antrenörler & PT'ler için",
+							"description": "Ücretsiz antrenman programınızı DM'den gönderin, 'yoruma yaz' ile büyüyün, fiyat ve ön görüşme sorularını yanıtlayın."
+						},
+						"heroDescription": "İhtiyaçlarına özel akıllı Instagram otomasyonu",
+						"heroTitle": "Size Göre Tasarlandı",
+						"industriesLabel": "Sektörler",
+						"influencer": {
+							"description": "DM ve yorumları otomatikleştir, içerik üretmeye odaklan",
+							"title": "Influencer'lar İçin"
+						}
+					},
+					"templates": {
+						"description": "Dakikalar içinde başlamak için hazır otomasyon şablonları",
+						"title": "Şablonları Keşfet"
+					},
+					"replyPositiveComments": {
+						"title": "Pozitif Yorumlara Yanıt",
+						"description": "Olumlu yorumlara anında yanıt vererek topluluğunu sıcak ve canlı tut"
+					},
+					"replyGiveawayEntries": {
+						"title": "Çekiliş Katılımlarını Yanıtla",
+						"description": "Katılımlara anında yanıt ver, kuralları DM'den gönder, takibi anında doğrula"
+					},
+					"leadCollection": {
+						"title": "DM'lerden Lead Toplayın",
+						"description": "Otomatik DM sohbetleriyle istediğiniz veriyi sorun, doğrulayın ve kaydedin"
+					},
+					"partners": {
+						"heroAlt": "Instagram DM otomasyonu kullanan mutlu Simpliers partneri",
+						"heroTitle": "Üretirken kazan",
+						"hashtag": "işbirliği",
+						"tagline": "Her ay düzenli gelir paylaşımı",
+						"cta": {
+							"title": "#işbirliği Programına Katıl",
+							"description": "Dakikalar içinde başvur, linkini al, her referansla aylık gelirini büyüt",
+							"headline": "Bizimle {partnership} yapın",
+							"partnership": "#işbirliği",
+							"commission": "{percentage}'a varan tekrarlayan komisyon"
+						},
+						"percentage": "%{rate}"
+					}
+				}
+			},
+			"chatPath": "/tr"
+		},
+		"comments": {
+			"postList": {
+				"title": "Gönderiler",
+				"followersText": "{followersCount} takipçi",
+				"noCaption": "Açıklama yok",
+				"needsAttention": "Dikkat gerekiyor",
+				"totalComments": "yorum"
+			},
+			"commentList": {
+				"bulkActions": "Toplu işlemler",
+				"confirmAll": "Tümü Okundu",
+				"unconfirmAll": "Tümü Okunmadı"
+			},
+			"commentPreview": {
+				"replies": "yanıt",
+				"show": "Göster",
+				"hide": "Gizle",
+				"reply": "Yanıtla",
+				"confirm": "Okundu",
+				"unconfirm": "Okunmadı",
+				"share": "Paylaş",
+				"shareTitle": "Bu yorumu başkalarıyla paylaş",
+				"sentimentScore": "Sentiment Puanı",
+				"analyzeComment": "Yorumu Analiz Et",
+				"shareDropdown": {
+					"title": "Paylaş",
+					"downloadFilename": "Yorum Önizlemesi"
+				},
+				"runFlow": "Bir Flow Çalıştır",
+				"sending": "Gönderiliyor",
+				"failed": "Gönderilemedi"
+			},
+			"replyComment": {
+				"placeholder": "Yanıtınızı yazın..."
+			}
+		},
+		"globalComponents": {
+			"countryPicker": {
+				"placeholder": "Ülke seç",
+				"search": "Ülke ara...",
+				"popular": "Popüler",
+				"allCountries": "Tüm ülkeler",
+				"empty": "Eşleşen ülke yok"
+			},
+			"accountProfile": {
+				"followers": "Takipçi",
+				"following": "Takip"
+			},
+			"errorState": {
+				"supportText": "Sorun devam ederse, {here} bize ulaşın.",
+				"here": "buradan",
+				"retryButton": "Yeniden Dene",
+				"title": "Bir hata oluştu"
+			},
+			"refreshPermissionButton": {
+				"title": "{platformName} İzinlerini Yenile"
+			},
+			"auth": {
+				"authModal": {
+					"closeButton": "Kapat"
+				},
+				"forgotPasswordForm": {
+					"title": "Şifrenizi mi unuttunuz?",
+					"text": "Buradan şifre sıfırlama bağlantısı isteyebilirsiniz.",
+					"backToLoginButton": "Giriş Yapmaya Dön",
+					"emailLabel": "E-postanız",
+					"sendLinkButton": "Bağlantıyı Gönder",
+					"successMessage": "Şifre sıfırlama bağlantısı e-posta adresinize gönderilmiştir."
+				},
+				"loginForm": {
+					"title": "Tekrar Merhaba!",
+					"text": "Hesabınızı yönetmek için giriş yapın.",
+					"emailLabel": "E-postanız",
+					"passwordLabel": "Şifreniz",
+					"forgotPasswordLink": "Şifrenizi mi unuttunuz?",
+					"loginButton": "Giriş Yap",
+					"registerText": "Hesabınız yok mu?",
+					"registerButton": "Hemen kaydolun"
+				},
+				"registerForm": {
+					"title": "{simpliers}'a Hoş Geldiniz!",
+					"text": "Hemen kaydolun ve aramıza katılın.",
+					"nameLabel": "Adınız",
+					"namePlaceHolder": "Adınız ve Soyadınız",
+					"emailLabel": "E-postanız",
+					"passwordLabel": "Şifreniz",
+					"confirmPasswordLabel": "Tekrar Şifreniz",
+					"registerButton": "Kayıt Olun",
+					"loginText": "Zaten bir hesabınız var mı?",
+					"loginButton": "Giriş Yapın"
+				},
+				"common": {
+					"or": "veya",
+					"welcomeMessage": "Hoş geldin {name}!"
+				}
+			},
+			"brands": {
+				"blog": "Blog",
+				"giveaway": "Çekiliş"
+			},
+			"fixedFollowUs": {
+				"action": "Takip Edin"
+			},
+			"threads": {
+				"createThreadForm": {
+					"title": "Destek almaktan çekinmeyin!",
+					"text": "Size yardımcı olmak için buradayız.",
+					"nameLabel": "Adınız",
+					"namePlaceHolder": "Adınız ve Soyadınız",
+					"emailLabel": "E-postanız",
+					"phoneLabel": "Telefon Numaranız",
+					"textLabel": "Mesajınız",
+					"sendButton": "Gönder",
+					"methods": {
+						"textIsEmpty": "Lütfen mesajınızı yazın.",
+						"sentSuccessfully": "Mesajınız başarıyla gönderildi."
+					}
+				}
+			},
+			"faq": {
+				"title": "Sıkça Sorulan Sorular",
+				"aiText": "YZ",
+				"artificialIntelligenceText": "Yapay Zeka",
+				"supportBox": {
+					"title": "Sorunuz burada yok mu?",
+					"subtitle": "Destek ekibimiz size yardımcı olmaktan mutluluk duyar",
+					"emailButton": "E-posta Gönder",
+					"liveSupportButton": "Canlı Destek"
+				}
+			},
+			"loadingElement": {
+				"text": "Yükleniyor..."
+			},
+			"searchBox": {
+				"placeholder": "Ara...",
+				"noResults": "Sonuç bulunamadı"
+			},
+			"state": {
+				"tryAgain": "Tekrar Dene"
+			},
+			"shareDropdown": {
+				"title": "Paylaş",
+				"copy": "Linki Kopyala",
+				"download": "Görsel Oluştur",
+				"share": "Paylaş",
+				"retryTitle": "Otomatik kopyalanamadı",
+				"retryHint": "Linki kopyalamak için buraya dokun."
+			},
+			"localizedLink": {
+				"routeNotFound": "Route bulunamadı: {route}"
+			},
+			"instagramBrowserWarning": {
+				"title": "Instagram Tarayıcısı Uyarısı",
+				"message": "Sorunsuz bir deneyim için, cihazınızın varsayılan tarayıcısını veya daha iyi bir deneyim için masaüstü cihazınızı kullanmanızı öneririz.",
+				"okButton": "Tamam, Devam Et",
+				"openInSafariButton": "Safari'de Aç"
+			}
+		},
+		"accounts": {
+			"posts": {
+				"setAutomation": "Yorumları DM'den yanıtla",
+				"viewAllFlows": "Diğer Flow’lar",
+				"moreTitle": "Tüm Gönderiler",
+				"moreDescription": "Yorumları otomatikleştirmek için tüm gönderilerinize göz atın",
+				"viewAllPosts": "Tüm Gönderileri Gör",
+				"createAFlow": "Yeni Flow Kur",
+				"action": "Flow Kur"
+			},
+			"languageModal": {
+				"title": "Çeviri",
+				"description": "Gelen mesajların otomatik olarak çevirilmesini sağlayabilirsiniz.",
+				"targetLanguageLabel": "Çeviri yapılacak dil",
+				"selectLanguage": "Dil Seçin",
+				"cancelTranslation": "Çeviriyi İptal Et",
+				"saveButton": "Kaydet"
+			},
+			"settingsTab": {
+				"messengerProfiles": {
+					"iceBreakerModal": {
+						"title": "Konuşma Başlatıcılar",
+						"description": "Kullanıcılar sohbeti başlatırken görecekleri ilk soruları tanımlayın. Hızlı mesajları kullanarak konuşmaları yönlendirin, önemli aksiyonları öne çıkarın ve kullanıcıların hesabınızın neler yapabildiğini hızlıca keşfetmesine yardımcı olun.",
+						"suggestionText": "{username} tarafından önerilen bir soruyu göndermek için dokunun."
+					},
+					"persistentModal": {
+						"title": "DM Menüsü",
+						"description": "Hesabınızın DM ekranında kullanıcılarınızın gördüğü varsayılan menüyü özelleştirin. Daha akıcı bir gezinme deneyimi oluşturmak için menü öğelerini kolayca ekleyin, düzenleyin veya kaldırın.",
+						"moreOptions": "Daha fazla seçenek",
+						"tapToSend": "Göndermek için dokun"
+					}
+				},
+				"messengerProfileSettings": {
+					"title": "Instagram DM Ayarları",
+					"agentMessagePauseDuration": {
+						"title": "Otomasyon Duraklatma Süresi",
+						"description": "Bir mesaj gönderdiğinizde, otomasyonlar bu süre boyunca duraklatılır"
+					}
+				},
+				"dangerZone": {
+					"title": "Kritik Alan",
+					"deleteAccount": {
+						"title": "Hesabı Sil",
+						"description": "Bu hesabı kalıcı olarak siler.",
+						"description2": "Bu işlem geri alınamayabilir."
+					}
+				},
+				"notificationSettings": {
+					"title": "Bildirim Ayarları",
+					"pauseAll": "Tüm Bildirimleri Durdur",
+					"browserNotifications": {
+						"title": "Tarayıcı Bildirim Etkinleştir",
+						"description": "Simpliers’tan anlık bildirimler almak için tarayıcı bildirimlerini etkinleştir. Yeni mesajları, yorumları ve Flow güncellemelerini kaçırma.",
+						"allowButton": "Bildirimlere İzin Ver"
+					},
+					"reports": {
+						"title": "Raporlar",
+						"daily": {
+							"title": "Günlük Raporlar",
+							"description": "Hesabınız için günlük ististikler alın"
+						},
+						"weekly": {
+							"title": "Haftalık Raporlar",
+							"description": "Hesabınız için haftalık içgörü raporlarını alın"
+						},
+						"monthly": {
+							"title": "Aylık Raporlar",
+							"description": "Hesabınız için aylık performans özetlerini alın."
+						}
+					},
+					"flows": {
+						"title": "Flow'lar",
+						"milestone": {
+							"title": "Önemli Aşamalar",
+							"description": "Flow'larınızla ilgili önemli aşamalardan haberdar olun"
+						}
+					}
+				},
+				"regionalSettings": {
+					"title": "Bölgesel Ayarlar",
+					"timezone": {
+						"title": "Saat Dilimi",
+						"description": "Analiz ve raporlar için saat diliminizi ayarlayın."
+					},
+					"language": {
+						"title": "Dil",
+						"description": "Sayfa ve bildirimler için dil tercihinizi belirleyin."
+					}
+				},
+				"saveButton": {
+					"save": "Kaydet",
+					"tryAgain": "Yeniden Dene"
+				},
+				"teamSettings": {
+					"title": "Takım Ayarları",
+					"autoAssignment": {
+						"title": "Otomatik Atama",
+						"description": "Yeni konuşmaları ekip üyelerine otomatik olarak ata"
+					},
+					"assignmentMode": {
+						"title": "Atama Yöntemi",
+						"description": "Konuşmaların ekip üyeleri arasında nasıl dağıtılacağı",
+						"selectMode": "Mod seçin",
+						"options": {
+							"sequential": "Sırayla",
+							"random": "Rastgele",
+							"weighted": "Frekansa Göre",
+							"scheduled": "Zaman Aralığına Göre"
+						}
+					},
+					"days": {
+						"monday": "Pazartesi",
+						"tuesday": "Salı",
+						"wednesday": "Çarşamba",
+						"thursday": "Perşembe",
+						"friday": "Cuma",
+						"saturday": "Cumartesi",
+						"sunday": "Pazar"
+					},
+					"alwaysAvailable": "Her zaman",
+					"saveSuccess": "Ayarlar kaydedildi"
+				},
+				"chatSettings": {
+					"title": "Sohbet Ayarları"
+				}
+			},
+			"accountHeader": {
+				"followers": "{count} Takipçi",
+				"contacts": "{count} Kişi",
+				"refreshButton": "Instagram İzinlerini Yenile"
+			},
+			"upgradeModal": {
+				"title": "Tüm Özelliklere Erişin",
+				"commentSignatureTitle": "Otomatik Yorumlardan İmzayı Kaldır",
+				"tiersTitle": "Kiç Kişiyle Etkileşiminiz Var?",
+				"features": {
+					"randomizerStep": "Randomizer Adımıyla Trafiği Böl",
+					"dataCollectionStep": "Flow İçinde Müşteri Verisi Topla",
+					"replyCommentStep": "Yorumlara Otomatik Yanıt Ver",
+					"hideCommentStep": "İstenmeyen Yorumları Otomatik Gizle",
+					"commentOnLiveStarter": "Canlı Yayın Yorumlarından Flow Tetikle",
+					"filterByIntent": "Mesajları Yapay Zekâ ile Niyete Göre Filtrele",
+					"filterBySentiment": "Mesajları Duyguya Göre Filtrele",
+					"commentSentimentRule": "Flow'u Yorum Duygusuna Göre Dallandır",
+					"commentScoreRule": "Flow'u Yorum Skoruna Göre Dallandır",
+					"commentIntentRule": "Flow'u Yorum Niyetine Göre Dallandır"
+				}
+			},
+			"overviewTab": {
+				"persistentMenu": {
+					"title": "Ana Menü",
+					"description": "Instagram DM’de üstte sabit görünen ana menüdür. Takipçilerinizin önemli aksiyonlara, linklere ve sık sorulan sorulara tek dokunuşla ulaşmasını sağlar.",
+					"actions": {
+						"edit": "Düzenle",
+						"setup": "Ayarla"
+					},
+					"messages": {
+						"success": "Kalıcı menü başarıyla kaydedildi",
+						"remove": {
+							"title": "Kalıcı Menüyü Kaldır",
+							"message": "Kalıcı menüyü kaldırmak istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+							"success": "Kalıcı menü başarıyla kaldırıldı"
+						}
+					}
+				},
+				"iceBreaker": {
+					"title": "Hazır Mesajlar",
+					"description": "Biri size mesaj atmadan önce gördüğü hazır sorulardır. Takipçilerin sohbeti tek dokunuşla başlatmasını sağlar.",
+					"messages": {
+						"success": "Hazır Mesajlar başarıyla kaydedildi",
+						"remove": {
+							"success": "Buz kırıcı mesajları başarıyla kaldırıldı",
+							"title": "Konuşma Başlatıcı Menüyü Sil",
+							"message": "Konuşma başlatıcı menüyü kaldırmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
+						}
+					}
+				},
+				"flowsOverview": {
+					"title": "Yayındaki Flow'lar",
+					"emptyState": {
+						"title": "Yayınlanmış Bir Flow bulunmuyor",
+						"content": "İlk Flow’unu oluşturarak Instagram hesabını daha profesyonel ve kontrollü şekilde yönetmeye başla.",
+						"viewAllFlows": "Tüm Flow'ları Görüntüle",
+						"dividerText": "veya"
+					},
+					"table": {
+						"headers": {
+							"flowName": "Adı",
+							"starters": "Trigger'lar",
+							"runs": "Çalışmalar",
+							"uniqueContacts": "Tekil Kişi Sayısı",
+							"lastPublished": "Yayınlanma Zamanı"
+						}
+					},
+					"flowCount": "{count} Flow"
+				},
+				"profileInformation": {
+					"post": "Gönderi",
+					"followers": "Takipçi",
+					"following": "Takip"
+				},
+				"steps": {
+					"title": "Buradan Başlayın",
+					"setupGuide": "{chatLogo}'i keşfetmek için bu hızlı adımları uygulayın.",
+					"connectInstagram": {
+						"title": "Hesap Ekle"
+					},
+					"chatWithContacts": {
+						"title": "Biriyle DM'den Konuş",
+						"description": "İlk sohbetinizi başlatmak için {simpliersLogo}’ye bir mesaj gönderebilirsiniz ✨",
+						"button": "{simpliers}'a DM Gönder"
+					},
+					"interactAFlow": {
+						"title": "Bir Flow'u Deneyimleyin",
+						"description": "Flow'un nasıl çalıştığını görmek ister misiniz? Bu gönderiye {hello} yazın ve Flow’un anında yanıt vermesini izleyin 🚀",
+						"button": "Yoruma {hello} Yaz",
+						"triggerWord": "Chat",
+						"postLink": "https://www.instagram.com/p/DRAGXYqlMdl"
+					},
+					"publishFirstFlow": {
+						"title": "İlk Flow’unuzu Yayına Alın",
+						"description": "İlk Flow’unuzu yayına alın; mesajlara otomatik yanıt versin ve gerçek sohbetleri sizin yerinize yönetsin.",
+						"button": "Tüm Otomasyonlara Göz Atın"
+					},
+					"subscribe": {
+						"title": "Bir Plana Abone Olun",
+						"description": "Tüm özellikleri kullanmak için bir plana abone olun",
+						"button": "Planları Gör"
+					},
+					"getFirstComment": {
+						"title": "Bir Yorum Alın",
+						"description": "Herhangi bir gönderinize bir yorum geldiğinde, yorum otomatik olarak analiz edilir ve olumlu/olumsuz olarak etiketlenir ve skoru hesaplanır."
+					}
+				},
+				"emptyPosts": "Gönderiler burada görünecek.",
+				"postsSection": {
+					"title": "Gönderilerinize Otomasyon Kurun",
+					"description": "Bir gönderi seçin, her yorumu otomatik bir DM'e, yeni takipçiye ya da satışa dönüştürün."
+				},
+				"featureToggles": {
+					"goToFlow": "Düzenle",
+					"enable": "Etkinleştir",
+					"enabled": "Etkin",
+					"hideNegativeComments": {
+						"title": "Toksik Yorumları Gizleyin",
+						"description": "Yapay zeka saldırgan yorumları yakalar ve gizler. Gönderileriniz temiz, markanız güvende kalsın."
+					},
+					"replyPositiveComments": {
+						"title": "Pozitif Yorumları Yanıtlayın",
+						"description": "Güzel yorum bırakan takipçilere otomatik teşekkür gönderin. Etkileşiminiz zahmetsizce artsın."
+					},
+					"growFollowersFromComments": {
+						"title": "Yorumlardan Takipçi Kazanın",
+						"description": "Her yorumu yeni bir takipçiye dönüştürün. DM yalnızca sizi takip eden kullanıcılara gitsin."
+					},
+					"otherFlows": "Diğer otomasyonlar"
+				}
+			},
+			"billingTab": {
+				"planBillingTab": {
+					"unlinkedSubscriptions": {
+						"title": "Kullanılmayan Abonelikler",
+						"description": "Henüz bir {chat} hesap ile eşleştirilmemiş abonelikleriniz."
+					},
+					"title": "Abonelik ve Faturalandırma",
+					"upgradePlan": "Planınızı Yükseltin",
+					"cancelSubscription": "Aboneliği İptal Et",
+					"currentPlan": "Mevcut Plan:",
+					"usage": {
+						"title": "Kullanımlar",
+						"contacts": "Kişiler",
+						"used": "%{percentage} Kullanıldı",
+						"comments": "Yorumlar",
+						"unlimited": "Sınırsız",
+						"aiAnalysis": "Analizler",
+						"teamMembers": "Ekip Üyeleri",
+						"messages": "Mesajlar",
+						"flowRuns": "Flow'ların Çalışma Sayısı",
+						"exceedLimitText": "Sınır Aşıldı!"
+					},
+					"status": {
+						"paid": "Abonelik",
+						"pending": "Beklemede",
+						"cancelled": "İptal Edilmiş",
+						"failed": "Başarısız"
+					},
+					"subscriptionCard": {
+						"yourPlan": "Planınız",
+						"upgrade": "Planı yükselt",
+						"freeBadge": "Süresiz ücretsiz",
+						"contacts": {
+							"description": "Plan fiyatınız aktif kişi sayısıyla birlikte ölçeklenir. Kişi limiti belirleyerek listenizin büyümesini ve ödediğiniz tutarı kontrol edin.",
+							"activeLabel": "Aktif kişiler",
+							"label": "Kişiler",
+							"overageCap": "Otomasyonlarınız {count} aktif kişiye kadar çalışmaya devam eder, sonrasında duraklar."
+						},
+						"inboxSeats": "Inbox Koltuğu",
+						"price": "Fiyat",
+						"title": "Döneme Göre Kullanımlar",
+						"daysLeft": "{days} gün kaldı",
+						"renewalPending": "Yenileme bekleniyor",
+						"freePlanLabel": "Ücretsiz plan"
+					}
+				},
+				"cancelOnDueDate": {
+					"willBeCancelledText": "Aboneliğiniz {date} tarihinde iptal olacak."
+				},
+				"contactLimitCard": {
+					"idle": {
+						"title": "Kişi Sınırı Belirleyin",
+						"subtitle": "Sürpriz fatura diye bir şey yok; sınır her zaman sizin elinizde.",
+						"hint": "Sınıra ulaşıldığında otomasyonlarınız bir sonraki döneme kadar duraklar. Sınırı istediğiniz zaman değiştirebilirsiniz."
+					},
+					"overage": {
+						"title": "Plan sınırının {count} kişi üzerindesiniz",
+						"subtitle": "Bir sonraki faturanıza yaklaşık {amount} eklenir, dönem başında tahsil edilir.",
+						"reassurance": "Otomasyonlarınız belirlediğiniz sınıra ulaşana kadar kesintisiz çalışır. Daha fazla kişi mi gerekiyor?"
+					},
+					"stats": {
+						"inUse": "Kullanılan",
+						"planLimit": "Plana Dahil",
+						"overageCap": "Aşım sınırı",
+						"contactsSuffix": "Kişi"
+					},
+					"upgradeLinkLabel": "Aboneliğinizi yükseltin"
+				},
+				"maxOverageLimitModal": {
+					"openButton": "Ayarla",
+					"openHint": "Sürpriz faturaların önüne geçmek için en fazla kaç kişiyle etkileşime girilebileceğini seçin ya da aşım sınırı belirleyin.",
+					"title": "Kişi sınırınızı belirleyin",
+					"intro": "Bir ayda en fazla ne kadar ödeyeceğinizi belirleyin. Aktif Kişileriniz bu sınıra ulaştığı anda otomasyonlarınız duraklar; böylece sürpriz yüksek faturalarla karşılaşmazsınız.",
+					"sliderLabel": "Maksimum Kişi Sınırı",
+					"markers": {
+						"current": "Kullanılan",
+						"planLimit": "Plan limiti",
+						"effectiveLimit": "Geçerli limit",
+						"yourCap": "Sınırınız"
+					},
+					"estimate": {
+						"kicker": "Bu fatura dönemi",
+						"title": "Ödeyeceğiniz Maksimum Aşım Ücreti:",
+						"breakdown": "En fazla {count} ek kişi × ek kişi başına {perContact}",
+						"resetNote": "Limitleriniz {date} tarihinde sıfırlanacaktır.",
+						"upgradeHint": "Daha fazla kişiye ulaşıyor musunuz? {upgradeLink}",
+						"upgradeLinkLabel": "Aboneliğinizi yükseltebilirsiniz",
+						"noOverage": "Bu sınırda ek ücret oluşmaz.",
+						"unavailable": "Aşım fiyatlandırması planınız için mevcut değil."
+					},
+					"savedJustNow": "Kaydedildi",
+					"saving": "Kaydediliyor…",
+					"saveError": "Limitiniz kaydedilemedi. Lütfen tekrar deneyin.",
+					"resetHint": "Planınızdaki varsayılan sınırı kullan.",
+					"summary": {
+						"included": "Planınıza dahil: {count}",
+						"overage": "Aşım: {count} için en fazla {amount}",
+						"contacts": "{count} Kişi",
+						"upgradePlan": "Planı Yükselt"
+					}
+				},
+				"renewOnDueDate": {
+					"waitingForPaymentRetry": {
+						"alert": {
+							"title": "Aboneliğiniz yenilenemedi.",
+							"text": "Hizmeti kullanmaya devam edebilmek için lütfen kart bilgilerinizi güncelleyin."
+						},
+						"description": "Ödeme almayı bir kaç saat sonra yeniden deneyeceğiz."
+					},
+					"alreadyUpdatePaymentMethod": "Kayıtlı kartlarınızı gözden geçirdiyseniz, aşağıdaki buton ile aboneliğinizi yenilemeyi yeniden deneyebilirsiniz.",
+					"retryPaymentButton": "Aboneliği Yenile",
+					"willRenewText": "Aboneliğiniz {date} tarihinde yenilenecek."
+				},
+				"unlinkedSubscriptionCard": {
+					"linkButton": "Bu Hesap İle Eşleştir",
+					"successMessage": "Hesap başarıyla bağlandı ve yükseltildi!"
+				},
+				"cancelSubscriptionModal": {
+					"surveySection": {
+						"title": "Aboneliğinizi sonlandırmak üzeresiniz",
+						"description": "Ücretini ödediğiniz aktif dönemin sonuna kadar aboneliğe özel ayrıcalıklardan yararlanmaya devam edebilirsiniz.",
+						"surveyQuestion": "İptal sebebiniz",
+						"surveyQuestionDescription": "Aboneliğinizi neden iptal ettiğinizle ilgili bir geribildirim paylaşmanızı rica ederiz.",
+						"surveyOptions": {
+							"noLongerUsingInstagram": "Instagram'ı artık aktif kullanmıyorum",
+							"tooExpensive": "Fiyat bütçeme uymuyor",
+							"missingFeatures": "Aradığım özellikleri bulamadım",
+							"technicalIssues": "Teknik sorunlarla karşılaştım",
+							"switchedToAnotherTool": "Başka bir araca geçiyorum",
+							"temporaryPause": "Kısa bir ara vermem gerekiyor"
+						},
+						"otherQuestion": "Diğer görüşleriniz",
+						"otherQuestionDescription": "Bir sonraki sefer size daha iyi bir deneyim sunabilmemiz için bize ne önerirsiniz?",
+						"continueButton": "Devam Et",
+						"closeButton": "Aboneliğe Devam Et",
+						"placeholder": "Görüşlerinizi paylaşın"
+					},
+					"featuresSection": {
+						"title": "{chatAccount} hesabının aboneliğini iptal etmeden önce, ayrıcalıklar hakkında kısa bir hatırlatma",
+						"premiumAdvantagesTable": {
+							"free": "Ücretsiz",
+							"subscription": "Abonelik",
+							"limited": "Limitli",
+							"notAvailable": "Mevcut değil",
+							"contactCount": "Aylık etkileşime geçilebilen kişi sayısı",
+							"toxicComment": "Toksik Yorum Uyarıları",
+							"contactCountPro": "Planınla büyür",
+							"commentModeration": "Flow'larda Yorum Moderasyonu",
+							"signature": "{simpliersChat} imzasını kaldırma",
+							"aiModeration": "Niyete göre analiz ve AI moderasyonu",
+							"autoTranslate": "Mesajlarda otomatik çevirme özelliği"
+						},
+						"cancelingQuestion": "Aboneliğe devam etmek ister misiniz?",
+						"cancelingQuestionDescription": "Devam etmek istemezseniz, aboneliğiniz aktif dönem sonunda sonlandırılacak ve kartınızdan yeniden bir tahsilat yapılmayacaktır.",
+						"yesButton": "Aboneliğime devam edeceğim",
+						"noButton": "Yine de iptal et",
+						"cancelled": "Abonelik iptal edildi. Erişimin dönem sonuna kadar devam edecek."
+					}
+				},
+				"actions": {
+					"changePlan": "Planı Değiştir",
+					"cancelSubscription": "Aboneliği İptal Et",
+					"continueSubscription": "Aboneliği Devam Ettir",
+					"continueSubscriptionDescription": "Eğer aboneliği devam ettirirseniz, bir sonraki dönem için ödeme alınacaktır.",
+					"continued": "Aboneliğiniz devam ediyor."
+				},
+				"addNewCardModal": {
+					"paymentFailed": {
+						"title": "Ödeme başarısız oldu",
+						"text": "Lütfen ödemenizi yeniden deneyin."
+					},
+					"saveCardButton": "Kartı Kaydet"
+				},
+				"subscriptionStoredCards": {
+					"openAddCardModal": "Yeni kart ekle"
+				}
+			},
+			"chatAccountSidebar": {
+				"tabs": {
+					"overview": "Genel Bakış",
+					"billing": "Faturalandırma",
+					"settings": "Ayarlar",
+					"attributes": "Özellikler",
+					"posts": "Gönderiler",
+					"activities": "Aktiviteler"
+				},
+				"followersText": "{followersCount} Takipçi"
+			},
+			"activitiesTab": {
+				"emptyTitle": "Henüz aktivite yok",
+				"emptyContent": "Hesabınız mesaj, yorum ve daha fazlasını gönderip aldıkça aktiviteler burada görünecek.",
+				"table": {
+					"contact": "Kişi",
+					"event": "Eylem",
+					"origin": "Kaynak",
+					"date": "Tarih"
+				},
+				"typeKeys": {
+					"message_received": "Mesaj Alındı",
+					"message_sent": "Mesaj Gönderildi",
+					"comment_received": "Yorum Alındı",
+					"reply_comment": "Yorum Yanıtlandı",
+					"hide_comment": "Yorum Gizlendi",
+					"unhide_comment": "Yorum Görünür Yapıldı"
+				},
+				"originTooltips": {
+					"flow": "Bir Flow ile gönderildi",
+					"agent": "Simpliers CHAT ile gönderildi",
+					"system": "Başka bir uygulama ile gönderildi"
+				}
+			},
+			"attributesTab": {
+				"chatAccountCustomFields": {
+					"title": "Özel Alanlar",
+					"save": "Kaydet",
+					"fieldNamePlaceholder": "Alan adı",
+					"emptyState": {
+						"title": "Henüz özel alan yok"
+					},
+					"deleteConfirmation": {
+						"title": "Emin misiniz?",
+						"text": "{count} özel alanı silmek istediğinize emin misiniz?",
+						"confirm": "Evet, sil",
+						"cancel": "Vazgeç"
+					},
+					"selectAll": "Tümünü Seç"
+				},
+				"chatAccountTags": {
+					"deleteConfirmation": {
+						"title": "Emin misiniz?",
+						"text": "{count} etiketi silmek istediğinize emin misiniz?",
+						"confirm": "Evet, sil",
+						"cancel": "Vazgeç"
+					},
+					"emptyState": {
+						"title": "Henüz etiket yok"
+					},
+					"title": "Etiketler",
+					"save": "Kaydet",
+					"selectAll": "Tümünü Seç"
+				}
+			},
+			"usageTab": {
+				"title": "Kullanım",
+				"subtitle": "Hesabının kişiler, mesajlar ve flow’lar genelinde nasıl kullanıldığını takip et.",
+				"engagedContacts": {
+					"title": "Etkileşime Girilen Kişiler",
+					"seriesName": "Etkileşime Girilen Kişiler",
+					"range": {
+						"7d": "Son 7 gün",
+						"30d": "Son 30 gün",
+						"90d": "Son 90 gün"
+					}
+				},
+				"stats": {
+					"title": "İstatistikler",
+					"contacts": "Kişiler",
+					"used": "%{percentage} kullanıldı",
+					"comments": "Yorumlar",
+					"unlimited": "Sınırsız",
+					"aiAnalysis": "AI Analizi",
+					"teamMembers": "Ekip Üyeleri",
+					"messages": "Mesajlar",
+					"flowRuns": "Flow Çalıştırma",
+					"exceedLimitText": "Limit aşıldı!"
+				}
+			}
+		},
+		"contacts": {
+			"header": {
+				"title": "Kişiler",
+				"searchPlaceholder": "İsim, kullanıcı adı, e-posta ile ara...",
+				"columnsButton": "Sütunlar",
+				"exportButton": "Dışa Aktar",
+				"visibleColumnsTitle": "Görünür Sütunlar"
+			},
+			"filterList": {
+				"operators": {
+					"equals": "Eşittir",
+					"not_equals": "Eşit değildir",
+					"contains": "İçerir",
+					"not_contains": "İçermez"
+				},
+				"activeFilters": "Aktif filtreler",
+				"addFilter": "Ekle",
+				"save": "Kaydet",
+				"cancel": "İptal",
+				"filter": "Filtre",
+				"tagList": "Etiketler"
+			},
+			"table": {
+				"columns": {
+					"first_name": "Ad",
+					"last_name": "Soyadı",
+					"ig": {
+						"username": "Kullanıcı Adı"
+					},
+					"email": "E-posta",
+					"notes": "Notlar",
+					"address": "Adres",
+					"phone": "Telefon",
+					"timezone": "Saat Dilimi",
+					"custom_fields": "Özel Alanlar"
+				},
+				"selectionWarning": {
+					"title": "Seçim Temizlenecek",
+					"description": "Filtreler değiştiğinde mevcut seçimler sıfırlanacaktır.",
+					"confirm": "Devam Et",
+					"cancel": "İptal"
+				}
+			},
+			"footer": {
+				"allSelected": "Tümü seçildi",
+				"allSelectedExcept": "({count} hariç)",
+				"selectedCount": "{count} kişi seçildi",
+				"bulkActions": "Toplu İşlemler",
+				"resumeFlows": "Flow'ları Devam Ettir",
+				"pauseFlows": "Flow'ları Durdur",
+				"deleteContacts": "Kişileri Sil",
+				"dropdowns": {
+					"addTag": "Etiket Ekle",
+					"removeTag": "Etiketi Sil",
+					"addCustomField": "Özel Alan Ekle",
+					"removeCustomField": "Özel Alanı Sil",
+					"updateCustomField": "Özel Alanı Düzenle",
+					"add": "Ekle",
+					"delete": "Sil",
+					"save": "Kaydet",
+					"createNewTag": "Başka bir etiket oluştur",
+					"selectField": "Alan seçin",
+					"searchField": "Alan ara...",
+					"searchCustomField": "Özel alan ara...",
+					"noResults": "Sonuç bulunamadı",
+					"fieldsSelected": "{count} alan seçildi",
+					"enterValue": "Değer girin",
+					"enterNumber": "Sayı girin",
+					"true": "Doğru",
+					"false": "Yanlış",
+					"yes": "Evet",
+					"no": "Hayır"
+				}
+			},
+			"bulkActions": {
+				"confirm": "Evet, Devam Et",
+				"cancel": "Vazgeç",
+				"addTag": {
+					"title": "Etiket Ekle",
+					"description": "Seçilen {count} kişiye \"{tags}\" {tagLabel} eklenecek.",
+					"singular": "etiketi",
+					"plural": "etiketleri"
+				},
+				"removeTag": {
+					"title": "Etiket Kaldır",
+					"description": "Seçilen {count} kişiden \"{tags}\" {tagLabel} kaldırılacak.",
+					"singular": "etiketi",
+					"plural": "etiketleri"
+				},
+				"addCustomField": {
+					"title": "Özel Alan Ekle",
+					"description": "Seçilen {count} kişiye \"{fieldName}\" alanı eklenecek."
+				},
+				"removeCustomField": {
+					"title": "Özel Alan Kaldır",
+					"description": "Seçilen {count} kişiden \"{fields}\" {fieldLabel} kaldırılacak.",
+					"singular": "alanı",
+					"plural": "alanları"
+				},
+				"updateCustomField": {
+					"title": "Özel Alan Güncelle",
+					"description": "Seçilen {count} kişinin \"{fieldName}\" alanı güncellenecek."
+				},
+				"deleteContacts": {
+					"title": "Kişileri Sil",
+					"description": "Seçilen {count} kişi kalıcı olarak silinecek. Bu işlem geri alınamaz!"
+				},
+				"pauseFlows": {
+					"title": "Flow'ları Duraklat",
+					"description": "Seçilen {count} kişi için tüm Flow'lar {duration} duraklatılacak.",
+					"forever": "süresiz olarak",
+					"minutes": "{value} dakika boyunca",
+					"hours": "{value} saat boyunca",
+					"days": "{value} gün boyunca"
+				},
+				"resumeFlows": {
+					"title": "Flow'ları Sürdür",
+					"description": "{count} kişinin duraklatılmış Flow'ları kaldığı yerden devam edecek."
+				}
+			},
+			"export": {
+				"excel": "Excel",
+				"csv": "CSV",
+				"googleSheets": "Google Sheets"
+			}
+		},
+		"chat": {
+			"dmAccessDisabledModal": {
+				"title": "Instagram'da DM erişimi kapalı",
+				"description": "Mesaj gönderebilmek için Instagram ayarlarından üçüncü taraf mesaj erişimini açmalısın."
+			},
+			"accountMenuEditor": {
+				"editor": {
+					"confirmDialog": {
+						"title": "Emin misiniz?",
+						"text": "Bunu geri alamayacaksınız!",
+						"confirmButtonText": "Evet, sil",
+						"cancelButtonText": "İptal"
+					}
+				},
+				"actionButtons": {
+					"newButton": "Yeni Buton",
+					"newQuestion": "Yeni Soru",
+					"action": "Flow",
+					"webLink": "Web Bağlantısı",
+					"defaultLanguage": "Varsayılan dil {language}.",
+					"save": "Kaydet"
+				},
+				"actionItem": {
+					"selectAction": "Eylem Seçin",
+					"actionTitle": "Eylem başlığı",
+					"flow": "Flow",
+					"webLink": "Web Bağlantısı",
+					"question": "Soru",
+					"noActionSelected": "Eylem türü gereklidir",
+					"validation": {
+						"titleRequired": "Bu alan gereklidir ve 1 ile 30 karakter arasında olmalıdır.",
+						"urlRequired": "Bu alan gereklidir ve geçerli bir URL olmalıdır.",
+						"fieldRequired": "Bu alan gereklidir",
+						"questionRequired": "Bu alan gereklidir ve 1 ile 30 karakter arasında olmalıdır."
+					}
+				},
+				"languageTabs": {
+					"default": "Varsayılan"
+				}
+			},
+			"contactInfo": {
+				"contactFields": {
+					"title": "Kişi Bilgileri",
+					"errorMessage": "Kişi bilgileri güncellenirken hata oluştu",
+					"saveButton": "Kaydet",
+					"editButton": "Düzenle",
+					"firstNameLabel": "Adı",
+					"firstNamePlaceholder": "Adını Girin",
+					"lastNameLabel": "Soyadı",
+					"lastNamePlaceholder": "Soyadını Girin",
+					"emailLabel": "E-posta",
+					"emailPlaceholder": "E-posta adresini girin",
+					"notesLabel": "Notlar",
+					"notesPlaceholder": "Bu kişi hakkında notlar girin",
+					"addressLabel": "Adres",
+					"addressPlaceholder": "Adres girin",
+					"phoneLabel": "Telefon",
+					"phonePlaceholder": "Telefon numarasını girin",
+					"timezoneLabel": "Zaman Dilimi",
+					"timezonePlaceholder": "Zaman dilimini girin"
+				},
+				"contactCustomFields": {
+					"title": "Özel Alanlar",
+					"addFieldButton": "Alan Ekle",
+					"saveButton": "Kaydet",
+					"editButton": "Düzenle",
+					"cancelButton": "Vazgeç",
+					"fieldNameLabel": "Alan Adı",
+					"fieldNamePlaceholder": "Alan adı",
+					"valueLabel": "Değer",
+					"valuePlaceholder": "Alan değeri",
+					"emptyState": "Hiçbir özel alan eklenmedi",
+					"resetConfirmation": {
+						"title": "Emin misin?",
+						"text": "Yaptığın değişiklikler geri alınacak",
+						"confirmButton": "Evet",
+						"cancelButton": "Hayır"
+					}
+				},
+				"contactInfoContent": {
+					"defaultContactName": "Kişi",
+					"followersText": "{followersCount} takipçi",
+					"seeOnInstagramButton": "Instagram'da Görüntüle",
+					"emptyState": {
+						"title": "Hiçbir Kişi Seçilmedi",
+						"content": "Bir görüşme seçin, kişi bilgilerini görüntüleyin."
+					},
+					"goToConversation": "Konuşmaya Git",
+					"flowsPause": {
+						"button": "Otomasyonları Duraklat",
+						"options": {
+							"10min": "10 dakika",
+							"30min": "30 dakika",
+							"1hour": "1 saat",
+							"3hours": "3 saat",
+							"6hours": "6 saat",
+							"24hours": "24 saat",
+							"forever": "Süresiz"
+						}
+					},
+					"flowsPaused": {
+						"title": "Otomasyonlar Duraklatıldı",
+						"until": "{date} tarihine kadar",
+						"resumeButton": "Devam Et"
+					}
+				},
+				"contactTags": {
+					"title": "Etiketler",
+					"addTagButton": "Etiket Ekle",
+					"emptyState": "Etiket eklenmedi"
+				},
+				"tag": {
+					"availableTagsTitle": "Mevcut Etiketler",
+					"createNewTagTitle": "Yeni Etiket Oluştur",
+					"tagNamePlaceholder": "Etiket adı",
+					"createTagButton": "Etiket Oluştur",
+					"failedToFetchTitle": "Etiketler alınamadı",
+					"noTagsFound": "Etiket bulunamadı"
+				},
+				"partials": {
+					"tagBadgeList": {
+						"noTagsFound": "Etiket bulunamadı"
+					},
+					"tagSetter": {
+						"createTagButton": "Etiket Oluştur",
+						"tagNamePlaceholder": "Etiket adı"
+					},
+					"tag": {
+						"availableTagsTitle": "Mevcut Etiketler",
+						"createNewTagTitle": "Yeni Etiket Oluştur"
+					}
+				}
+			},
+			"sidebar": {
+				"accountSelector": {
+					"allAccountsTooltip": "Tüm Hesaplar",
+					"allAccountsLabel": "Tümü",
+					"addAccountButton": "Hesap Ekle"
+				},
+				"usageDropdown": {
+					"tooltip": "Kullanım",
+					"title": "Aktif Kişi Sayısı",
+					"limitReached": "Limit doldu",
+					"upgradeButton": "Yükselt",
+					"manageBilling": "Fatura",
+					"empty": {
+						"message": "Kişi kullanımını takip etmek için hesap bağla."
+					}
+				},
+				"conversationList": {
+					"title": "Sohbetler",
+					"searchPlaceholder": "Ara...",
+					"followersText": "{followersCount} takipçi",
+					"unsupportedMessage": "Bu mesaj desteklenmiyor.",
+					"filters": {
+						"all": "Tümü",
+						"unread": "Okunmamış"
+					},
+					"errorState": {
+						"title": "Bir hata oluştu",
+						"message": "Konuşmalarınızı yükleyemedik, lütfen tekrar deneyin.",
+						"reloadButton": "Yeniden Yükle"
+					},
+					"assignedToMe": "Bana atananlar",
+					"newConversations": "{count} yeni sohbet"
+				},
+				"itemOptions": {
+					"deleteAlert": {
+						"title": "Emin misin?",
+						"text": "Bu işlem geri alınamaz!",
+						"confirm": "Evet, sil",
+						"cancel": "İptal"
+					},
+					"deleteConversation": "Sil",
+					"removePinned": "Sabitlemeyi kaldır",
+					"pin": "Sabitle",
+					"markAsUnread": "Okunmadı olarak işaretle",
+					"assignee": "Birine ata"
+				}
+			},
+			"mobilePreview": {
+				"chatScreen": {
+					"businessAccount": "İşletme Hesabı",
+					"messagePlaceholder": "Mesaj yazın..."
+				},
+				"commentOption": {
+					"comments": "Yorumlar",
+					"username": "Kullanıcı Adı",
+					"now": "Şimdi",
+					"reply": "Yanıtla",
+					"leaveComment": "Yorum bırak",
+					"addCommentPlaceholder": "Kullanıcı adı için bir yorum ekleyin..."
+				},
+				"postView": {
+					"viewAllComments": "Tüm yorumları görüntüle",
+					"viewComments": "{count} yorumun tümünü gör"
+				},
+				"postsScreen": {
+					"posts": "Gönderiler",
+					"nextPost": "Sonraki Gönderi",
+					"allPost": "Tüm Gönderiler",
+					"selectPostsError": "En az bir gönderi seçmelisiniz."
+				}
+			},
+			"content": {
+				"chatMessage": {
+					"unsupportedContent": "Desteklenmeyen içerik.",
+					"sentViaExternalApp": "Başka bir uygulama aracılığıyla",
+					"messageStatus": {
+						"sentAt": "Gönderildi {date}",
+						"readAt": "Okundu {date}",
+						"waitingToSend": "Bekliyor",
+						"queued": "Kuyrukta",
+						"sending": "Gönderiliyor",
+						"failedAt": "Başarısız oldu {date}"
+					}
+				},
+				"contentHeader": {
+					"showTranslations": "Çevirileri Göster",
+					"willBeTranslatingTo": "Şu Dile Çevrilecek:",
+					"activateAutoTranslate": "Otomatik çeviriyi etkinleştir",
+					"autoTranslateTooltip": "Mesajları otomatik olarak seçtiğiniz dile çevirebilirsiniz."
+				},
+				"messageInput": {
+					"comingSoon": "Yakında",
+					"cannotSendMessage": "Son 7 gün içerisinde kullanıcıyla iletişim kurmadığınız için yeni bir mesaj gönderemezsiniz.",
+					"messagePlaceholder": "Mesaj yazın...",
+					"translateTo": "Çevir",
+					"shareMode": {
+						"messagesSelected": " Paylaşmak İçin Mesaj Seçin | {count} Mesaj Seçildi | {count} Mesaj Seçildi",
+						"cancel": "Vazgeç",
+						"share": "Paylaş"
+					},
+					"shareDropdown": {
+						"title": "Paylaş",
+						"downloadFilename": "Sohbet Mesajları"
+					},
+					"AudioUpload": {
+						"uploadAudio": "Ses Dosyası Yükle"
+					},
+					"you": "Siz",
+					"replyingTo": "Yanıtlanıyor",
+					"replyingToMedia": "Medya",
+					"whisperPlaceholder": "Ekibinize fısıldayın",
+					"watching": "{name} izliyor...",
+					"typing": "{name} yazıyor...",
+					"agentActivity": "{names} ve {count} diğer kişi burada"
+				},
+				"messageInputRestriction": {
+					"contactLimit": {
+						"description": "Planınızın sınırına ulaştınız. Daha fazla kişiye mesaj göndermek için planınızı yükseltmelisiniz.",
+						"upgradeButton": "Sınırı Artır"
+					},
+					"permissionsExpired": {
+						"description": "Hesabınızın izinlerinin süresi dolmuş. İzinlerinizi yenileyerek konuşmaya devam edebilirsiniz.",
+						"refreshButton": "İzinleri Yenile"
+					},
+					"dmAccessDisabled": {
+						"description": "Instagram hesabınızda DM erişimi kapalı görünüyor. Otomasyonlarınızda ya da Sohbet sayfasından DM gönderebilmek için DM erişimini açmanız gerekiyor.",
+						"button": "Nasıl Açılır?",
+						"resetButton": "Etkinleştirdim"
+					}
+				},
+				"messageTypes": {
+					"audioPreview": {
+						"audioLoadFailed": "Ses yüklenemedi."
+					},
+					"filePreview": {
+						"defaultFilename": "Dosya"
+					},
+					"imagePreview": {
+						"imageLoadFailed": "Görüntü yüklenemedi"
+					},
+					"igReelPreview": {
+						"videoLoadFailed": "Video yüklenemedi."
+					},
+					"igStoryPreview": {
+						"storyLoadFailed": "Hikaye yüklenemedi"
+					},
+					"sharePreview": {
+						"post": "Gönderi",
+						"imageLoadFailed": "Gönderi yüklenemedi"
+					},
+					"stickerPreview": {
+						"stickerLoadFailed": "Çıkartma yüklenemedi"
+					},
+					"videoPreview": {
+						"fullScreen": "Tam Ekran",
+						"videoLoadFailed": "Video yüklenemedi"
+					}
+				},
+				"chatContent": {
+					"selectChatToStart": "Başlamak için bir sohbet seçin"
+				},
+				"dragDrop": {
+					"title": "Dosyayı Buraya Bırakın"
+				}
+			}
+		},
+		"flow": {
+			"createFlowModalElement": {
+				"getStartedButton": "Başlayın",
+				"communityLabel": "Topluluk"
+			},
+			"communityTemplatesList": {
+				"emptyState": "Henüz topluluk şablonu yok. Onaylanan şablonlar burada görünecek.",
+				"nodeCount": "{count} adım",
+				"by": "Paylaşan",
+				"useTemplate": "Şablonu kullan",
+				"untitled": "İsimsiz şablon",
+				"followers": "takipçi",
+				"usageCount": "Bu şablon {count} kez kullanıldı"
+			},
+			"flowSetup": {
+				"flowNamePlaceholder": "Flow İsmi",
+				"publishedFlowWarning": {
+					"text": "{publishedFlow}'u Düzenliyorsunuz",
+					"publishedFLow": "Yayındaki Flow",
+					"rollbackButton": "Yayındakine Dön",
+					"pauseFlow": "Durdur",
+					"goToLiveButton": "Değişiklikleri Yayınla"
+				},
+				"publishButton": "Yayına Al",
+				"publishSuccessMessage": "Flow başarıyla yayınlandı!",
+				"fixErrorsBeforePublish": "Neredeyse hazırsınız. Yayınlamak için eksikleri tamamlayın.",
+				"shareFlowDropdown": {
+					"button": "Paylaş",
+					"back": "Geri"
+				},
+				"shareFlow": {
+					"modeSelector": {
+						"title": "Flow'unu kiminle paylaşacaksın?",
+						"description": "Tek bir kişiye link gönder ya da toplulukla paylaş.",
+						"personal": {
+							"title": "Bir kişiyle paylaş",
+							"description": "Tek kullanım için özel bir link oluştur"
+						},
+						"community": {
+							"title": "Toplulukla paylaş",
+							"description": "Onaya gönder, diğer kullanıcılar şablon olarak kullansın"
+						}
+					},
+					"personalShare": {
+						"title": "Tek kişiyle paylaş",
+						"description": "Bu linke sahip olan kişi flow'unu kendi hesabında kullanabilir.",
+						"updateButton": "Değişiklikleri gönder",
+						"tweetText": "Oluşturduğum otomasyonu siz de deneyebilirsiniz 🚀\n",
+						"whatsappText": "Oluşturduğum otomasyonu siz de deneyebilirsiniz 🚀\n"
+					},
+					"communityShare": {
+						"title": "Toplulukta yayınla",
+						"description": "Flow'un onaylandığında şablonlar arasında yer alır, topluluk senin Flow'undan ilham alıp kendi otomasyonunu kurabilir.",
+						"pendingShort": "İnceleniyor",
+						"activeShort": "Yayında",
+						"pendingLabel": "v{version} inceleniyor",
+						"pendingDescription": "Ekip flow'unu inceliyor. Onaylandığında haber vereceğiz.",
+						"activeLabel": "v{version} yayında",
+						"activeDescription": "Flow'un şablonlarda yayında, topluluk kullanabiliyor.",
+						"rejectedLabel": "v{version} reddedildi",
+						"rejectedDescription": "Bu sefer kabul edilmedi. Üzerinde oynayıp yeniden gönderebilirsin.",
+						"submittedToast": "Flow'un inceleniyor.",
+						"form": {
+							"title": {
+								"label": "Flow adı",
+								"placeholder": "Flow'una açık ve anlaşılır bir ad ver"
+							},
+							"versionInfo": "Şu anda {version} sürümünü paylaşıyorsun",
+							"submitButton": "Toplulukta yayınla",
+							"updateButton": "Değişiklikleri Gönder"
+						}
+					}
+				},
+				"contentHeader": {
+					"regenerateButton": "Regenerate",
+					"previewFlow": {
+						"title": "Flow’u Dene",
+						"description": "Flow’u denemek için \"{code}\" kodunu {username} hesabına DM olarak gönder.",
+						"button": "Test et",
+						"scanQr": "DM atmak için tara",
+						"sendDm": "DM Gönder",
+						"goToProfile": "Profile Git",
+						"goToPost": "Gönderiye Git",
+						"commentTestHint": "{username} hesabından farklı bir hesapla denemelisiniz."
+					}
+				}
+			},
+			"flowCard": {
+				"status": {
+					"published": "Yayınlandı",
+					"draft": "Taslak"
+				},
+				"actions": {
+					"edit": "Düzenle",
+					"duplicate": "Kopyala",
+					"delete": "Sil",
+					"view": "Görüntüle",
+					"editWithDiagram": "Diagram'da Düzenle"
+				},
+				"stats": {
+					"steps": "{count} Adım"
+				},
+				"deleteConfirm": {
+					"title": "Flow'u Sil",
+					"text": "\"{flowName}\" Flow'unu silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
+					"confirmButton": "Evet, Sil",
+					"cancelButton": "İptal"
+				},
+				"toggleStatusConfirm": {
+					"title": "Flow'un Durumunu Değiştir",
+					"text": "“{flowName}” Flow'unu gerçekten değiştirmek istiyor musunuz?",
+					"confirmButton": "Evet",
+					"cancelButton": "Vazgeç"
+				},
+				"editWithDiagram": {
+					"title": "Flow Gelişmiş Diagram'a Taşınacak",
+					"text": "Flow, gelişmiş diagrama dönüştürülecektir. Yeniden {typeKey} olarak düzenlenemez.",
+					"confirmButton": "Devam et",
+					"cancelButton": "Kapat",
+					"typeKey": {
+						"basic": "Basit Flow",
+						"diagram": "Diagram",
+						"quick": "Hızlı Flow"
+					}
+				},
+				"noTriggers": "Trigger yok"
+			},
+			"triggerSingleFlow": {
+				"title": "Aktif Flow'lar",
+				"description": "Bu kullanıcı için bir flow'u elle tetikleyebilirsiniz",
+				"emptyState": {
+					"title": "Uygun flow bulunamadı",
+					"goToFlows": "Flow'lara git"
+				},
+				"flowCompactCard": {
+					"runCount": "Daha önce bu kişi için çalıştı",
+					"neverRan": "Bu kişi için çalışmadı",
+					"runButton": "Çalıştır"
+				},
+				"runFlowSuccess": "Flow başarıyla çalıştı"
+			},
+			"selectAccount": {
+				"placeholder": "Hesap Seçin"
+			},
+			"selectAccountModal": {
+				"title": "Bir Hesap Seçin",
+				"description": "Devam etmek için bir hesaplardan birini seçin."
+			},
+			"addNodePartials": {
+				"addAction": {
+					"buttonText": "Adım",
+					"dropdownTitle": "Flow'unuza eklemek için bir adım seçin",
+					"commentActionsTitle": "Yorum İşlemleri",
+					"moreActions": "Daha Fazla İşlem"
+				},
+				"addTrigger": {
+					"buttonText": "Trigger Ekle"
+				},
+				"addActionRenderer": {
+					"addTag": {
+						"title": "Etiket Ekle",
+						"description": "Kişiye bir etiket ekleyin"
+					},
+					"removeTag": {
+						"title": "Etiketi Kaldır",
+						"description": "Kişiden bir etiketi kaldırın"
+					},
+					"setContactField": {
+						"title": "Özel Alanı Ayarla",
+						"description": "Kişiye özel bir alan ekleyin ve değerini belirleyin"
+					},
+					"randomizer": {
+						"title": "Rastgele Dağıtım",
+						"description": "Kişileri farklı adımlara rastgele olarak yönlendirir"
+					},
+					"sendPrivateReply": {
+						"title": "Özel Yanıt Gönder",
+						"description": "Yorum yazarına özel mesaj gönder"
+					},
+					"replyComment": {
+						"title": "Yoruma Yanıt Ver",
+						"description": "Yoruma herkese açık yanıt ver"
+					},
+					"hideComment": {
+						"title": "Yorumu Gizle",
+						"description": "Yorumu herkesten gizle"
+					},
+					"delay": {
+						"title": "Bekleme",
+						"description": "Beklemek için bir süre belirleyin"
+					},
+					"externalRequest": {
+						"title": "API isteği",
+						"description": "Harici bir servise API isteği yapın"
+					},
+					"sendMessage": {
+						"title": "Mesaj Gönder",
+						"description": "Kişiye bir Direkt Mesaj gönderin"
+					},
+					"dataCollection": {
+						"title": "Bilgi Toplama",
+						"description": "Kişiden DM aracılığıyla bilgilerini alın"
+					},
+					"triggerFlow": {
+						"title": "Flow'u Çalıştır",
+						"description": "Başka bir Flow'u başlatın"
+					},
+					"selfNode": {
+						"title": "Başka Bir Adım",
+						"description": "Bu Flow'un içindeki başka bir adıma geçer"
+					},
+					"pauseFlows": {
+						"title": "Flow'u Durdur",
+						"description": "Bir kişi için tüm flowları durdur"
+					},
+					"signature": {
+						"title": "{chat} Etiketi",
+						"description": "Her otomasyonun sonuna küçük bir imza mesajı ekleyin"
+					},
+					"condition": {
+						"title": "Koşul Ekle",
+						"description": "Bir değeri karşılaştır"
+					},
+					"unknownAction": "Bilinmeyen Adım"
+				},
+				"advancedNodeActions": {
+					"searchPlaceholder": "Adım Ara..."
+				}
+			},
+			"node": {
+				"actions": {
+					"deleteTooltip": "Bu adımı sil",
+					"deleteConfirmation": {
+						"title": "Adımı Sil",
+						"text": "Bu {stepType} adımı Flow'unuzdan silinecektir.",
+						"confirmButtonText": "Evet, Sil",
+						"cancelButtonText": "Vazgeç"
+					},
+					"addTag": {
+						"addTagsToContact": "Bu etiketleri kişiye ekle"
+					},
+					"dataCollection": {
+						"collectData": "{replyType} Topla",
+						"message": "Mesaj",
+						"replyType": "Yanıt Türü",
+						"saveTo": "Kaydet:",
+						"selectField": "Bir alan seçin...",
+						"choiceOptions": "Seçenekler",
+						"addOption": "Seçenek Ekle",
+						"maxOptions": "(Maksimum 10)",
+						"buttonTextPlaceholder": "Buton metni",
+						"noOptionsAdded": "Henüz seçenek eklenmedi",
+						"note": "Not:",
+						"automationPausesNote": "Flow, kişi yanıt verene kadar duraklar. Kişi yanıt vermezse başka bir Flow başlatabilirsiniz.",
+						"advanced": "Gelişmiş",
+						"ifUserWontReply": "Kullanıcı yanıt vermezse, {minutes} dakika bekle",
+						"nextStepAfterExpiration": "Süre dolduktan sonraki adım:",
+						"chooseNextStep": "Sonraki Adımı Seç",
+						"ifResponseNotValid": "Eğer yanıt geçerli değilse",
+						"replyTypes": {
+							"text": "Metin",
+							"email": "E-posta",
+							"phone": "Telefon",
+							"number": "Sayı",
+							"url": "URL",
+							"date": "Tarih",
+							"datetime": "Tarih ve Saat",
+							"image": "Görüntü",
+							"multiple_choice": "Çoktan Seçmeli"
+						},
+						"timesOnInvalidReply": "Yanıt geçersiz ise {count} defa dene",
+						"ifNotValid": "Adım"
+					},
+					"delay": {
+						"wait": "{time} {unit} Bekle",
+						"or": "veya",
+						"everyDay": "Her gün",
+						"days": "Günler",
+						"continueOnDays": "{days} günleri {startHour} - {endHour} arasında devam et",
+						"waitUntil": "{dateTime} olana kadar bekle",
+						"duration": "Süre",
+						"datetime": "Tarih/Saat",
+						"enterDuration": "Süreyi girin",
+						"seconds": "Saniye",
+						"minutes": "Dakika",
+						"hours": "Saatler",
+						"continueOnSpecificDays": "Belirli günlerde devam et",
+						"noWaitTimeRange": "Gecikmenin uygulanmayacağı durumlar",
+						"timeRange": "Zaman Aralığı:",
+						"daysLabel": "Günler:",
+						"selectAll": "Hepsini Seç",
+						"clear": "Temizle",
+						"selectDay": "Günü seçin",
+						"targetDateTime": "Hedef Tarih ve Saat",
+						"weekdays": {
+							"monday": "Pazartesi",
+							"tuesday": "Salı",
+							"wednesday": "Çarşamba",
+							"thursday": "Perşembe",
+							"friday": "Cuma",
+							"saturday": "Cumartesi",
+							"sunday": "Pazar"
+						},
+						"units": {
+							"seconds": "saniye",
+							"minutes": "dakika",
+							"hours": "saat"
+						},
+						"timeRangeInfo": "Seçilen günlerin belirlenen saatlerinde, bekleme uygulanmayacaktır."
+					},
+					"sendMessage": {
+						"title": "Mesaj Gönder",
+						"textMessage": "Metin Mesajı",
+						"sendTextMessage": "Metin mesajı gönder",
+						"image": "Görüntü",
+						"sendImage": "Görüntü gönder",
+						"delay": "Gecikme",
+						"typingDelay": "Yazma gecikmesi",
+						"moreContentTypes": "Daha fazla içerik türü...",
+						"otherContentTypes": "Diğer içerik türleri",
+						"audioMessage": "Sesli Mesaj",
+						"sendAudioMessage": "Sesli mesaj gönder",
+						"videoMessage": "Video Mesaj",
+						"sendVideo": "Video gönder",
+						"fileMessage": "Dosya",
+						"sendFile": "PDF dosyası gönder",
+						"cardMessage": "Kart Mesajı",
+						"soon": "Yakında",
+						"dynamicContent": "Dinamik İçerik",
+						"dynamicContentFromServer": "Sunucudan dinamik içerik",
+						"addContent": "İçerik Ekle",
+						"contentTypeSummary": "DM'den {type} gönder",
+						"contentTypes": {
+							"text": "Metin Mesajı",
+							"image": "Görüntü",
+							"audio": "Ses",
+							"video": "Video",
+							"file": "Dosya",
+							"card": "Kart",
+							"dynamic": "Dinamik İçerik",
+							"delay": "Gecikme"
+						},
+						"moreItems": "daha fazla",
+						"addQuickReplies": "Hızlı Yanıtlar Ekle",
+						"testMessageSuccess": "Mesaj testi başarıyla gönderildi!"
+					},
+					"removeTag": {
+						"removeTagsFromContact": "Bu etiketleri, varsa, kişiden kaldır."
+					},
+					"setContactField": {
+						"setFieldValue": "Kişi alanı değerini ayarla",
+						"selectField": "Kişi Alanı Seç",
+						"chooseField": "Bir alan seçin...",
+						"operation": "İşlem",
+						"selectOperation": "İşlem seçin...",
+						"value": "Değer",
+						"amount": "Miktar",
+						"textToAppend": "Sonuna eklenecek metin",
+						"textToPrepend": "Başına eklenecek metin",
+						"selectValue": "Değer seçin...",
+						"true": "Doğru",
+						"false": "Yanlış",
+						"valuePlaceholder": "Değer girin...",
+						"appendPlaceholder": "Sonuna eklenecek metin",
+						"prependPlaceholder": "Başına eklenecek metin",
+						"operations": {
+							"set": "Değer Ata",
+							"increment": "Artır",
+							"decrement": "Azalt",
+							"append": "Sona Ekle",
+							"prepend": "Başa Ekle",
+							"toggle": "Değiştir (Doğru/Yanlış)",
+							"clear": "Değeri Temizle"
+						},
+						"help": {
+							"set": "{field} alanını belirtilen değere ayarla",
+							"increment": "{field} alanını belirtilen miktarda artır",
+							"decrement": "{field} alanını belirtilen miktarda azalt",
+							"append": "{field} alanının sonuna metin ekle",
+							"prepend": "{field} alanının başına metin ekle",
+							"toggle": "{field} alanını doğru ve yanlış arasında değiştir",
+							"clear": "{field} alanındaki değeri kaldır"
+						}
+					},
+					"randomizer": {
+						"title": "Rastgele Dağıtım",
+						"distributionMessage": "Toplam %{current}",
+						"randomPathEveryTime": "Her seferinde rastgele seç",
+						"randomPathEveryTimeTooltip": "Her kişi için rastgele seçilir. Devre dışı bırakılırsa, seçenekler sırayla kullanılır.",
+						"newVariation": "+ Yeni Varyasyon"
+					},
+					"pauseFlows": {
+						"title": "Flow'ları Durdur",
+						"durationDescription": "Tüm Flow'lar {duration} durdurulacak",
+						"selectDuration": "Süre Seçin",
+						"duration": "{value} {unit}",
+						"units": {
+							"minutes": "dakika boyunca",
+							"hours": "saat boyunca",
+							"days": "gün boyunca",
+							"forever": "süresiz olarak"
+						},
+						"dropdownUnits": {
+							"minutes": "{count} dakika",
+							"hours": "{count} saat",
+							"days": "{count} gün",
+							"forever": "Süresiz"
+						},
+						"description": "Bu kişi için belirlenen süre boyunca diğer Flow’ları devre dışı bırak."
+					},
+					"comment": {
+						"sendPrivateReply": {
+							"title": "Özel Yanıt Gönder",
+							"description": "Instagram, kullanıcının sizden bir mesaj alacağını bildirmenizi zorunlu tutar.",
+							"notification": "Son 24 saat içinde kullanıcıdan bir mesaj aldıysanız, bu gönderilmeyecektir."
+						},
+						"replyComment": {
+							"title": "Yoruma Yanıt Ver",
+							"replyPlaceholder": "Yanıt yorumunu girin...",
+							"addReply": "Yanıt Ekle",
+							"sendOptions": "Gönderim Seçenekleri",
+							"sendRandomly": "Rastgele Gönder",
+							"sendRandomlyDesc": "Her yorum için listeden rastgele bir yanıt seç",
+							"sendInOrder": "Sırayla Gönder",
+							"sendInOrderDesc": "Yanıtları listedeki sıraya göre gönder"
+						},
+						"hideComment": {
+							"title": "Yorumu Gizle",
+							"description": "Bu işlem yorumu herkesten gizleyecek",
+							"note": "Yorum gizlenecek ancak silinmeyecek"
+						}
+					},
+					"triggerFlow": {
+						"selectFlowToTrigger": "Çalıştırmak için bir Flow Seçin",
+						"loading": "Yükleniyor...",
+						"selectFlow": "Flow seçin...",
+						"published": "Yayınlandı",
+						"steps": "adımlar",
+						"noActiveFlowsFound": "Aktif Flow bulunamadı"
+					},
+					"externalRequestPartials": {
+						"requestBody": {
+							"bodyNotAvailable": "GET istekleri için body mevcut değil.",
+							"addField": "Alan Ekle",
+							"fieldNamePlaceholder": "Alan adı",
+							"fieldValuePlaceholder": "Alan değeri",
+							"noFieldsAdded": "Henüz hiçbir alan eklenmedi",
+							"contactInformation": "Kişi Bilgileri",
+							"jsonHint": "{name} ile kişi bilgilerini ekleyin"
+						},
+						"requestBuilder": {
+							"pasteFromClipboard": "Pano'dan yapıştır",
+							"urlPlaceholder": "https://api.example.com/endpoint",
+							"tabs": {
+								"settings": "Ayarlar",
+								"test": "Test"
+							},
+							"settings": {
+								"timeout": "Zaman Aşımı (saniye)",
+								"retryAttempts": "Tekrar Deneme Sayısı",
+								"cacheResponse": "Yanıtılı Önbellekle",
+								"cacheDuration": "Önbellek Süresi (dakika)",
+								"continueOnError": "Hata Durumunda Devam Et"
+							},
+							"summary": {
+								"header": "başlık",
+								"headers": "başlıklar",
+								"saveTo": "Kaydet:",
+								"extract": "Çıkar"
+							}
+						},
+						"requestHeaders": {
+							"addHeader": "Header Ekle",
+							"noHeadersAdded": "Henüz header eklenmedi",
+							"headerNamePlaceholder": "Header adı",
+							"headerValuePlaceholder": "Değeri",
+							"commonHeaders": "Common Headers"
+						},
+						"requestResponse": {
+							"messageFieldPath": "Veri Yolu (Field Path)",
+							"messageFieldHint": "Yanıt içeriğini bulmak için JSON yolu",
+							"fallbackMessage": "Fallback Mesajı",
+							"fallbackPlaceholder": "Üzgünüz, dinamik içeriği yükleyemedik.",
+							"retryHint": "İstek başarısız olursa gönderilecek mesaj"
+						},
+						"requestTest": {
+							"testing": "Test Ediliyor...",
+							"requestSuccessful": "İstek Başarılı",
+							"requestFailed": "İstek Başarısız",
+							"extractedMessage": "Çıkarılan Mesaj",
+							"responseDetails": "Yanıt Ayrıntıları",
+							"duration": "Süre",
+							"size": "Boyut",
+							"requestSummary": "İstek Özeti",
+							"extract": "Çıkar",
+							"notConfigured": "Yapılandırılmadı",
+							"field": "alan",
+							"fields": "alanlar",
+							"rawTextBody": "Ham metin gövdesi",
+							"title": "İsteği Test Et"
+						}
+					},
+					"sendMessagePartials": {
+						"genericMessage": {
+							"titlePlaceholder": "Başlığınızı yazın",
+							"subtitlePlaceholder": "Alt başlığınızı yazın"
+						},
+						"audioMessage": {
+							"acceptText": "MP3, WAV, M4A en fazla 25MB",
+							"browserNotSupported": "Tarayıcınız ses öğesini desteklemiyor.",
+							"orRecordAudio": "Ya da Ses Kaydet",
+							"clickToStartRecording": "Kaydı başlatmak için tıklayın",
+							"recording": "Kaydediliyor...",
+							"recordingCompleted": "Kayıt tamamlandı",
+							"useRecording": "Kaydı Kullan",
+							"discard": "İptal et",
+							"microphonePermissionRequired": "Mikrofon İzni Gerekli",
+							"allowMicrophoneAccess": "Lütfen ses kaydetmek için mikrofon erişimine izin verin."
+						},
+						"fileMessage": {
+							"acceptText": "PDF en fazla 25MB"
+						},
+						"delayMessage": {
+							"waiting": "Bekleniyor",
+							"second": "{count} saniye | {count} saniye"
+						},
+						"mediaMessage": {
+							"dropFileHere": "Dosyayı buraya bırakın veya göz atmak için tıklayın",
+							"orEnterUrl": "Bir URL Girin",
+							"enterMediaUrl": "{mediaType} URL girin",
+							"pasteFromClipboard": "Pano'dan yapıştır",
+							"cancel": "İptal",
+							"loadMedia": "{mediaType} Yükle",
+							"mediaTypes": {
+								"image": "Resim",
+								"audio": "Ses",
+								"video": "Video",
+								"file": "Dosya"
+							},
+							"pleaseSelectFile": "Lütfen bir {mediaType} dosya seçin",
+							"formatNotSupported": "❌ {format} format web tarayıcılarında desteklenmiyor.\n\n✅ Desteklenen formatlar: MP4, WebM, OGG\n\nEn iyi uyumluluk için videonuzu MP4 formatına dönüştürün.",
+							"fileSizeTooLarge": "Dosya boyutu {size}MB'den küçük olmalıdır.",
+							"uploadFailed": "Yükleme başarısız oldu. Lütfen tekrar deneyin.",
+							"failedToGetUploadUrl": "Yükleme URL'si alınamadı. Ayrıntılar için konsolu kontrol edin.",
+							"fileUploadFailed": "Dosya yükleme başarısız oldu",
+							"externalMedia": "Harici {mediaType}"
+						},
+						"quickReply": {
+							"title": "Hızlı Yanıtlar",
+							"info": "Hızlı Yanıt Düğmeleri",
+							"description": "Kullanıcılar için hızlı yanıt seçenekleri sunar (maks 20 karakter)",
+							"replyOptions": "Yanıt Seçenekleri",
+							"addReply": "Yanıt Ekle",
+							"noRepliesAdded": "Henüz hızlı yanıt eklenmedi",
+							"addFirstReply": "İlk Yanıtı Ekle",
+							"replyTextPlaceholder": "Yanıt metni",
+							"action": "Eylem",
+							"continue": "Devam Et",
+							"webhook": "Webhook",
+							"tag": "Etiket",
+							"jump": "Atla",
+							"custom": "Özel",
+							"preview": "Önizleme",
+							"quickRepliesWillAppear": "Hızlı yanıtlar şu şekilde görünecek:",
+							"quickTemplates": "Hızlı Şablonlar",
+							"yes": "Evet",
+							"no": "Hayır",
+							"maybe": "Belki",
+							"later": "Sonra",
+							"getInfo": "Bilgi Al",
+							"contact": "İletişim",
+							"getPrice": "Fiyat Al",
+							"makeAppointment": "Randevu Al",
+							"catalog": "Katalog",
+							"support": "Destek",
+							"required": "Lütfen buraya bir şey yazın.",
+							"maxLength": "En fazla 20 karakter yazabilirsiniz."
+						},
+						"textMessage": {
+							"placeholder": "Mesajınızı yazın",
+							"addButton": "Buton Ekle",
+							"variables": {
+								"name": "Ad",
+								"phone": "Telefon",
+								"email": "E-posta",
+								"company": "Şirket",
+								"step": "Adım",
+								"date": "Tarih",
+								"time": "Zaman"
+							}
+						},
+						"textMessageButton": {
+							"placeholder": "Buton metni",
+							"url": "URL",
+							"urlPlaceholder": "https://example.com",
+							"pasteFromClipboard": "Pano'dan yapıştır",
+							"websiteUrl": "Web Sitesi URL'si",
+							"consentButtonLabel": "Buton",
+							"saveButton": "Kaydet"
+						},
+						"videoMessage": {
+							"acceptText": "MP4, WebM, OGG 100MB'a kadar (MOV desteklenmiyor)",
+							"browserNotSupported": "Tarayıcınız video etiketini desteklemiyor."
+						}
+					},
+					"signature": {
+						"title": "{simpliers} Etiketi",
+						"description": "Ücretsiz planlarda, her Flow'un sonunda küçük bir etiket bulunur. Bir plana abone olarak bu imzayı kaldırabilirsiniz.",
+						"contentTypeSummary": "{simpliersChat} Etiketi",
+						"summaryDescription": "Ücretsiz planlara dahildir. Kaldırmak için bir plana abone olabilirsiniz.",
+						"subscribe": "Bir Plana Abone Ol"
+					}
+				},
+				"conditions": {
+					"comparison": {
+						"fieldTypes": {
+							"text": "Metin",
+							"yesNo": "Evet/Hayır",
+							"number": "Sayı",
+							"date": "Tarih",
+							"tag": "Etiket",
+							"unknown": "Bilinmeyen"
+						},
+						"comparisonLabel": "Karşılaştırma",
+						"selectOperator": "Operatör Seç",
+						"dayCountLabel": "Gün Sayısı",
+						"valueLabel": "Değer",
+						"numberLabel": "Sayı",
+						"dateLabel": "Tarih",
+						"tagNameLabel": "Etiket Adı",
+						"dayCountPlaceholder": "Gün sayısı",
+						"tagNamePlaceholder": "Etiket adı",
+						"selectIntent": "Niyet seçin",
+						"ifNotMatchesText": "Eğer karşılaştırma eşleşmiyorsa, o zaman",
+						"ifNotButton": "Eğer Değil",
+						"placeholders": {
+							"withinDays": "örn: 7 (son 7 gün)",
+							"olderThanDays": "örneğin: 30 (30 günden daha eski)",
+							"contains": "Aranacak metin",
+							"startsWith": "Başlangıç metni",
+							"endsWith": "Bitiş metni",
+							"textValue": "Metin değeri",
+							"numberValue": "Sayı değeri",
+							"tagExample": "örneğin: vip-müşteri",
+							"equals": "Eşitlenecek metin"
+						},
+						"messages": {
+							"noComparisonSelected": "Karşılaştırma türü seçilmedi",
+							"elseNodeExists": "Aksi düğüm zaten mevcut"
+						},
+						"operators": {
+							"is_not_empty": "Eğer biliniyorsa",
+							"is_empty": "Eğer bilinmiyorsa",
+							"equals": "Eşitse",
+							"not_equals": "Eşit değilse",
+							"contains": "Eğer içeriyorsa",
+							"not_contains": "İçermiyorsa",
+							"starts_with": "Eğer ile başlıyorsa",
+							"ends_with": "Eğer ile bitiyorsa",
+							"is_true": "Eğer doğruysa",
+							"is_false": "Eğer yanlışsa",
+							"greater_than": "Eğer büyükse",
+							"less_than": "Eğer daha azsa",
+							"greater_than_or_equal": "Eşit veya büyükse",
+							"less_than_or_equal": "Eşit veya daha az ise",
+							"before": "Eğer önce",
+							"after": "Eğer sonra",
+							"on": "Eğer tarih itibarıyla",
+							"within_days": "Son X günde ise",
+							"older_than_days": "X günden daha eskiyse",
+							"has": "Eğer etiket varsa",
+							"not_has": "Etiket yoksa",
+							"positive": "Eğer Pozitifse",
+							"negative": "Eğer Olumsuzsa",
+							"neutral": "Eğer Nötr ise"
+						}
+					},
+					"fieldSelector": {
+						"searchPlaceholder": "Alan ara...",
+						"addCustomField": "Özel Alan Ekle",
+						"fieldNamePlaceholder": "Alan Adı (örneğin, müşteri_id)",
+						"addButton": "Ekle",
+						"cancelButton": "İptal",
+						"conditionLabel": "Koşul",
+						"customField": "Özel Alan",
+						"fieldTypes": {
+							"string": "Metin",
+							"integer": "Sayı",
+							"bool": "Doğru/Yanlış",
+							"date": "Tarih"
+						}
+					},
+					"categories": {
+						"recommended": "Önerilen",
+						"contact": "Kişi",
+						"instagram": "Instagram Profili",
+						"comment": "Yorum",
+						"custom": "Özel Alanlar"
+					},
+					"fields": {
+						"first_name": {
+							"name": "Adı",
+							"description": "Kişinin adı."
+						},
+						"last_name": {
+							"name": "Soyadı",
+							"description": "Kişinin soyadı."
+						},
+						"email": {
+							"name": "E-posta",
+							"description": "Kişinin e-posta adresi."
+						},
+						"phone": {
+							"name": "Telefon",
+							"description": "Kişinin telefon numarası."
+						},
+						"subscribed": {
+							"name": "Abone mi?",
+							"description": "Kişinin mesaj almak için abone olup olmadığını."
+						},
+						"tag": {
+							"name": "Etiket",
+							"description": "Bir etikete sahip olup olmadığı."
+						},
+						"ig": {
+							"username": {
+								"name": "Instagram Kullanıcı Adı",
+								"description": "Instagram kullanıcı adı."
+							},
+							"followers_count": {
+								"name": "Instagram Takipçi Sayısı",
+								"description": "Instagram takipçi sayısı."
+							},
+							"is_verified": {
+								"name": "Onaylı Hesap",
+								"description": "Instagram hesabının doğrulanıp doğrulanmadığı."
+							},
+							"last_interaction": {
+								"name": "Instagram Son Etkileşim",
+								"description": "Instagram'daki son etkileşimin tarihi."
+							},
+							"last_seen": {
+								"name": "Instagram Son Görülme",
+								"description": "Instagram'da son görülme zamanı."
+							},
+							"follows_account": {
+								"name": "Instagram Hesabını Takip Ediyor",
+								"description": "Instagram hesabınızı takip edip etmediği."
+							},
+							"opted_in": {
+								"name": "Instagram'da Abone Mi?",
+								"description": "Instagram mesajlaşması için onay verip vermediği."
+							}
+						},
+						"comment": {
+							"sentiment": {
+								"name": "Sentiment Analizi",
+								"description": "Yorumun duygu analiz sonucu (olumlu, olumsuz, nötr)."
+							},
+							"score": {
+								"name": "Sentiment Skoru",
+								"description": "Yorumun duygu analiz skoru."
+							},
+							"intent": {
+								"name": "Niyet Analizi",
+								"description": "Yorumun niyet analiz sonucu (örneğin, soru, şikayet, övgü)."
+							},
+							"text": {
+								"name": "Metin",
+								"description": "Yorumları metnine göre filtrele."
+							}
+						}
+					}
+				},
+				"triggers": {
+					"partials": {
+						"scoreFilterBuilder": {
+							"selectOperator": "Karşılaştırma seçin",
+							"description": "Mesajın AI tarafından hesaplanan skor değerine göre filtreleme yapın."
+						},
+						"sentimentFilterBuilder": {
+							"selectSentiment": "Duygu seçin",
+							"description": "Yorumun duygusu;",
+							"sentiments": {
+								"positive": "Pozitif",
+								"neutral": "Nötr",
+								"negative": "Negatif"
+							}
+						},
+						"filterComments": {
+							"title": "Yorumları Filtrele",
+							"description": "Flow’u başlatacak yorumları anahtar kelimelere göre filtreleyin.",
+							"mustIncludeWords": "İçereceği Kelimeler",
+							"mustIncludeWordsDescription": "Yorum, bu kelimelerden {bold} tanesini içeriyorsa eşleşir.",
+							"atLeastOne": "en az bir",
+							"excludedKeywords": "Hariç Tutulacak Kelimeler",
+							"excludedKeywordsDescription": "Eğer yorum {bold} içeriyorsa, eşleşme göz ardı edilecektir.",
+							"anyOfThese": "bunlardan herhangi birini",
+							"keywordPlaceholder": "Bir kelime yazın ve Enter tuşuna basın...",
+							"addButton": "Ekle"
+						},
+						"replyComment": {
+							"title": "Yoruma Yanıt Ver",
+							"description": "Gönderinize yorum yapıldığında, bir yorumla yanıt verin.",
+							"commentTextPlaceholder": "Yorum Metni",
+							"signatureLabel": "{simpliersChat} Etiketi ekle",
+							"signatureDescription": "Otomatik giden her yorumun sonuna \"{signature}\" eklenecek.",
+							"signatureTooltip": "Simpliers CHAT Etiketi"
+						},
+						"selectMedia": {
+							"usernamePlaceholder": "kullanıcı adı",
+							"selectedPostsLabel": "Seçilen ({count} Gönderi)",
+							"allPostsSelected": "Tüm gönderiler (Paylaşılacak olanlar dahil)",
+							"nextPostSelected": "Bir Sonraki Paylaşılacak Gönderi",
+							"profileAlt": "Profil resmi",
+							"postAlt": "Gönderi",
+							"nextPost": "Sonraki Gönderi"
+						},
+						"selectPostType": {
+							"allPostsTitle": "Tüm Gönderiler",
+							"allPostsDescription": "Herhangi bir gönderiye yorum yapıldığında",
+							"nextPostTitle": "Paylaşılacak ilk gönderi",
+							"nextPostDescription": "Yayınlanacak olan bir sonraki gönderinize bir yorum yapıldığında.",
+							"selectSpecificTitle": "Gönderi Seçin",
+							"selectSpecificDescription": "Seçilen gönderilere bir yorum yapıldığında"
+						},
+						"triggerSummary": {
+							"nextPost": "Bir sonraki gönderiniz",
+							"selectedPosts": "Hiç gönderi seçilmedi | {count} gönderi seçildi | {count} gönderi seçildi",
+							"allPosts": "Tüm gönderiler",
+							"filtered": "Filtrelenmiş",
+							"plusAll": "+ Diğerleri"
+						}
+					},
+					"storyMention": {
+						"title": "Hikayede Bahsedilme",
+						"description": "Bir hikayede sizden bahsedildiğinde",
+						"autoLikeTitle": "Hikayeyi Beğen",
+						"autoLikeDescription": "Hikayeyi otomatik olarak beğenir",
+						"perContactTitle": "Her bir kişi için günde 1 kez gönder",
+						"perContactDescription": "Aynı kullanıcıya günde yalnızca bir kez yanıt gönderir."
+					},
+					"commentOnPost": {
+						"title": "Gönderi veya Reel Yorumu",
+						"description": "Gönderinize yorum yapıldığında",
+						"defaultPrivateReplyMessage": "Merhaba {igUsername}! 👋 \n\nYorumun için teşekkürler 💬\n\nSana detayları az sonra DM’den göndereceğim! 📩",
+						"consentMessage": {
+							"title": "Onay Mesajı",
+							"description1": "Instagram, birine yorum üzerinden yanıt verdiğinizde önce kullanıcının DM alacağını belirtmenizi ister."
+						}
+					},
+					"replyToStory": {
+						"title": "Hikaye Yanıtı",
+						"description": "Hikayenize bir yanıt verildiğinde",
+						"autoLikeTitle": "Yanıtı Beğen",
+						"autoLikeDescription": "Gelen yanıtı otomatik olarak beğenir",
+						"filterRules": {
+							"addRule": "Filtre Kuralı Ekle",
+							"removeRule": "Kuralı Kaldır",
+							"contains": "İçerir",
+							"doesNotContain": "İçermez",
+							"beginsWith": "İle Başlar",
+							"containsWholeWord": "Tam Kelime İçerir",
+							"containsDescription": "Mesaj bu anahtar kelimelerden en az birini içeriyorsa eşleşir.",
+							"doesNotContainDescription": "Mesaj bu anahtar kelimelerden hiçbirini içermiyorsa eşleşir.",
+							"beginsWithDescription": "Mesaj bu anahtar kelimelerden herhangi biriyle başlıyorsa eşleşir.",
+							"containsWholeWordDescription": "Mesaj bu anahtar kelimeleri tam kelime olarak içeriyorsa eşleşir (başka bir kelimenin parçası olarak değil)."
+						}
+					},
+					"receivedDM": {
+						"title": "Direkt Mesaj",
+						"description": "Bir DM alındığında",
+						"mustIncludeWords": "İçereceği Kelimeler",
+						"mustIncludeWordsDescription": "Mesaj, bu kelimelerden {bold} tanesini içeriyorsa eşleşir.",
+						"atLeastOne": "en az bir",
+						"excludedKeywords": "Hariç Tutulacak Kelimeler",
+						"excludedKeywordsDescription": "Eğer mesaj {bold} içeriyorsa, eşleşme göz ardı edilecektir.",
+						"anyOfThese": "bunlardan herhangi birini",
+						"keywordPlaceholder": "Bir kelime yazın ve Enter'a basın...",
+						"addButton": "Ekle",
+						"filterMessages": {
+							"title": "Kelimelere Göre Filtre",
+							"description": "Flow'u başlatacak mesajları içerdiği kelimelere göre filtreleyin."
+						},
+						"scoreFilter": {
+							"title": "Skor Puanına Göre Filtre",
+							"description": "Mesajları AI tarafından hesaplanan skor puanına göre filtreleyin."
+						},
+						"sentimentFilter": {
+							"title": "Duygu Analizine Göre Filtre",
+							"description": "Mesajları YZ duygu analizine göre filtreleyin.",
+							"analysisOption": "Duygu Analizi",
+							"scoreOption": "Skor Puanı"
+						},
+						"aiFilters": {
+							"title": "Niyete Göre Filtrele",
+							"description": "Gelen mesajları niyetine göre akıllıca filtrelemek için Yapay Zeka'yı kullanın.",
+							"ifMessageAbout": "Mesaj şununla ilgiliyse:",
+							"placeholder": "Kişi ... istiyor",
+							"inputDescription": "Kullanıcının niyetini \"Kişi ... istiyor\" veya \"Kişi ... hakkında soruyor\" şeklinde tanımlayın",
+							"shuffleExample": "Örneği değiştir",
+							"clickToApply": "Uygulamak için tıklayın",
+							"examples": {
+								"lookingForCoupon": "Kişi indirim kuponu soruyor",
+								"wantsCatalog": "Kişi tüm ürünlerin listesini istiyor",
+								"asksBusinessHours": "Kişi çalışma saatlerini soruyor",
+								"asksDiscount": "Kişi indirim istiyor",
+								"asksPrices": "Kişi fiyatları soruyor",
+								"asksProducts": "Kişi ürünler hakkında bilgi istiyor",
+								"wantsSupport": "Kişi müşteri desteği istiyor",
+								"asksShipping": "Kişi kargo seçeneklerini soruyor",
+								"wantsRefund": "Kişi iade istiyor",
+								"asksAvailability": "Kişi ürün uygunluğunu soruyor"
+							}
+						},
+						"filterRules": {
+							"addRule": "Başka Filtre Ekle",
+							"removeRule": "Kuralı Kaldır",
+							"contains": "İçerir",
+							"doesNotContain": "İçermez",
+							"beginsWith": "İle Başlar",
+							"containsWholeWord": "Tam Kelime İçerir",
+							"containsDescription": "Mesaj bu anahtar kelimelerden en az birini içeriyorsa eşleşir.",
+							"doesNotContainDescription": "Mesaj bu anahtar kelimelerden hiçbirini içermiyorsa eşleşir.",
+							"beginsWithDescription": "Mesaj bu anahtar kelimelerden herhangi biriyle başlıyorsa eşleşir.",
+							"containsWholeWordDescription": "Mesaj bu anahtar kelimeleri tam kelime olarak içeriyorsa eşleşir (başka bir kelimenin parçası olarak değil).",
+							"suggestedKeywordsLabel": "Önerilen kelimeler:",
+							"suggestedKeywords": {
+								"link": "Link",
+								"info": "Bilgi",
+								"price": "Fiyat",
+								"order": "Sipariş",
+								"help": "Yardım"
+							}
+						}
+					},
+					"commentOnLive": {
+						"title": "Canlı Yayın Yorumu",
+						"description": "Canlı yayınınıza yorum yapıldığında",
+						"perContactTitle": "Her kişi için canlı yayın başına 1 kez gönder",
+						"perContactDescription": "Aynı kullanıcıya her canlı yayın için yalnızca bir kez yanıt gönderir."
+					},
+					"unknownTrigger": {
+						"description": "Bilinmeyen Trigger"
+					}
+				},
+				"summaries": {
+					"triggers": {
+						"emptyState": "Flow'un başlaması için bir Trigger ekleyin"
+					},
+					"pauseFlows": {
+						"title": "Flow'u Durdur"
+					},
+					"addTag": {
+						"emptyState": "Eklenecek etiketleri seçin"
+					},
+					"removeTag": {
+						"emptyState": "Kaldırılacak etiketleri seçin"
+					},
+					"externalRequest": {
+						"emptyState": "API endpoint'ini yapılandırın"
+					},
+					"sendMessage": {
+						"emptyState": "Mesaj içeriği ekleyin",
+						"duration": "{duration} saniye",
+						"dynamicContentPlaceholder": "Dinamik Mesaj"
+					},
+					"dataCollection": {
+						"emptyState": "Veri toplama türünü seçin"
+					},
+					"comparison": {
+						"emptyState": "Karşılaştırma alanını seçin"
+					},
+					"triggerFlow": {
+						"emptyState": "Tetiklenecek Flow'u seçin"
+					},
+					"setContactField": {
+						"emptyState": "Alan ve işlem seçin"
+					},
+					"randomizer": {
+						"emptyState": "Dağıtım oranlarını belirleyin",
+						"andMore": "+{count} tane daha",
+						"randomPathEveryTime": "Her seferinde rastgele"
+					},
+					"sendPrivateReply": {
+						"emptyState": "Özel yanıt mesajını yapılandırın",
+						"message": "Mesaj"
+					},
+					"replyComment": {
+						"emptyState": "Yanıt mesajları ekleyin",
+						"repliesCount": "{count} yanıt yapılandırıldı",
+						"emptyReply": "(Boş yanıt)",
+						"andMore": "+{count} tane daha",
+						"sendRandomly": "Rastgele gönderir",
+						"sendInOrder": "Sırayla gönderir"
+					},
+					"hideComment": {
+						"description": "Yorum herkesten gizlenecek"
+					}
+				}
+			},
+			"nodeSettings": {
+				"namePlaceholder": "Adım İsmi (İsteğe bağlı)",
+				"nextButton": "Sonraki",
+				"nextStepButton": "Sonraki Adım"
+			},
+			"messageContentList": {
+				"writeMessage": "Mesaj yaz",
+				"buttonText": "Buton metni",
+				"imageArea": "Görsel Alanı",
+				"videoArea": "Video Alanı",
+				"dynamicContent": "Dinamik içerik",
+				"genericTitle": "Başlık",
+				"genericSubtitle": "Alt Başlık"
+			},
+			"preview": {
+				"storyMention": "Hikayesinde senden bahsetti",
+				"anyMessage": "Herhangi bir mesaj",
+				"writeMessage": "Mesaj yaz",
+				"buttonText": "Buton metni",
+				"optionText": "Seçenek metni",
+				"emptyState": {
+					"title": "Başlamak için bir Starter seçin"
+				}
+			},
+			"quick": {
+				"components": {
+					"commentOnPostTrigger": {
+						"title": "Bir yorum geldiğinde",
+						"type": {
+							"selectedPost": "Gönderi veya reels seçin",
+							"anyPost": "Herhangi bir gönderi veya reels",
+							"nextPost": "Bir sonraki gönderi veya reels"
+						},
+						"replyToCommentsLabel": "Yoruma yanıt ver",
+						"validationMessage": "Doğal görünmesi için 3 farklı yanıt oluşturun",
+						"replies": ["Teşekkürler! DM'lerini kontrol et. 😊", "Sana mesaj gönderdim! 🤩", "DM'lerini kontrol et! 🚀"]
+					},
+					"firstDMActionPanel": {
+						"defaultTitle": "DM Gönder",
+						"anOpeningDM": "Açılış DM'i",
+						"whatIsOpeningDM": "Açılış DM'i nedir?",
+						"askToFollowBeforeLink": "Önce takip etmelerini iste",
+						"askForEmail": "E-postasını iste",
+						"defaultEmailMessage": "Anladım! Linki paylaşmadan önce, bilmeni istiyorum... En özel içerikleri e-posta ailem için saklıyorum 🤗 \n\nE-postanı aşağıya bırak, en iyi içerikleri alabilirsin 💌",
+						"defaultFollowMessage": "Neredeyse tamam! Link özellikle takipçilerim için ✨\n\nBeni takip ettikten hemen sonra, linki göndereceğim ve hemen başlayabilirsin! 🎉",
+						"defaultFollowMessageButton": "Takip Ediyorum",
+						"defaultGoToProfileButton": "Profile Git"
+					},
+					"followUpMessage": {
+						"title": "Ardından şu mesajı gönder:",
+						"validation": {
+							"min": "{field} en az {min} olmalıdır",
+							"max": "{field} en fazla {max} olmalıdır"
+						},
+						"hours": "Saat",
+						"minutes": "Dakika"
+					},
+					"openingDMRequiredModal": {
+						"title": "Açılış DM'i Ne İşe Yarar?",
+						"subtitle": "Açılış DM ile yapabilecekleriniz:",
+						"addButton": "Açılış DM'i Kalsın",
+						"closeButton": "Açılış DM'ini Kapat",
+						"enableButton": "Açılış DM'i Ekle",
+						"skipButton": "Kapat",
+						"description": "Instagram, yorum üzerinden mesaj gönderirken önce bir “Açılış DM’i” göndermenizi ister. Bu mesaj, kullanıcının sizden DM alacağını bildirir ve ardından Flow başlar.",
+						"features": {
+							"followUp": {
+								"title": "Hatırlatma mesajı gönder",
+								"description": "Linki ilk seferde kaçıranlar için kişiselleştirilmiş bir hatırlatıcı ayarlayın"
+							},
+							"growFollowers": {
+								"title": "Takipçi sayınızı artırın",
+								"description": "Link göndermeden önce otomatik olarak sizi takip etmelerini isteyin."
+							},
+							"collectEmails": {
+								"title": "E-posta toplayın",
+								"description": "Sosyal medya içinde ve dışında onlarla bağlantı kurmak için DM'den e-postalarını isteyin"
+							}
+						}
+					},
+					"triggerKeywordSettings": {
+						"specificWordLabel": "Belirli bir kelime",
+						"anyWordLabel": "Herhangi bir kelime",
+						"title": "Yorum Şunları İçermelidir",
+						"intentLabel": "Akıllı Filtre"
+					},
+					"quickSignature": {
+						"helperText": "Ücretsiz planlara dahildir. Kaldırmak için bir plana abone olabilirsiniz."
+					},
+					"question": {
+						"questionGroup": {
+							"points": "{points} Puan",
+							"correctAnswerMessage": {
+								"title": "Doğru Cevap Mesajı",
+								"helperText": "Kullanıcı doğru cevap verdiğinde gönderilecek mesaj"
+							},
+							"wrongAnswerMessage": {
+								"title": "Yanlış Cevap Mesajı",
+								"helperText": "Kullanıcı yanlış cevap verdiğinde gönderilecek mesaj"
+							},
+							"followUpMessage": {
+								"title": "Geçiş Mesajı",
+								"helperText": "Soru cevaplandıktan sonra gönderilecek mesaj"
+							},
+							"correctAnswerDefaultText": "Doğru Cevap",
+							"wrongAnswerDefaultText": "Yanlış Cevap",
+							"followUpDefaultText": "Devam edelim! 🎯 Puanın: {score}",
+							"questionNumber": "{index}. Soru"
+						},
+						"repeatedQuizQuestion": {
+							"title": "Yeniden katılmayı engelle?",
+							"alreadyTakenMessage": "Bu sınavı zaten tamamlamışsınız gibi görünüyor."
+						},
+						"afterQuiz": {
+							"title": "Sorular Bitince",
+							"successMessage": {
+								"title": "Başarılı Olanların Mesajı",
+								"helperText": "Eşiğin üzerinde puan alan kullanıcılara gönderilecek mesaj"
+							},
+							"scoreThreshold": {
+								"title": "Başarı Eşiği",
+								"helperText": "Başarılı sayılmak için toplanacak puan"
+							},
+							"failureMessage": {
+								"title": "Başarısız Olanların Mesajı",
+								"helperText": "Eşiğin altında puan alan kullanıcılara gönderilecek mesaj"
+							}
+						},
+						"helperText": "Sorunuzu oluşturun ve katılımcılar için cevap seçeneklerini ayarlayın.",
+						"title": "Soru",
+						"pointLabel": "Puan",
+						"answersTitle": "Cevaplar",
+						"addAnswerButton": "Cevap Ekle",
+						"noAnswersYet": "İlk cevabı ekleyin"
+					}
+				},
+				"storyMentionReply": {
+					"title": "Bir hikayede sizden bahsedildiğinde",
+					"reactWithHeart": "Hikayeyi beğen",
+					"reactWithHeartDesc": "Biri seni hikayesinde bahsettiğinde otomatik olarak ❤️ ile tepki verir.",
+					"sendMessageTitle": "Ardından şu mesajı gönder:",
+					"perContactADay": "Günde yalnızca bir kez gönder",
+					"perContactADayDesc": {
+						"text": "Bir kişi seni {time} içinde birden fazla kez hikâyede etiketlese bile, yalnızca ilk etiketlemesine etkileşim verilir.",
+						"hour": "{hour} saat"
+					}
+				},
+				"replyToStory": {
+					"title": "Hikayenize bir yanıt verildiğinde",
+					"reactWithHeart": "Mesajı Beğen",
+					"reactWithHeartDesc": "Hikayene yanıt geldiğinde otomatik olarak ❤️ ile tepki verir.",
+					"sendMessageTitle": "Ardından şu mesajı gönder:"
+				},
+				"positiveCommentReply": {
+					"sentimentScore": "Duygu Skoru",
+					"sentimentScoreDesc": "Yapay zeka puanlamasıyla yorumların duygusunu otomatik olarak tespit eder. Eşik değerin üzerindeki yorumlara yanıtlar verir.",
+					"scoreGreaterThan": "Score >",
+					"positivityThreshold": "Pozitiflik Eşiği",
+					"neutral": "Nötr",
+					"positive": "Pozitif",
+					"replyTitle": "Bu tepkilerle yanıt verin",
+					"replyDesc": "Bu tepkiler, pozitif yorumlara yanıt olarak paylaşılacaktır:",
+					"replyPlaceholder": "Bir emoji ya da text girin (e.g., 😊, ❤️, 👍)",
+					"addReply": "Tepki Ekle",
+					"sendRandomly": "Rastgele gönder",
+					"privateReplyTitle": "DM Gönder"
+				},
+				"questionCommentReply": {
+					"intentDetection": "Niyet Tespiti",
+					"intentDetectionDesc": "Yapay zeka, yorumların soru içerdiğini otomatik olarak tespit eder.",
+					"question": "Soru",
+					"privateReplyTitle": "DM'den yanıt ver",
+					"privateReplyDesc": "Sohbeti sürdürmek için kişiselleştirilmiş bir DM gönderin.",
+					"privateReplyPlaceholder": "Yanıt mesajınızı girin (örneğin: Merhaba! 👋 Yorumun için teşekkürler 💬 Sana detayları DM olarak göndereceğim!)"
+				},
+				"hideCommentNegative": {
+					"sentimentScore": "Duygu Skoru",
+					"sentimentScoreDesc": "Yapay zeka, yorumlardaki olumsuz duyguyu otomatik olarak tespit eder. Eşik değerin altındaki yorumlar gizlenir.",
+					"scoreLessThan": "Skor <",
+					"negativityThreshold": "Olumsuzluk Eşiği",
+					"negative": "Olumsuz",
+					"hideCommentTitle": "Olmsuz Yorumları Gizle",
+					"hideCommentDesc": "Olumsuz olarak tespit edilen yorumları otomatik olarak gizler.",
+					"neutral": "Nötr",
+					"privateReplyTitle": "Mesaj gönder"
+				},
+				"runGiveaway": {
+					"alreadyEnteredTitle": "Bu çekilişe aynı kişinin tekrar katılmasını engelle?",
+					"alreadyEnteredPlaceholder": "Bu çekilişe zaten katıldın. Bol şanslar 🍀",
+					"winnerSelection": "Kazanma Oranı",
+					"winnerSelectionDesc": "Kazanma olasılıklarını ve kazananların nasıl rastgele seçileceğini ayarlayın.",
+					"winningChance": "Şans Yüzdesi",
+					"rare": "Nadir",
+					"common": "Sıklıkla",
+					"winnerMessage": "Kazananın Mesajı",
+					"winnerMessageDesc": "Kazanan talihlilere gönderilecek mesaj",
+					"winnerMessagePlaceholder": "🎉 Tebrikler! Çekilişimizi kazandınız! Detaylar için birazdan sizinle iletişime geçeceğiz.",
+					"loserMessage": "Kazanamayanların Mesajı",
+					"loserMessageDesc": "Kazanmayan katılımcılara gönderilecek teşekkür mesajı",
+					"loserMessagePlaceholder": "Katıldığın için teşekkürler! Bir sonraki çekilişimiz için takipte kal. 🎁"
+				},
+				"quiz": {
+					"title": "Ödüllü Sınav",
+					"addNewQuestion": "Soru Ekle",
+					"questionName": "Soru {questionNumber}",
+					"questionText": "Soru {questionNumber}",
+					"defaultOption1": "Seçenek 1",
+					"defaultOption2": "Seçenek 2",
+					"wrongAnswerName": "Soru {questionNumber} · Yanlış Cevap",
+					"wrongAnswerText": "Yanlış Cevap 🫣",
+					"customFieldDescription": "Özel Alan",
+					"correctAnswerName": "Soru {questionNumber} · Doğru Cevap",
+					"correctAnswerText": "Doğru cevap! 🎉",
+					"followUpMessageName": "Geçiş Mesajı {questionNumber}",
+					"followUpMessageText": "Hadi devam edelim! 🎯"
+				},
+				"common": {
+					"nextStep": "İlerle"
+				},
+				"turnCommentsIntoSales": {
+					"andThenTheyWillGet": "Şu mesajı gönder:",
+					"customerControlTitle": "Kişiyle Yeniden İletişime Geç",
+					"hours": "{count} saat",
+					"sendMessageAfter": "{hours} sonra bu mesajı gönder:"
+				},
+				"replyToDm": {
+					"title": "Size bir mesaj atıldığında"
+				}
+			},
+			"flowCreateDropdown": {
+				"createFlowButton": "Flow Oluştur"
+			},
+			"createFlowModal": {
+				"title": "Şablonlar",
+				"subtitle": "Hedefinize en uygun Flow şablonunu seçin veya sıfırdan başlayın.",
+				"allCategories": "Tüm Kategoriler",
+				"searchPlaceholder": "Ara...",
+				"categories": {
+					"comments": "Yorum Odaklı",
+					"stories": "Hikaye Odaklı",
+					"sales": "Satış Hedefli",
+					"moderation": "Yorum Moderasyonu",
+					"engagement": "Etkileşim Artırma",
+					"dm": "DM odaklı",
+					"community": "Topluluk"
+				},
+				"startFromScratch": {
+					"title": "Kendi Flow'unuzu Oluşturun",
+					"startTrigger": {
+						"title": "Bir Trigger ile Başlayın",
+						"postComment": "Gönderi veya Reel yorumu",
+						"storyMention": "Hikayede bahsedilme",
+						"replyToStory": "Hikayeye yanıt"
+					},
+					"startScratch": {
+						"title": "Kendi Flow'unu Oluştur",
+						"blank": "Basit Flow"
+					},
+					"startDiagram": {
+						"blank": "Gelişmiş Diagram"
+					}
+				},
+				"quickFlows": {
+					"replyGiveawayEntries": {
+						"title": "Çekiliş Katılımlarını Yanıtla",
+						"description": "Çekilişinize katılanları hesabınızı takip etmeye çağırın ve yorumlara otomatik yanıt verin."
+					},
+					"sendDmFromComments": {
+						"title": "Yorumlardan DM Gönder",
+						"description": "Gönderinize yorum yapanlara otomatik mesaj gönderin."
+					},
+					"storyMentionReply": {
+						"title": "Hikaye Bahsetmelerini Yanıtla",
+						"description": "Hikayesinde sizden bahsedenlere otomatik yanıt verin ve hikayelerini beğenin."
+					},
+					"replyToStory": {
+						"title": "Hikaye Yanıtlarını Yanıtla",
+						"description": "Hikayenize yanıt verenlere otomatik olarak cevap verin ve mesajlarını beğenin."
+					},
+					"replyToDm": {
+						"title": "DM'leri Cevapla",
+						"description": "Size atılan mesajları otomatik olarak cevaplayın."
+					},
+					"growFollowersFromComments": {
+						"title": "Yorumlardan Takipçi Kazan",
+						"description": "Yorum yapan kişileri anında hesabınızı takip etmeye davet edin."
+					},
+					"turnCommentsIntoSales": {
+						"title": "Yorumları Satışa Dönüştür",
+						"description": "Yorum yapan kişilerle otomatik etkileşime geçin ve sohbetleri satışa dönüştürün."
+					},
+					"hideCommentNegative": {
+						"title": "Olumsuz Yorumları Gizle",
+						"description": "Topluluğunuzu pozitif ve güvenli tutmak için olumsuz yorumları otomatik olarak gizleyin."
+					},
+					"positiveCommentReply": {
+						"title": "Pozitif Yorumları Yanıtla",
+						"description": "Etkileşimi artırmak ve teşekkür etmek için pozitif yorumlara otomatik olarak yanıt verin."
+					},
+					"questionCommentReply": {
+						"title": "Yorumlardaki Soruları Yanıtla",
+						"description": "Yorumlardaki soruları otomatik olarak tespit edip, yanıtlar verin ve detaylı bilgi için DM ile devam edin."
+					},
+					"runGiveaway": {
+						"title": "Anlık Çekiliş",
+						"description": "Kullanıcılar çekilişe katılıp şanslarını deneyerek indirim kodu kazanmaya çalışır."
+					},
+					"quiz": {
+						"title": "Ödüllü Sınav",
+						"description": "Takipçilerinize DM üzerinden bir kaç soru sorun; yanıtlarına göre puan toplamalarını sağlayın ve ödüller dağıtın."
+					},
+					"replyPositiveComments": {
+						"title": "Pozitif Yorumlara Yanıt",
+						"description": "Güzel yorumlara anında teşekkür ederek topluluğunu büyüt"
+					}
+				},
+				"theseDays": "Bugünlerde paylaşılanlar"
+			},
+			"justPublished": {
+				"title": "Flow Yayına Alındı!",
+				"description": "Otomasyonunuz başarıyla yayına alındı.",
+				"viewFlowsButton": "Flow'larımı Görüntüle"
+			}
+		},
+		"pay": {
+			"payElements": {
+				"paymentFailed": {
+					"title": "Ödeme Başarısız Oldu.",
+					"text": "Lütfen tekrar deneyin ya da bizimle iletişime geçin."
+				}
+			},
+			"paymentElements": {
+				"useNewCard": "Yeni Kart Kullan"
+			},
+			"paymentForm": {
+				"cardHolder": {
+					"label": "Kartın Üzerindeki İsim",
+					"placeholder": "John Doe"
+				},
+				"cardNumber": {
+					"label": "Kart Numarası",
+					"placeholder": "1234 5678 9012 3456"
+				},
+				"expiryDate": {
+					"label": "Geçerlilik Tarihi",
+					"placeholder": "MM/YY"
+				},
+				"cvv": {
+					"label": "CVV"
+				},
+				"security": {
+					"title": "Kart bilgilerini güvenle saklayın",
+					"description": "Kart bilgileri, dünya çapında kabul edilen bir güvenlik standardı olan PCI-DSS Seviye 1 uyumlu altyapıda saklanır."
+				},
+				"payButton": "Ödeme Yap ({price} {currency})"
+			},
+			"storedCards": {
+				"expiresAtText": "{date} tarihinde sonlanacak",
+				"payButton": "Ödeme Yap",
+				"removeButton": "Sil",
+				"removedMessage": "Kart başarıyla silindi",
+				"removePopup": {
+					"title": "Kartı Sil",
+					"text": "Bu kartı kaldırmak istediğinden emin misiniz?",
+					"confirmButton": "Sil",
+					"cancelButton": "Vazgeç"
+				},
+				"removeCard": "Kartı sil",
+				"atLeastOneCard": "En az bir kartınızın olması gerekir"
+			},
+			"couponCode": {
+				"applyButton": "Uygula",
+				"inputPlaceholder": "Kodunuzu Yazın",
+				"title": "İndirim kodunuz mu var?"
+			},
+			"refCode": {
+				"title": "Arkadaşından davet kodu mu aldın?",
+				"subtitle": "Kodunu kullan, sana özel ufak bir hediyemiz seni bekliyor.",
+				"inputPlaceholder": "Davet kodunu gir",
+				"applyButton": "Kullan",
+				"successMessage": "Davet kodu kullanıldı. Hediyen hesabına tanımlandı."
+			},
+			"couponApplied": {
+				"title": "Kupon uygulandı: {code}",
+				"discount": "İndirim",
+				"amountToPayNow": "Şimdi ödenecek tutar"
+			},
+			"couponDescription": {
+				"mainText": "{couponValidAfterText} {couponValidPeriodText} {discountText} indirim uygulanacaktır.",
+				"couponValidAfterText": "​ | İlk dönemden sonra | {count}. dönemden sonra",
+				"couponValidPeriodText": "​ | İlk dönem | {count} dönem boyunca",
+				"percentageDiscountText": "%{value}",
+				"amountDiscountText": "{value}"
+			}
+		}
+	},
+	"pages": {
+		"app": {
+			"index": {
+				"title": "Bağlı Hesaplar",
+				"selectAccountButton": "Hesabı Seç"
+			},
+			"errorState": {
+				"title": "Bir Hata Oluştu",
+				"message": "Üzgünüz :( Bir hata ile karşılaştık.",
+				"reloadButton": "Yeniden Dene"
+			},
+			"emptyState": {
+				"title": "Henüz Hesap Yok",
+				"message": "Yeni bir hesap eklemek için tıklayın"
+			},
+			"flows": {
+				"title": "Flow'lar",
+				"emptyState": {
+					"title": "Henüz Flow Yok",
+					"description": "{username} için ilk Flow'u oluşturun",
+					"descriptionGeneral": "İlk Flow'unuzu oluşturarak başlayın",
+					"createFirstFlowButton": "İlk Flow'u Oluştur"
+				},
+				"table": {
+					"headers": {
+						"runs": "Çalışmalar",
+						"uniqueContacts": "Kişiler"
+					}
+				},
+				"notifications": {
+					"duplicateFeatureComingSoon": "Çoğaltma yakında geliyor",
+					"analyticsFeatureComingSoon": "Analitik yakında geliyor"
+				},
+				"filters": {
+					"searchByName": "Ara",
+					"filterByPost": "Gönderiye Göre",
+					"filterByTrigger": "Trigger'a Göre",
+					"clearAll": "Temizle",
+					"resultsCount": "{count} sonuç",
+					"selectPost": "İlgili flow'ları görmek için gönderi seçin",
+					"selectTriggerTypes": "Trigger türlerini seçin",
+					"clearPostFilter": "Temizle",
+					"selectedPost": "Seçili Gönderi",
+					"loadMore": "Daha Fazla",
+					"selectAccountFirst": "Gönderiye göre filtrelemek için önce bir hesap seçin",
+					"triggerTypes": {
+						"commentOnPost": "Gönderiye Yorum",
+						"receivedDM": "Gelen DM",
+						"storyMention": "Hikayede Etiketleme",
+						"replyToStory": "Hikayeye Yanıt",
+						"commentOnLive": "Canlı Yayına Yorum"
+					},
+					"sortBy": "Sırala",
+					"sortLabels": {
+						"runsDesc": "En Çok Çalışan",
+						"runsAsc": "En Az Çalışan",
+						"uniqueContactsDesc": "En Çok Kişiye Ulaşan",
+						"uniqueContactsAsc": "En Az Kişiye Ulaşan",
+						"createdAtDesc": "Yeniden Eskiye",
+						"createdAtAsc": "Eskiden Yeniye"
+					}
+				}
+			},
+			"chat": {
+				"notifications": {
+					"permissionGranted": "Bilidirim izni verildi",
+					"permissionDenied": "Bildirim izni reddedildi",
+					"permissionAlreadyGranted": "Bildirim izni zaten verildi",
+					"browserNotSupported": "Bu tarayıcı bildirimleri desteklemiyor.",
+					"newMessageFrom": "[{username}] {senderName} size bir mesaj gönderdi"
+				}
+			},
+			"accounts": {
+				"tabs": {
+					"overview": "Genel Bakış",
+					"billing": "Faturalandırma",
+					"settings": "Ayarlar",
+					"attributes": "Özellikler",
+					"posts": "Gönderiler",
+					"activities": "Aktiviteler",
+					"usage": "Kullanım"
+				},
+				"header": {
+					"refreshPermissionsButton": "İzinleri Yenile",
+					"deleteAccountButton": "Hesabı Sil",
+					"deleteAccountTooltip": "Hesabı Sil"
+				},
+				"deleteConfirmation": {
+					"title": "{name} ({username}) hesabını Silmek İstediğinizden Emin misiniz?",
+					"warningText": "⚠️ Bu işlem geri alınamaz!",
+					"dataToBeDeleted": "Silinecek veriler:",
+					"chatHistory": "Tüm sohbet geçmişi",
+					"connectionInfo": "Hesap bağlantı bilgileri",
+					"contactList": "Kişi listesi ve etkileşim verileri",
+					"templates": "Otomatik yanıt şablonları",
+					"analytics": "Tüm istatistik ve analiz verileri",
+					"confirmButton": "Evet, {username} hesabını Sil",
+					"cancelButton": "İptal",
+					"deletingTitle": "Hesap Siliniyor...",
+					"deletingText": "Lütfen bekleyiniz, veriler siliniyor.",
+					"successTitle": "Hesap Başarıyla Silindi",
+					"successText": "Hesabınız ve tüm verileri sistemden kaldırılmıştır.",
+					"confirmButtonText": "Tamam"
+				}
+			},
+			"contacts": {
+				"preferences": {
+					"loadError": "Sütun tercihleri yüklenemedi"
+				},
+				"emptyState": {
+					"title": "Bir Kişi Seçin",
+					"content": "Detayları görmek için kişi seçin"
+				}
+			},
+			"comments": {
+				"emptyState": {
+					"title": "Bir Yorum Seçin",
+					"content": "Yorum sahibinin bilgilerini görmek için bir yorum seçin"
+				}
+			},
+			"pay": {
+				"subscription": {
+					"title": {
+						"monthly": "Aylık Abonelik Ödemesi",
+						"yearly": "Yıllık Abonelik Ödemesi"
+					},
+					"subtitle": "Hesabını büyütmeye bugün başla, istediğin zaman iptal et.",
+					"info": "Abonelik planları dönem sonunda otomatik olarak yenilenir.",
+					"termsText": "Devam ederek Hizmet Şartları’nı ve {termsOfPayment} kabul edersiniz.",
+					"termsOfPayment": "Koşullar",
+					"successMessage": "Ödeme Başarılı!",
+					"upgradeCard": {
+						"toBeChargedText": "Bugün tahsil edilecek tutar",
+						"amount": {
+							"covered": {
+								"subscription": "Geçerli Plan",
+								"accounts": "Geçerli {count} Ek Hesap"
+							},
+							"new": {
+								"subscription": "Yeni Plan",
+								"accounts": "{count} Ek Hesap"
+							}
+						}
+					}
+				}
+			},
+			"posts": {
+				"emptyTitle": "Gönderi paylaştığınızda burada görünecek",
+				"fetchPosts": "Yeni Gönderileri Kontrol Et",
+				"title": "Gönderiler"
+			},
+			"teamPath": "tr/hesabim/ekip",
+			"flow": {
+				"shared": {
+					"slug": {
+						"error": {
+							"goBackButton": "Anasayfaya dön"
+						}
+					}
+				}
+			}
+		}
+	},
+	"plugins": {
+		"veeValidate": {
+			"requiredMessage": "{name} zorunludur",
+			"thisFieldText": "Bu alan",
+			"email": "Geçerli bir e-posta adresi girin",
+			"min": "Bu alan en az {length} karakter olmaldıır",
+			"max": "Bu alan en fazla {length} karakter olabilir",
+			"confirmed": "Bu alan {target} ile aynı olmalıdır",
+			"expDateCheck": "Kartınızn son kullanma tarihini AA/YY olarak girin",
+			"dateInvalid": "Bu tarih geçmişte. Hatalı yazmış olabilir misiniz?",
+			"twoWord": "Lütfen isminizi ve soy isminizi girin",
+			"formAddress": "Lütfen adresinizi girin",
+			"url": "Lütfen geçerli bir URL girin",
+			"validDate": "Lütfen geçerli bir tarih girin"
+		}
+	},
+	"layouts": {
+		"error": {
+			"contactLinkText": "buraya tıklayarak",
+			"default404Message": "Oops! Hatalı bir bağlantıya tıklamış olabilirsiniz.",
+			"defaultMessage": "Oops! Bir şeyler ters gitti.",
+			"goBackText": "Geri Dön",
+			"goHomeText": "Anasayfaya Dön",
+			"tellUsText": "Bizimle ilgili bir sorun olduğunu düşünüyorsanız, {contactLink} bize bildirebilirsiniz",
+			"tryAgainText": "Tekrar Deneyin"
+		},
+		"preview": {
+			"poweredBy": "{brand} aracılığıyla"
+		},
+		"affiliateApp": {
+			"brand": "Partner",
+			"account": "Hesap",
+			"nav": {
+				"dashboard": "Panel",
+				"partners": "Partnerler",
+				"links": "Linkler",
+				"payouts": "Ödemeler",
+				"reports": "Raporlar"
+			},
+			"menu": {
+				"home": "Ana sayfa",
+				"settings": "Ayarlar",
+				"logout": "Çıkış"
+			}
+		},
+		"affiliateLanding": {
+			"brand": "#işbirligi",
+			"badge": "Partner Programı",
+			"nav": {
+				"giveaway": "Çekiliş",
+				"chat": "Chat",
+				"how": "Nasıl Çalışır?",
+				"earnings": "Kazançlar",
+				"faq": "SSS"
+			},
+			"apply": "Hemen Başvur"
+		},
+		"affiliateForm": {
+			"title": "Partner Başvurusu"
+		}
+	},
+	"headers": {},
+	"countryNames": {
+		"af": "Afganistan",
+		"al": "Arnavutluk",
+		"dz": "Cezayir",
+		"as": "Amerikan Samoası",
+		"ad": "Andorra",
+		"ao": "Angola",
+		"aı": "Anguilla",
+		"aq": "Antarktika",
+		"ag": "Antigua ve Barbuda",
+		"ar": "Arjantin",
+		"am": "Ermenistan",
+		"aw": "Aruba",
+		"au": "Avustralya",
+		"at": "Avusturya",
+		"az": "Azerbaycan",
+		"bs": "Bahamalar",
+		"bh": "Bahreyn",
+		"bd": "Bangladeş",
+		"bb": "Barbados",
+		"by": "Belarus",
+		"be": "Belçika",
+		"bz": "Belize",
+		"bj": "Benin",
+		"bm": "Bermuda",
+		"bt": "Butan",
+		"bo": "Bolivya",
+		"ba": "Bosna Hersek",
+		"bw": "Botsvana",
+		"bv": "Bouvet Adası",
+		"br": "Brezilya",
+		"ıo": "Britanya Hint Okyanusu Toprakları",
+		"bn": "Brunei",
+		"bg": "Bulgaristan",
+		"bf": "Burkina Faso",
+		"mm": "Myanmar",
+		"bı": "Burundi",
+		"kh": "Kamboçya",
+		"cm": "Kamerun",
+		"ca": "Kanada",
+		"cv": "Yeşil Burun Adaları",
+		"ky": "Cayman Adaları",
+		"cf": "Orta Afrika Cumhuriyeti",
+		"td": "Çad",
+		"cl": "Şili",
+		"cn": "Çin",
+		"cx": "Christmas Adası",
+		"cc": "Cocos (Keeling) Adaları",
+		"co": "Kolombiya",
+		"km": "Komorlar",
+		"cg": "Kongo (Brazzavil)",
+		"cd": "Kongo (Kinşasa)",
+		"ck": "Cook Adaları",
+		"cr": "Kosta Rika",
+		"cı": "Fildişi Sahili",
+		"hr": "Hırvatistan",
+		"cu": "Küba",
+		"cw": "Curaçao",
+		"cy": "Kıbrıs",
+		"cz": "Çek Cumhuriyeti",
+		"dk": "Danimarka",
+		"dj": "Cibuti",
+		"dm": "Dominika",
+		"do": "Dominik Cumhuriyeti",
+		"ec": "Ekvador",
+		"eg": "Mısır",
+		"sv": "El Salvador",
+		"gq": "Ekvator Ginesi",
+		"er": "Eritre",
+		"ee": "Estonya",
+		"et": "Etiyopya",
+		"fk": "Falkland Adaları",
+		"fo": "Faroe Adaları",
+		"fj": "Fiji",
+		"fı": "Finlandiya",
+		"fr": "Fransa",
+		"gf": "Fransız Guyanası",
+		"pf": "Fransız Polinezyası",
+		"tf": "Fransız Güney ve Antarktika Toprakları",
+		"ga": "Gabon",
+		"gm": "Gambiya",
+		"ge": "Gürcistan",
+		"de": "Almanya",
+		"gh": "Gana",
+		"gı": "Cebelitarık",
+		"gr": "Yunanistan",
+		"gl": "Grönland",
+		"gd": "Grenada",
+		"gp": "Guadeloupe",
+		"gu": "Guam",
+		"gt": "Guatemala",
+		"gg": "Guernsey",
+		"gn": "Gine",
+		"gw": "Gine-Bissau",
+		"gy": "Guyana",
+		"ht": "Haiti",
+		"hm": "Heard ve McDonald Adaları",
+		"hn": "Honduras",
+		"hk": "Hong Kong",
+		"hu": "Macaristan",
+		"ıs": "İzlanda",
+		"ın": "Hindistan",
+		"ıd": "Endonezya",
+		"ır": "İran",
+		"ıq": "Irak",
+		"ıe": "İrlanda",
+		"ım": "Man Adası",
+		"ıl": "İsrail",
+		"ıt": "İtalya",
+		"jm": "Jamaika",
+		"jp": "Japonya",
+		"je": "Jersey",
+		"jo": "Ürdün",
+		"kz": "Kazakistan",
+		"ke": "Kenya",
+		"kı": "Kiribati",
+		"kp": "Kuzey Kore",
+		"kr": "Güney Kore",
+		"kw": "Kuveyt",
+		"kg": "Kırgızistan",
+		"la": "Laos",
+		"lv": "Letonya",
+		"lb": "Lübnan",
+		"ls": "Lesotho",
+		"lr": "Liberya",
+		"ly": "Libya",
+		"lı": "Lihtenştayn",
+		"lt": "Litvanya",
+		"lu": "Lüksemburg",
+		"mo": "Makao",
+		"mk": "Makedonya",
+		"mg": "Madagaskar",
+		"mw": "Malavi",
+		"my": "Malezya",
+		"mv": "Maldivler",
+		"ml": "Mali",
+		"mt": "Malta",
+		"mh": "Marshall Adaları",
+		"mq": "Martinik",
+		"mr": "Moritanya",
+		"mu": "Mauritius",
+		"yt": "Mayotte",
+		"mx": "Meksika",
+		"fm": "Mikronezya Federal Devletleri",
+		"md": "Moldova",
+		"mc": "Monako",
+		"mn": "Moğolistan",
+		"me": "Karadağ",
+		"ms": "Montserrat",
+		"ma": "Fas",
+		"mz": "Mozambik",
+		"na": "Namibya",
+		"nr": "Nauru",
+		"np": "Nepal",
+		"nl": "Hollanda",
+		"nc": "Yeni Kaledonya",
+		"nz": "Yeni Zelanda",
+		"nı": "Nikaragua",
+		"ne": "Nijer",
+		"ng": "Nijerya",
+		"nu": "Niue",
+		"nf": "Norfolk Adası",
+		"mp": "Kuzey Mariana Adaları",
+		"no": "Norveç",
+		"om": "Umman",
+		"pk": "Pakistan",
+		"pw": "Palau",
+		"pa": "Panama",
+		"pg": "Papua Yeni Gine",
+		"py": "Paraguay",
+		"pe": "Peru",
+		"ph": "Filipinler",
+		"pn": "Pitcairn Adaları",
+		"pl": "Polonya",
+		"pt": "Portekiz",
+		"pr": "Porto Riko",
+		"qa": "Katar",
+		"re": "Reunion",
+		"ro": "Romanya",
+		"ru": "Rusya",
+		"rw": "Ruanda",
+		"bl": "Saint Barthelemy",
+		"sh": "Saint Helena, Ascension ve Tristan da Cunha",
+		"kn": "Saint Kitts ve Nevis",
+		"lc": "Saint Lucia",
+		"mf": "Saint Martin",
+		"pm": "Saint Pierre ve Miquelon",
+		"vc": "Saint Vincent ve Grenadinler",
+		"ws": "Samoa",
+		"sm": "San Marino",
+		"st": "Sao Tome ve Principe",
+		"sa": "Suudi Arabistan",
+		"sn": "Senegal",
+		"rs": "Sırbistan",
+		"sc": "Seyşeller",
+		"sl": "Sierra Leone",
+		"sg": "Singapur",
+		"sx": "Sint Maarten",
+		"sk": "Slovakya",
+		"sı": "Slovenya",
+		"sb": "Solomon Adaları",
+		"so": "Somali",
+		"za": "Güney Afrika",
+		"gs": "Güney Georgia ve Güney Sandwich Adaları",
+		"ss": "Güney Sudan",
+		"es": "İspanya",
+		"lk": "Sri Lanka",
+		"sd": "Sudan",
+		"sr": "Surinam",
+		"sz": "Svaziland",
+		"se": "İsveç",
+		"ch": "İsviçre",
+		"sy": "Suriye",
+		"tw": "Tayvan",
+		"tj": "Tacikistan",
+		"tz": "Tanzanya",
+		"th": "Tayland",
+		"tl": "Doğu Timor",
+		"tg": "Togo",
+		"tk": "Tokelau",
+		"to": "Tonga",
+		"tt": "Trinidad ve Tobago",
+		"tn": "Tunus",
+		"tr": "Türkiye",
+		"tm": "Türkmenistan",
+		"tc": "Turks ve Caicos Adaları",
+		"tv": "Tuvalu",
+		"ug": "Uganda",
+		"ua": "Ukrayna",
+		"ae": "Birleşik Arap Emirlikleri",
+		"gb": "Birleşik Krallık",
+		"us": "Amerika Birleşik Devletleri",
+		"uy": "Uruguay",
+		"uz": "Özbekistan",
+		"vu": "Vanuatu",
+		"va": "Vatikan",
+		"ve": "Venezuela",
+		"vn": "Vietnam",
+		"vg": "İngiliz Virjin Adaları",
+		"vı": "Amerikan Virjin Adaları",
+		"wf": "Wallis ve Futuna",
+		"eh": "Batı Sahra",
+		"ye": "Yemen",
+		"zm": "Zambiya",
+		"zw": "Zimbabve"
+	},
+	"models": {
+		"comments": {
+			"intents": {
+				"question": "Soru",
+				"complaint": "Şikayet",
+				"compliment": "Övgü",
+				"request": "İstek",
+				"support": "Destek",
+				"purchase": "Satın Alma",
+				"information": "Bilgi",
+				"feedback": "Geri Bildirim",
+				"spam": "Spam",
+				"giveaway_entry": "Çekiliş Katılımı",
+				"collaboration": "İş Birliği"
+			}
+		},
+		"flow": {
+			"utils": {
+				"quick": {
+					"sendDmFromComments": {
+						"flowName": "Yorumdan DM Gönder",
+						"defaultMessage": "Umarım bu paylaşım senin için faydalı olmuştur 🙏\nBenzer konularda içerikler paylaşmaya devam ediyorum, takipte kal 🌿"
+					},
+					"replyGiveawayEntries": {
+						"flowName": "Çekiliş Katılımlarını Yanıtla",
+						"defaultMessage": "Katılımın onaylandı! 🎉\n\nBol şans! 🍀",
+						"defaultCommentReply1": "Çekilişimize katıldığın için teşekkürler! 🎉",
+						"defaultCommentReply2": "Bol şans! 🍀",
+						"defaultCommentReply3": "Bizi takip etmeyi unutma! 😊",
+						"defaultOpeningDMMessage": "Selam {igUsername}! 🎉\n\nÇekilişimize katıldığın için çok teşekkürler! Burada olduğun için çok mutluyuz 🙌\n\nKatılımını onaylamak için aşağıdaki butona tıkla, bol şans! 🍀✨",
+						"defaultOpeningDMButton": "Katılımı Onayla 🎁",
+						"comparisonNode": {
+							"name": "Hesabı Takip Ediyor",
+							"description": "Kullanıcının Instagram hesabınızı takip edip etmediğini kontrol eder."
+						},
+						"followMessage": "Neredeyse tamam! 🎉\n\nÇekilişe katılımını tamamlamak için önce hesabımızı takip et. Sonra aşağıdaki butona tıkla! 💫",
+						"followButton": "Takip Ettim ✅"
+					},
+					"firstDMActionPanel": {
+						"defaultOpeningDMMessage": "Merhaba! {igUsername} \n\nBurada olduğun için çok mutluyum, ilgin için çok teşekkürler 😊 \n\nAşağıya tıkla, linki hemen göndereceğim ✨",
+						"defaultOpeningDMButton": "Linki gönder"
+					},
+					"storyMentionReply": {
+						"flowName": "Hikaye Bahsetmesini Cevapla",
+						"defaultMessage": "Beni etiketlediğin için teşekkürler! 😊"
+					},
+					"replyToStory": {
+						"flowName": "Hikaye Yanıtlarını Cevapla",
+						"sendMessageText": "Hikayeme yanıt verdiğin için teşekkürler! 🙌"
+					},
+					"replyToDm": {
+						"flowName": "DM'leri Cevapla",
+						"sendMessageText": "Size hemen geri döneceğim 👌"
+					},
+					"growFollowersFromComments": {
+						"flowName": "Yorumları Takipçiye Dönüştür",
+						"openingMessage": "Selam! 👋\n\nYorumunu gördüm, ilgini çektiğini fark ettim 😊\n\nLinki göndermeden önce küçük bir bilgi: en iyi içeriklerimi ve paylaşımlarımı böyle DM’lerden gönderiyorum ✨\n\nBaşlamaya hazır mısın?",
+						"openingButton": "Hazırım 🙌",
+						"followMessage": "Neredeyse tamam! 🎉 \n\nBu içerik sadece takipçilerim için özel. Önce beni takip et, sonra linki hemen göndereceğim! 💫",
+						"followButton": "Takip Et & Linki Al",
+						"goToProfileButton": "Profile Git",
+						"finalMessage": "Umarım işine yarar 😊 \n\nKeyfini çıkar ✨",
+						"comparisonNode": {
+							"name": "Hesabı Takip Ediyor",
+							"description": "Kullanıcının Instagram hesabınızı takip edip etmediğini kontrol eder."
+						}
+					},
+					"turnCommentsIntoSales": {
+						"flowName": "Yorumları Satışa Dönüştür",
+						"openingMessage": "Merhaba! Yorumun için çok teşekkürler 💬✨\n\n\nSana özel küçük bir sürprizim var! 🎁\n\n\nAşağıya tıkla, senin için hazırladığım indirim kodunu hemen al 💖",
+						"openingButton": "Kodu Göster 💸",
+						"sendMessage": "🎁 İşte indirim kodun: WELCOME10  \n\nBu kodu ödeme sırasında kullanarak %10 indirim kazanabilirsin 🛍️\n",
+						"shopNowButton": "Satın Al",
+						"followUpMessage": "İndirimini kullanabildin mi, yardımcı olabileceğimiz bir şey var mı?",
+						"goToProfileButton": "Profile Git"
+					},
+					"positiveCommentReply": {
+						"flowName": "Pozitif Yorumları Yanıtla",
+						"sentimentField": {
+							"name": "Duygu Skoru",
+							"description": "Yapay zeka puanlamasıyla yorumların duygusunu otomatik olarak tespit eder. Eşik değerin üzerindeki yorumlar pozitif yanıtları tetikler."
+						}
+					},
+					"hideCommentNegative": {
+						"flowName": "Olumsuz Yorumları Gizle",
+						"sentimentField": {
+							"name": "Duygu Skoru",
+							"description": "Yapay zeka puanlamasıyla yorumların duygusunu otomatik olarak tespit eder. Eşik değerin üzerindeki yorumlar pozitif yanıtları tetikler."
+						},
+						"sendPrivateReply": "Merhaba!\n\nYorumunuz tarafımıza ulaşmıştır. Lütfen bizimle iletişime geçiniz"
+					},
+					"questionCommentReply": {
+						"flowName": "Yorumlardaki Soruları Yanıtla",
+						"intentField": {
+							"name": "Niyet Tespiti",
+							"description": "Yapay zeka yorumlarda soru içerip içermediğini otomatik olarak tespit eder."
+						},
+						"privateReplyText": "Mesajınızı aldık. En kısa sürede sizinle iletişime geçeceğiz."
+					},
+					"runGiveaway": {
+						"flowName": "Çekilişi Başlat",
+						"comparisonField": {
+							"name": "Çekiliş",
+							"description": "Çekiliş"
+						},
+						"privateReplyMessage": "Hey! Çekilişimizin kazananlarından biri olup olmadığını görmeye hazır mısın? 🍀 Şansını denemek için aşağıdaki butona tıkla!",
+						"privateReplyButton": "Hadi Başlayalım! 🔥",
+						"alreadyEnteredMessage": "Ops! Bu çekilişe zaten katılmışsın. ✨ Herkes için yalnızca 1 katılım hakkı var. Ama web sitemizde seni bekleyen başka güzel şeyler var 👇",
+						"winnerMessage": "Tebrikler! 🥳 Çekilişin şanslı kazananlarından birisin! Ödeme sırasında bu kodu kullanabilirsin: 24CUSTOM10 👇",
+						"loserMessage": "Üzgünüz! 😭 Bu sefer kazanamadın… Evet, biz de üzgünüz. Ama merak etme, yakında yeni bir çekiliş duyuracağız! Takipte kal ❤️",
+						"visitButton": "Siteyi Ziyaret Et",
+						"claimButton": "Kuponumu Al"
+					},
+					"quiz": {
+						"flowName": "Ödüllü Sınav",
+						"repeatMessage": "Bu sınavı daha önce tamamlamışsın gibi görünüyor.",
+						"questions": {
+							"question1": {
+								"text": "Instagram’da bir gönderiyi beğenmek için hangi ikona dokunursun?",
+								"options": {
+									"heart": "Kalp ❤️",
+									"star": "Yıldız ⭐",
+									"fire": "Ateş 🔥👊"
+								},
+								"wrongAnswer": "Bu sefer olmadı! 🫣 Instagram’da gönderiler kalp ikonu ile beğenilir.",
+								"correctAnswer": "Harika seçim! Instagram’da beğeniler kalp ikonu ile gösterilir. ❤️"
+							},
+							"question2": {
+								"text": "Bir Instagram Hikayesi ekranda ne kadar süre kalır?",
+								"options": {
+									"threeSeconds": "3 Saniye",
+									"fifteenSeconds": "15 Saniye",
+									"thirtySeconds": "30 Saniye"
+								},
+								"wrongAnswer": "Karıştırılması normal… Hikayeler aslında 15 saniye boyunca gösterilir.",
+								"correctAnswer": "Aynen öyle! Instagram Hikayeleri ekranlarda 15 saniye kalır 🎉"
+							},
+							"question3": {
+								"text": "Bir gönderiyi daha sonra tekrar görmek istiyorsan ne yapman gerekir?",
+								"options": {
+									"addStory": "Hikayene ekle",
+									"writeComment": "Yorum yaz",
+									"save": "Kaydet"
+								},
+								"wrongAnswer": "Kolay bir karışıklık! Doğru cevap gönderiyi kaydetmektir.",
+								"correctAnswer": "Doğru! Bir gönderiyi kaydetmek, onu daha sonra kolayca bulmanı sağlar."
+							}
+						},
+						"followUps": {
+							"question1": "Hadi sıradaki soruya geçelim.",
+							"question2": "Tamamdır, şimdi sıradaki soru geliyor.",
+							"question3": "Tüm sorular bitti. Şimdi sonuçlara bakalım."
+						},
+						"results": {
+							"highScore": "Harika iş çıkardın! Instagram’ı gerçekten iyi biliyorsun. 👏",
+							"lowScore": "Fena değil! Bir iki detayı kaçırmış olabilirsin ama Instagram’ı öğrenmek çok kolay."
+						}
+					}
+				},
+				"defaultTriggerConfig": {
+					"commentOnPost": {
+						"replyComments": {
+							"text1": "Birazdan sana DM atacağım! 😊",
+							"text2": "DM'lerini kontol et! 🙌",
+							"text3": "Mesaj gönderdim! 📩"
+						}
+					}
+				},
+				"defaultNodeConfigs": {
+					"sendPrivateReply": {
+						"buttonText": "Mesaj Gönder"
+					},
+					"replyComment": {
+						"text1": "Yorumun için teşekkürler! 😊",
+						"text2": "Mesajınız için teşekkür ederiz! 🙏",
+						"text3": "Düşüncelerini paylaşmana sevindik! 💬"
+					},
+					"signature": {
+						"locale": "tr_TR"
+					}
+				},
+				"errorsList": {
+					"receivedDMNeedsFilter": "Gelen mesajlar için en az bir filtre eklenmelidir.",
+					"triggersNeedsTrigger": "Flow'un başlaması için bir Trigger eklenmelidir.",
+					"sendMessageNeedsMessage": "Göndermeden önce bir mesaj belirlenmelidir.",
+					"hasResolvedTrigger": " ",
+					"needsToSetField": "Bir alan seçmelisiniz.",
+					"sendMessageTooLong": "Mesajınız en fazla 1000 karakter olabilir.",
+					"buttonGuardNotMatch": "Buton için bir eylem belirlenmelidir.",
+					"buttonTextIsEmpty": "Buton başlığı belirlenmelidir.",
+					"websiteLinkButtonUrlNotSet": "Link butonu için bağlantı (link) eklenmelidir.",
+					"quickReplyTitleIsEmpty": "Hızlı yanıt başlığı belirlenmelidir.",
+					"quickReplyGuardNotMatch": "Hızlı yanıt için bir eylem belirlenmelidir.",
+					"needsSelectAtLeastOnePost": "En azından bir gönderi seçmelisiniz."
+				}
+			}
+		}
+	},
+	"common": {
+		"followers": "takipçi",
+		"search": "Ara",
+		"noResults": "Sonuç bulunamadı"
+	},
+	"mixins": {
+		"flowDiagramMixin": {
+			"guardStyles": {
+				"button": "Buton",
+				"quickReply": "Hızlı Yanıt",
+				"invalidReply": "Geçersizse",
+				"expired": "Süresi Dolduğunda",
+				"variation": "Varyasyon",
+				"else": "Değilse",
+				"consent": "Onay"
+			}
+		}
+	}
+}

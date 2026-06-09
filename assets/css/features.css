@@ -1,0 +1,142 @@
+/* Features: renk token'ları ve yardımcı sınıflar */
+:root {
+    /* Ana feature renkleri */
+    --feature-chat: #6366f1; /* indigo-500 */
+    --feature-comments: #10b981; /* emerald-500 */
+    --feature-analyze: #f59e0b; /* amber-500 */
+    --feature-translate: #8b5cf6; /* violet-500 */
+    --feature-flow: #0ea5e9; /* sky-500 */
+    --feature-multiple: #f43f5e; /* rose-500 */
+}
+
+/* Tailwind v4 token'ları: text-feature-chat, bg-feature-chat, border-feature-chat, ring-feature-chat,... */
+@theme {
+    --color-feature-chat: var(--feature-chat);
+    --color-feature-comments: var(--feature-comments);
+    --color-feature-analyze: var(--feature-analyze);
+    --color-feature-translate: var(--feature-translate);
+    --color-feature-flow: var(--feature-flow);
+    --color-feature-multiple: var(--feature-multiple);
+
+    /* İçerik tonları (dark/light uyumlu) */
+    --color-feature-chat-content: color-mix(in srgb, var(--feature-chat) 60%, var(--color-base-content));
+    --color-feature-comments-content: color-mix(in srgb, var(--feature-comments) 60%, var(--color-base-content));
+    --color-feature-analyze-content: color-mix(in srgb, var(--feature-analyze) 60%, var(--color-base-content));
+    --color-feature-translate-content: color-mix(in srgb, var(--feature-translate) 60%, var(--color-base-content));
+    --color-feature-flow-content: color-mix(in srgb, var(--feature-flow) 60%, var(--color-base-content));
+    --color-feature-multiple-content: color-mix(in srgb, var(--feature-multiple) 60%, var(--color-base-content));
+}
+
+@layer components {
+    /* Üstteki ikon "pill" tabları için genel stil */
+    .feature-pill {
+        @apply size-9 rounded-lg md:size-12 md:rounded-2xl grid place-content-center bg-white transition-all;
+    }
+
+    .feature-pill i {
+        @apply sm:text-lg md:text-xl lg:text-2xl;
+    }
+
+    .feature-pill-active {
+        @apply ring-2;
+    }
+
+    /* Soft arkaplan yardımcıları (light tint) */
+    .bg-feature-soft-chat {
+        background: color-mix(in srgb, var(--feature-chat) 12%, var(--color-base-100));
+    }
+
+    .bg-feature-soft-comments {
+        background: color-mix(in srgb, var(--feature-comments) 12%, var(--color-base-100));
+    }
+
+    .bg-feature-soft-analyze {
+        background: color-mix(in srgb, var(--feature-analyze) 12%, var(--color-base-100));
+    }
+
+    .bg-feature-soft-translate {
+        background: color-mix(in srgb, var(--feature-translate) 12%, var(--color-base-100));
+    }
+
+    .bg-feature-soft-flow {
+        background: color-mix(in srgb, var(--feature-flow) 12%, var(--color-base-100));
+    }
+
+    .bg-feature-soft-replies {
+        background: color-mix(in srgb, var(--feature-multiple) 12%, var(--color-base-100));
+    }
+
+    /* Panel degrade arkaplanlar (personas.css benzeri) */
+    .bg-feature-panel-chat {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-chat) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-chat) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-feature-panel-comments {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-comments) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-comments) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-feature-panel-analyze {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-analyze) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-analyze) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-feature-panel-translate {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-translate) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-translate) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-feature-panel-flow {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-flow) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-flow) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    .bg-feature-panel-replies {
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--feature-multiple) 18%, var(--color-base-100)) 0%,
+                color-mix(in srgb, var(--feature-multiple) 8%, var(--color-base-100)) 100%
+        );
+    }
+
+    /* Metin ton sınıfları */
+    .text-feature-chat-content {
+        color: color-mix(in srgb, var(--color-feature-chat-content) 88%, var(--color-base-100));
+    }
+
+    .text-feature-comments-content {
+        color: color-mix(in srgb, var(--color-feature-comments-content) 88%, var(--color-base-100));
+    }
+
+    .text-feature-analyze-content {
+        color: color-mix(in srgb, var(--color-feature-analyze-content) 88%, var(--color-base-100));
+    }
+
+    .text-feature-translate-content {
+        color: color-mix(in srgb, var(--color-feature-translate-content) 88%, var(--color-base-100));
+    }
+
+    .text-feature-flow-content {
+        color: color-mix(in srgb, var(--color-feature-flow-content) 88%, var(--color-base-100));
+    }
+
+    .text-feature-multiple-content {
+        color: color-mix(in srgb, var(--color-feature-multiple-content) 88%, var(--color-base-100));
+    }
+}
