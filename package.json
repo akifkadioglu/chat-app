@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "patch-package && nuxt prepare"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@capacitor/clipboard": "^7.0.2",
@@ -52,7 +52,6 @@
     "nuxt-svgo": "^4.2.6",
     "pinia": "^3.0.3",
     "qrcode": "^1.5.4",
-    "simpliers-js-utils": "github:simpliers-giveaway/simpliers-js-utils#feat-simpliers-auth",
     "simpliers-nuxt-utils": "github:simpliers-giveaway/simpliers-nuxt-utils",
     "sweetalert2": "^11.23.0",
     "traverse": "^0.6.11",
@@ -78,7 +77,6 @@
     "@types/traverse": "^0.6.37",
     "@types/uuid": "^10.0.0",
     "attranslate": "^2.2.0",
-    "patch-package": "^8.0.1",
     "prettier": "3.3.3",
     "reddit-blog-scout": "^1.1.0",
     "tailwindcss": "^4.0.14"
